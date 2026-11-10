@@ -80,6 +80,8 @@ A dedicated clipping-indicator circuit is included in the LTspice project.
 
 The circuit uses an LM393 comparator model to detect signal levels approaching the selected clipping threshold. The output can be used to drive an LED, providing a visual indication of excessive signal amplitude.
 
+![Microphone clippling led circuit](img/clippingledcircuit.png)
+
 The comparator circuit is simulated separately to allow its operation and threshold behavior to be evaluated independently of the complete mixer.
 
 ## PCB Design
