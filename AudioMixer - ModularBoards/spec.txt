@@ -1,0 +1,11 @@
+example: behringer xenyx 802s
+image: https://assets-sb.thomann.de/f/49568/3306x3306/4a1d746be4/tps_2866_560494_0_februar55946-560494n.jpg/m/1600x0/filters:quality(90)
+
+4 channels: 
+- using xlr/jack connectors
+
+Regolations:
+-Trim regolation preamp (1 pot.) (-20dB to Line in and 10dB to 46dB Gain)
+-3 band equalizer (3 pot.) (12kHz,2.5kHz,80Hz)
+-pan control (from left to right channel) and clip led (1 pot.)
+-channel fader (volume control) (1 pot.) from 0db to 10db
