@@ -60,7 +60,13 @@ The following Bode plots show the equalizer response for different control setti
 
 The following plot shows the overall frequency response with all equalizer bands set to their neutral position (flat response).
 
-![Overall frequency response](img/bode_diagram.png)
+![Frequency response without any cut frequency](img/bode_diagram.png)
+
+A Monte Carlo analysis was also performed, considering a **1% tolerance for resistors (0603 package)** and a **10% tolerance for ceramic X7R capacitors**.
+
+The resulting frequency response is shown in the figure below, with no cutoff frequency applied.
+
+![Monte Carlo frequency response without any cutoff frequency](img/AudioMixer%20-%203bEq_bode_montecarlo.png)
 
 ### 2. Noise Analysis
 
