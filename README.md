@@ -22,9 +22,6 @@ The project is still under development. Circuit design, simulation, and PCB inte
 ## System Architecture
 
 The mixer is organized into modular functional blocks. This approach makes it possible to develop and test each section independently before integrating the complete system.
-
-### 1. Input Signal Conditioning
-
 The input stage provides microphone and line-level signal conditioning. Separate configurations are included for a single microphone/line channel and for two line-level channels, intended for left and right stereo signals.
 
 The signal-conditioning section includes:
@@ -34,7 +31,9 @@ The signal-conditioning section includes:
 - Output-level adjustment.
 - FX-send circuitry.
 
-The modular structure allows the input circuitry to be adapted to different channel configurations.
+### 1. Microphone/Line Preamplifier Circuit
+
+The microphone/line preamplifier circuit provides input signal conditioning and amplification for low-level microphone signals and line-level audio sources. It is designed to adapt different input signal levels to the following stages of the mixer, ensuring proper signal amplification and compatibility with the audio processing circuitry.
 
 ![Microphone and line amplifier](img/mic-line-amplifier.png)
 
@@ -46,7 +45,17 @@ The frequency response is evaluated through LTspice AC analysis. Different equal
 
 ![Three-band audio equalizer](img/3-band-equalizer.png)
 
-## Design and Simulation
+### 3. Clipping Indicator
+
+A dedicated clipping-indicator circuit is included in the LTspice project.
+
+The circuit uses an LM393 comparator model to detect signal levels approaching the selected clipping threshold. The output can be used to drive an LED, providing a visual indication of excessive signal amplitude.
+
+![Microphone clipping LED circuit](img/clippingledcircuit.png)
+
+The comparator circuit is simulated separately to allow its operation and threshold behavior to be evaluated independently of the complete mixer.
+
+## Simulation
 
 LTspice is used to investigate the behavior of the individual circuit blocks. The simulations currently focus on frequency response, signal conditioning, transient response, and noise performance.
 
@@ -68,54 +77,21 @@ The resulting frequency response is shown in the figure below, with no cutoff fr
 
 ![Monte Carlo frequency response without any cutoff frequency](img/AudioMixer%20-%203bEq_bode_montecarlo.png)
 
-### 2. Noise Analysis
-
-Noise performance is an important aspect of analog audio design, particularly in microphone preamplifier stages, where low-level input signals must be amplified.
-
-LTspice noise analysis is used to evaluate the output noise spectral density of the circuits. The results are also compared between different operational-amplifier configurations.
-
-The current comparison is part of the ongoing investigation into the noise contribution of the amplifier stages and their component models.
-
-![Noise spectral density comparison](img/noise_comparison.png)
-
-The noise simulations are still being refined. In particular, the accuracy of the operational-amplifier noise models and their agreement with datasheet specifications require further verification.
-
-### 3. Microphone/Line Preamplifier Transient Analysis
-
-Transient simulations are used to investigate the time-domain behavior of the microphone/line preamplifier.
-
-Monte Carlo simulations were performed to evaluate the effect of component tolerances on the amplifier's transient response. The results include the maximum and minimum gain configurations.
-
-**Maximum gain configuration:**
-
-![Microphone line amplifier transient Monte Carlo maximum gain](img/Mic-Line-Amp_transientMontecarlo%20Gmax.png)
-
-**Minimum gain configuration:**
-
-![Microphone line amplifier transient Monte Carlo minimum gain](img/Mic-Line-Amp_transientMontecarlo%20Gmin.png)
-
-These simulations help evaluate the variability of the amplifier response under different component tolerance conditions.
-
-### 4. Line Preamplifier Frequency Response
+### 2. Microphone/Line Preamplifier Frequency Response
 
 The frequency response of the line preamplifier was evaluated through LTspice AC analysis.
 
 ![Line preamplifier frequency response](img/Line%20preamplifier%20frequency%20response.png)
 
-The simulation provides an overview of the amplifier's behavior across the audio frequency range.
-
-### 5. XLR Microphone Preamplifier Analysis
-
-The XLR preamplifier is designed to handle balanced microphone-level signals. Its performance is investigated through frequency-domain, transient, and Monte Carlo simulations.
-
-#### Frequency Response
-
 The Bode plot shows the frequency response of the XLR preamplifier across the analyzed frequency range.
 
 ![XLR preamplifier frequency response](img/XLR%20preamplifier%20frequency%20response.png)
 
-#### Transient Response – 5 kHz Differential Input
+The simulation provides an overview of the amplifier's behavior across the audio frequency range.
 
+### 3. Microphone/Line Preamplifier Transient Response – 5 kHz Differential Input
+
+Transient simulations are used to investigate the time-domain behavior of the microphone/line preamplifier.
 A 5 kHz differential sinusoidal signal is applied to the XLR preamplifier to evaluate its time-domain response.
 
 ![XLR 5 kHz differential sinusoidal input](img/XLR%205kHz%20Differential%20Sinusoidal%20input.png)
@@ -133,20 +109,29 @@ The following plots show the output response for the maximum and minimum gain co
 #### Monte Carlo Transient Analysis
 
 A Monte Carlo simulation consisting of **300 runs** was performed using a 5 kHz sinusoidal input signal.
+The analysis evaluates the variability of the XLR preamplifier response due to component tolerances. The results include the maximum and minimum gain configurations.
 
-The analysis evaluates the variability of the XLR preamplifier response due to component tolerances.
+**Maximum gain configuration:**
 
-![XLR preamplifier 5 kHz sinusoidal input Monte Carlo analysis](img/Monte%20Carlo%20XLR%20Preamplifier%205kHz%20Sinusoidal%20input%20response%20(300%20runs).png)
+![Microphone line amplifier transient Monte Carlo maximum gain](img/Mic-Line-Amp_transientMontecarlo%20Gmax.png)
 
-### 6. Clipping Indicator
+**Minimum gain configuration:**
 
-A dedicated clipping-indicator circuit is included in the LTspice project.
+![Microphone line amplifier transient Monte Carlo minimum gain](img/Mic-Line-Amp_transientMontecarlo%20Gmin.png)
 
-The circuit uses an LM393 comparator model to detect signal levels approaching the selected clipping threshold. The output can be used to drive an LED, providing a visual indication of excessive signal amplitude.
+These simulations help evaluate the variability of the amplifier response under different component tolerance conditions.
 
-![Microphone clipping LED circuit](img/clippingledcircuit.png)
+### 4. Microphone/Line Preamplifier Noise Analysis
 
-The comparator circuit is simulated separately to allow its operation and threshold behavior to be evaluated independently of the complete mixer.
+Noise performance is an important aspect of analog audio design, particularly in microphone preamplifier stages, where low-level input signals must be amplified.
+
+LTspice noise analysis is used to evaluate the output noise spectral density of the circuits. The results are also compared between different operational-amplifier configurations.
+
+The current comparison is part of the ongoing investigation into the noise contribution of the amplifier stages and their component models.
+
+![Noise spectral density comparison](img/noise_comparison.png)
+
+The noise simulations are still being refined. In particular, the accuracy of the operational-amplifier noise models and their agreement with datasheet specifications require further verification.
 
 ## PCB Design
 
