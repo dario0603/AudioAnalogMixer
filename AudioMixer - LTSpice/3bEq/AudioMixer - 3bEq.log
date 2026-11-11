@@ -1,6 +1,6 @@
 LTspice 24.1.8 for Windows
-Circuit: C:\Users\posta\Desktop\KiCad files\AudioMixer\AudioMixer - LTSpice\3bEq\AudioMixer - 3bEq.net
-Start Time: Tue Nov 10 12:22:53 2026
+Circuit: C:\Users\posta\Desktop\KiCad files\AudioAnalogMixer\AudioMixer - LTSpice\3bEq\AudioMixer - 3bEq.net
+Start Time: Tue Nov 10 15:36:35 2026
 solver = Normal
 Maximum thread count: 12
 tnom = 27
@@ -33,10 +33,10 @@ Source Step = 63.6364%
 Source Step = 93.9394%
 Source stepping succeeded in finding the operating point.
 
-Total elapsed time: 0.512 seconds.
+Total elapsed time: 0.608 seconds.
 
 Files loaded:
-C:\Users\posta\Desktop\KiCad files\AudioMixer\AudioMixer - LTSpice\3bEq\AudioMixer - 3bEq.net
-C:\Users\posta\Desktop\KiCad files\AudioMixer\AudioMixer - LTSpice\3bEq\NE5532.sub
+C:\Users\posta\Desktop\KiCad files\AudioAnalogMixer\AudioMixer - LTSpice\3bEq\AudioMixer - 3bEq.net
+C:\Users\posta\Desktop\KiCad files\AudioAnalogMixer\AudioMixer - LTSpice\3bEq\NE5532.sub
 C:\Users\posta\AppData\Local\LTspice\lib\sub\ADI.lib
 

@@ -1,6 +1,6 @@
 LTspice 24.1.8 for Windows
-Circuit: C:\Users\posta\Desktop\KiCad files\AudioMixer-AudioAmp\AudioMixer - LTSpice\Mic-Line amplifier\AudioMixer - Mic-Line-amp.net
-Start Time: Wed Nov  4 16:31:48 2026
+Circuit: C:\Users\posta\Desktop\KiCad files\AudioAnalogMixer\AudioMixer - LTSpice\Mic-Line amplifier\AudioMixer - Mic-Line-amp.net
+Start Time: Wed Nov 11 13:19:15 2026
 solver = Normal
 Maximum thread count: 12
 tnom = 27
@@ -34,9 +34,9 @@ Source Step = 63.6364%
 Source Step = 93.9394%
 Source stepping succeeded in finding the operating point.
 
-Total elapsed time: 0.753 seconds.
+Total elapsed time: 0.831 seconds.
 
 Files loaded:
-C:\Users\posta\Desktop\KiCad files\AudioMixer-AudioAmp\AudioMixer - LTSpice\Mic-Line amplifier\AudioMixer - Mic-Line-amp.net
-C:\Users\posta\Desktop\KiCad files\AudioMixer-AudioAmp\AudioMixer - LTSpice\Mic-Line amplifier\NE5532.sub
+C:\Users\posta\Desktop\KiCad files\AudioAnalogMixer\AudioMixer - LTSpice\Mic-Line amplifier\AudioMixer - Mic-Line-amp.net
+C:\Users\posta\Desktop\KiCad files\AudioAnalogMixer\AudioMixer - LTSpice\Mic-Line amplifier\NE5532.sub
 

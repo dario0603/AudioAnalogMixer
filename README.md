@@ -48,7 +48,7 @@ The frequency response is evaluated through LTspice AC analysis. Different equal
 
 ## Design and Simulation
 
-LTspice is used to investigate the behavior of the individual circuit blocks. The simulations currently focus on frequency response, signal conditioning, and noise performance.
+LTspice is used to investigate the behavior of the individual circuit blocks. The simulations currently focus on frequency response, signal conditioning, transient response, and noise performance.
 
 ### 1. Three-Band Equalizer Response
 
@@ -80,13 +80,71 @@ The current comparison is part of the ongoing investigation into the noise contr
 
 The noise simulations are still being refined. In particular, the accuracy of the operational-amplifier noise models and their agreement with datasheet specifications require further verification.
 
-### 3. Clipping Indicator
+### 3. Microphone/Line Preamplifier Transient Analysis
+
+Transient simulations are used to investigate the time-domain behavior of the microphone/line preamplifier.
+
+Monte Carlo simulations were performed to evaluate the effect of component tolerances on the amplifier's transient response. The results include the maximum and minimum gain configurations.
+
+**Maximum gain configuration:**
+
+![Microphone line amplifier transient Monte Carlo maximum gain](img/Mic-Line-Amp_transientMontecarlo%20Gmax.png)
+
+**Minimum gain configuration:**
+
+![Microphone line amplifier transient Monte Carlo minimum gain](img/Mic-Line-Amp_transientMontecarlo%20Gmin.png)
+
+These simulations help evaluate the variability of the amplifier response under different component tolerance conditions.
+
+### 4. Line Preamplifier Frequency Response
+
+The frequency response of the line preamplifier was evaluated through LTspice AC analysis.
+
+![Line preamplifier frequency response](img/Line%20preamplifier%20frequency%20response.png)
+
+The simulation provides an overview of the amplifier's behavior across the audio frequency range.
+
+### 5. XLR Microphone Preamplifier Analysis
+
+The XLR preamplifier is designed to handle balanced microphone-level signals. Its performance is investigated through frequency-domain, transient, and Monte Carlo simulations.
+
+#### Frequency Response
+
+The Bode plot shows the frequency response of the XLR preamplifier across the analyzed frequency range.
+
+![XLR preamplifier frequency response](img/XLR%20preamplifier%20frequency%20response.png)
+
+#### Transient Response – 5 kHz Differential Input
+
+A 5 kHz differential sinusoidal signal is applied to the XLR preamplifier to evaluate its time-domain response.
+
+![XLR 5 kHz differential sinusoidal input](img/XLR%205kHz%20Differential%20Sinusoidal%20input.png)
+
+The following plots show the output response for the maximum and minimum gain configurations.
+
+**Maximum gain configuration:**
+
+![XLR preamplifier 5 kHz sinusoidal input response maximum gain](img/XLR%20Preamplifier%205kHz%20Sinusoidal%20input%20response%20Gmax.png)
+
+**Minimum gain configuration:**
+
+![XLR preamplifier 5 kHz sinusoidal input response minimum gain](img/XLR%20Preamplifier%205kHz%20Sinusoidal%20input%20response%20Gmin.png)
+
+#### Monte Carlo Transient Analysis
+
+A Monte Carlo simulation consisting of **300 runs** was performed using a 5 kHz sinusoidal input signal.
+
+The analysis evaluates the variability of the XLR preamplifier response due to component tolerances.
+
+![XLR preamplifier 5 kHz sinusoidal input Monte Carlo analysis](img/Monte%20Carlo%20XLR%20Preamplifier%205kHz%20Sinusoidal%20input%20response%20(300%20runs).png)
+
+### 6. Clipping Indicator
 
 A dedicated clipping-indicator circuit is included in the LTspice project.
 
 The circuit uses an LM393 comparator model to detect signal levels approaching the selected clipping threshold. The output can be used to drive an LED, providing a visual indication of excessive signal amplitude.
 
-![Microphone clippling led circuit](img/clippingledcircuit.png)
+![Microphone clipping LED circuit](img/clippingledcircuit.png)
 
 The comparator circuit is simulated separately to allow its operation and threshold behavior to be evaluated independently of the complete mixer.
 
@@ -127,21 +185,20 @@ The PCB layouts and circuit integration are still under development. Further wor
 │
 ├── AudioMixer - LTSpice/
 │   ├── 3bEq/
-│   │   ├── AudioMixer - 3bEq.asc       # Three-band equalizer simulation
-│   │   ├── NE5532.sub                  # NE5532 operational amplifier model
-│   │   ├── noise_comparison.pdf        # Noise comparison plot
-│   │   └── Montecarlo/                 # Monte Carlo simulation files
+│   │   ├── AudioMixer - 3bEq.asc
+│   │   ├── NE5532.sub
+│   │   └── Montecarlo/
 │   │
 │   ├── ClippingLed/
-│   │   ├── ClippingLed.asc             # Clipping indicator simulation
-│   │   └── lm393.lib                   # LM393 comparator model
+│   │   ├── ClippingLed.asc
+│   │   └── lm393.lib
 │   │
 │   └── Mic-Line amplifier/
 │       ├── AudioMixer - Mic-Line-amp.asc
-│       └── NE5532.sub                  # NE5532 operational amplifier model
+│       └── NE5532.sub
 │
 ├── AudioMixer - ModularBoards/
-│   ├── spec.txt                        # Project specifications
+│   ├── spec.txt
 │   │
 │   ├── 4ChannelMixerBoard/
 │   │   ├── Mixer_circuit.kicad_pro
