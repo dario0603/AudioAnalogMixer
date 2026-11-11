@@ -2307,6 +2307,12 @@
 		(uuid "08f3453e-2139-486f-a21f-38a44a9e2258")
 	)
 	(junction
+		(at 494.03 168.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0d0c97ba-cb27-429d-bc23-d20023fd3b65")
+	)
+	(junction
 		(at 340.36 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2511,12 +2517,6 @@
 		(uuid "5194325c-9d8f-4db9-88f7-a83ab2ea37a4")
 	)
 	(junction
-		(at 496.57 173.99)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "519be0c6-4c67-42a9-a66a-186108f96f7b")
-	)
-	(junction
 		(at 327.66 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2691,16 +2691,16 @@
 		(uuid "964dbca5-988c-4032-b2c4-6bc64c1ac845")
 	)
 	(junction
+		(at 254 168.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9c895e39-135e-4237-bc5b-806404931c42")
+	)
+	(junction
 		(at 87.63 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9f65cf10-837f-41fb-8e7e-47f4fdca3a1c")
-	)
-	(junction
-		(at 256.54 173.99)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a05728af-3e6a-4adb-b260-c376167a6bea")
 	)
 	(junction
 		(at 327.66 66.04)
@@ -2821,6 +2821,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c6d0ca16-216d-453e-a60b-e319e655ff66")
+	)
+	(junction
+		(at 254 367.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c80773e4-3994-4b7f-8ecc-0f06768e7e87")
 	)
 	(junction
 		(at 100.33 331.47)
@@ -3001,12 +3007,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "eaf73393-e513-465c-98cb-95010609067a")
-	)
-	(junction
-		(at 256.54 372.11)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f2be1838-a62e-4e28-aa19-ca5e8f1785a5")
 	)
 	(junction
 		(at 340.36 41.91)
@@ -3244,7 +3244,7 @@
 	)
 	(wire
 		(pts
-			(xy 488.95 173.99) (xy 496.57 173.99)
+			(xy 488.95 173.99) (xy 501.65 173.99)
 		)
 		(stroke
 			(width 0)
@@ -3344,6 +3344,16 @@
 	)
 	(wire
 		(pts
+			(xy 494.03 168.91) (xy 501.65 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ad9c18b-ca37-4fa6-82fe-912963fa435e")
+	)
+	(wire
+		(pts
 			(xy 372.11 312.42) (xy 360.68 312.42)
 		)
 		(stroke
@@ -3351,16 +3361,6 @@
 			(type default)
 		)
 		(uuid "0af4f365-1971-47b9-81c0-23416b352e79")
-	)
-	(wire
-		(pts
-			(xy 494.03 171.45) (xy 499.11 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0b24ed19-0752-45a4-9c60-ee7ded2ef63d")
 	)
 	(wire
 		(pts
@@ -3534,16 +3534,6 @@
 	)
 	(wire
 		(pts
-			(xy 254 369.57) (xy 259.08 369.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "12ec8683-f125-429a-97c4-408f2836a4df")
-	)
-	(wire
-		(pts
 			(xy 149.86 130.81) (xy 149.86 129.54)
 		)
 		(stroke
@@ -3631,6 +3621,16 @@
 			(type default)
 		)
 		(uuid "16ae1959-07b0-4938-8b0a-95a561505953")
+	)
+	(wire
+		(pts
+			(xy 501.65 171.45) (xy 494.03 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16bc1846-38ba-45ae-a0c2-8b680796be0e")
 	)
 	(wire
 		(pts
@@ -3864,16 +3864,6 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 372.11) (xy 256.54 372.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1f528060-cbe1-498d-a226-d8c06af208e2")
-	)
-	(wire
-		(pts
 			(xy 345.44 210.82) (xy 342.9 210.82)
 		)
 		(stroke
@@ -3931,6 +3921,16 @@
 			(type default)
 		)
 		(uuid "214e9601-ed3c-44ae-adce-ef4d632bb0fd")
+	)
+	(wire
+		(pts
+			(xy 259.08 364.49) (xy 259.08 375.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21c9ed51-b34a-4ccd-85f9-267e3420455b")
 	)
 	(wire
 		(pts
@@ -4001,6 +4001,16 @@
 			(type default)
 		)
 		(uuid "254f24d2-c065-4ee7-b15f-482cbe987303")
+	)
+	(wire
+		(pts
+			(xy 494.03 168.91) (xy 494.03 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2573e99d-0eb7-49bf-8cd9-32589c522697")
 	)
 	(wire
 		(pts
@@ -4224,16 +4234,6 @@
 	)
 	(wire
 		(pts
-			(xy 256.54 374.65) (xy 256.54 372.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "325a1ac3-eb58-4556-aab4-a924e7b05d62")
-	)
-	(wire
-		(pts
 			(xy 97.79 284.48) (xy 100.33 284.48)
 		)
 		(stroke
@@ -4344,16 +4344,6 @@
 	)
 	(wire
 		(pts
-			(xy 254 171.45) (xy 259.08 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3754814c-3810-44f3-b5f8-7c791c8fa0b0")
-	)
-	(wire
-		(pts
 			(xy 394.97 327.66) (xy 382.27 327.66)
 		)
 		(stroke
@@ -4441,16 +4431,6 @@
 			(type default)
 		)
 		(uuid "3bfb4e23-ad90-45b4-b5fd-7281e25e3b8f")
-	)
-	(wire
-		(pts
-			(xy 499.11 179.07) (xy 496.57 179.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3c64d933-d0f8-4e3d-a5bf-811faf371be4")
 	)
 	(wire
 		(pts
@@ -4644,16 +4624,6 @@
 	)
 	(wire
 		(pts
-			(xy 496.57 179.07) (xy 496.57 181.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "43ec4313-f427-4019-b797-d8afda15822d")
-	)
-	(wire
-		(pts
 			(xy 407.67 288.29) (xy 407.67 290.83)
 		)
 		(stroke
@@ -4764,7 +4734,7 @@
 	)
 	(wire
 		(pts
-			(xy 254 369.57) (xy 254 303.53)
+			(xy 254 369.57) (xy 254 367.03)
 		)
 		(stroke
 			(width 0)
@@ -4791,16 +4761,6 @@
 			(type default)
 		)
 		(uuid "4c13bb1a-8358-48ff-9fa4-751e1d11720c")
-	)
-	(wire
-		(pts
-			(xy 499.11 176.53) (xy 496.57 176.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4cc7a0d3-9bb0-460a-b479-98d89836acbf")
 	)
 	(wire
 		(pts
@@ -4954,7 +4914,7 @@
 	)
 	(wire
 		(pts
-			(xy 256.54 179.07) (xy 256.54 181.61)
+			(xy 259.08 166.37) (xy 259.08 177.8)
 		)
 		(stroke
 			(width 0)
@@ -5174,16 +5134,6 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 377.19) (xy 256.54 377.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5ee311fc-7faf-4754-b988-8d2de95f076f")
-	)
-	(wire
-		(pts
 			(xy 83.82 260.35) (xy 87.63 260.35)
 		)
 		(stroke
@@ -5251,6 +5201,16 @@
 			(type default)
 		)
 		(uuid "622122be-cd3f-42e2-b06b-764ad5fb31dc")
+	)
+	(wire
+		(pts
+			(xy 254 367.03) (xy 254 303.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62268d7b-eb38-425b-a687-941f1f2016e1")
 	)
 	(wire
 		(pts
@@ -5374,6 +5334,16 @@
 	)
 	(wire
 		(pts
+			(xy 501.65 166.37) (xy 499.11 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68425cd3-eaec-4901-a65a-83057bdcd8ad")
+	)
+	(wire
+		(pts
 			(xy 228.6 196.85) (xy 228.6 199.39)
 		)
 		(stroke
@@ -5381,16 +5351,6 @@
 			(type default)
 		)
 		(uuid "68e0a896-c083-4d59-84ec-5f541d0b46e5")
-	)
-	(wire
-		(pts
-			(xy 256.54 377.19) (xy 256.54 379.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "69b66000-e79b-4901-9253-d431d36a5f9c")
 	)
 	(wire
 		(pts
@@ -5704,6 +5664,16 @@
 	)
 	(wire
 		(pts
+			(xy 499.11 166.37) (xy 499.11 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78074e7e-e304-42fc-a59c-9572386c6e64")
+	)
+	(wire
+		(pts
 			(xy 67.31 78.74) (xy 69.85 78.74)
 		)
 		(stroke
@@ -5761,16 +5731,6 @@
 			(type default)
 		)
 		(uuid "79a0a669-f14e-4b1c-91d8-4d572bc67fbc")
-	)
-	(wire
-		(pts
-			(xy 259.08 176.53) (xy 256.54 176.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7aa1b407-ab3a-4e91-aed3-15992880f4c4")
 	)
 	(wire
 		(pts
@@ -6354,7 +6314,7 @@
 	)
 	(wire
 		(pts
-			(xy 254 171.45) (xy 254 105.41)
+			(xy 254 168.91) (xy 254 105.41)
 		)
 		(stroke
 			(width 0)
@@ -7064,6 +7024,16 @@
 	)
 	(wire
 		(pts
+			(xy 261.62 369.57) (xy 254 369.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ade56890-d804-4414-9a23-b9a5ebd619f1")
+	)
+	(wire
+		(pts
 			(xy 100.33 331.47) (xy 97.79 331.47)
 		)
 		(stroke
@@ -7304,7 +7274,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 372.11) (xy 256.54 372.11)
+			(xy 248.92 372.11) (xy 261.62 372.11)
 		)
 		(stroke
 			(width 0)
@@ -7564,16 +7534,6 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 173.99) (xy 256.54 173.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c5073cc5-23b3-494b-af8c-cff0c66182d6")
-	)
-	(wire
-		(pts
 			(xy 67.31 189.23) (xy 67.31 196.85)
 		)
 		(stroke
@@ -7654,7 +7614,7 @@
 	)
 	(wire
 		(pts
-			(xy 494.03 171.45) (xy 494.03 105.41)
+			(xy 494.03 171.45) (xy 494.03 168.91)
 		)
 		(stroke
 			(width 0)
@@ -7864,6 +7824,16 @@
 	)
 	(wire
 		(pts
+			(xy 261.62 364.49) (xy 259.08 364.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d10d8e23-2337-4961-bdb5-4648262fd22d")
+	)
+	(wire
+		(pts
 			(xy 514.35 308.61) (xy 514.35 311.15)
 		)
 		(stroke
@@ -7914,7 +7884,7 @@
 	)
 	(wire
 		(pts
-			(xy 256.54 176.53) (xy 256.54 173.99)
+			(xy 254 168.91) (xy 254 171.45)
 		)
 		(stroke
 			(width 0)
@@ -7994,7 +7964,7 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 179.07) (xy 256.54 179.07)
+			(xy 261.62 166.37) (xy 259.08 166.37)
 		)
 		(stroke
 			(width 0)
@@ -8081,16 +8051,6 @@
 			(type default)
 		)
 		(uuid "d9c36bb1-faeb-4f51-9737-5755827a1c1f")
-	)
-	(wire
-		(pts
-			(xy 499.11 173.99) (xy 496.57 173.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d9c54889-1900-4a2c-a500-31069f01ff8f")
 	)
 	(wire
 		(pts
@@ -8304,16 +8264,6 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 374.65) (xy 256.54 374.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e4e1a573-920f-45d3-98fe-ade53b4ee595")
-	)
-	(wire
-		(pts
 			(xy 327.66 99.06) (xy 325.12 99.06)
 		)
 		(stroke
@@ -8374,7 +8324,7 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 173.99) (xy 256.54 173.99)
+			(xy 261.62 171.45) (xy 254 171.45)
 		)
 		(stroke
 			(width 0)
@@ -8411,16 +8361,6 @@
 			(type default)
 		)
 		(uuid "e831e59c-0e82-4854-a647-9c92381cfcfc")
-	)
-	(wire
-		(pts
-			(xy 496.57 176.53) (xy 496.57 173.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e8459481-0225-4b6c-b60f-16d1960d35e5")
 	)
 	(wire
 		(pts
@@ -8684,6 +8624,16 @@
 	)
 	(wire
 		(pts
+			(xy 254 367.03) (xy 261.62 367.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1f52daf-0fe8-4bc0-8bc3-60f779718cd8")
+	)
+	(wire
+		(pts
 			(xy 67.31 96.52) (xy 69.85 96.52)
 		)
 		(stroke
@@ -8741,6 +8691,16 @@
 			(type default)
 		)
 		(uuid "f61a9cd5-7db0-43cd-a4b3-bea356ae7b38")
+	)
+	(wire
+		(pts
+			(xy 254 168.91) (xy 261.62 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f713bd85-c2c6-4b4c-a542-8df0c140c62a")
 	)
 	(wire
 		(pts
@@ -8821,6 +8781,16 @@
 			(type default)
 		)
 		(uuid "fa1f909f-678d-4b5e-9b51-34460c1568b1")
+	)
+	(wire
+		(pts
+			(xy 248.92 173.99) (xy 261.62 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fac7f939-7af1-42e5-b819-0583a8634959")
 	)
 	(wire
 		(pts
@@ -9667,6 +9637,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 499.11 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "007efd9d-aa73-4694-bd6e-9ee0679e8b91")
+		(property "Reference" "#PWR052"
+			(at 499.11 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 501.65 179.0699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 499.11 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 499.11 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 499.11 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d682f9af-ff4f-407f-bad8-d35179a10417")
+		)
+		(instances
+			(project "Mixer_circuit"
+				(path "/524c0fa7-20e0-4db6-ae4b-fc3b6fcd38d3"
+					(reference "#PWR052")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 420.37 307.34 180)
 		(unit 1)
@@ -10328,79 +10365,6 @@
 			(project "Mixer_circuit"
 				(path "/524c0fa7-20e0-4db6-ae4b-fc3b6fcd38d3"
 					(reference "C13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Audio:AudioJack4")
-		(at 264.16 374.65 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0a46e79e-ebc5-490c-80d4-c036231e6de9")
-		(property "Reference" "J2"
-			(at 266.7 383.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "FX_out"
-			(at 266.7 381 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_Audio:Jack_3.5mm_PJ320E_Horizontal"
-			(at 264.16 374.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C2939183.html?s_z=n_q_pj320e"
-			(at 264.16 374.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Audio Jack, 4 Poles (TRRS), LCSC:C2939183"
-			(at 264.16 374.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "T"
-			(uuid "69b3f159-3d58-4e4d-90cf-910eb411a555")
-		)
-		(pin "R1"
-			(uuid "d6d470e0-de3b-4985-9649-60d238f232b9")
-		)
-		(pin "R2"
-			(uuid "d4c57518-cd8a-4aea-adaa-c50bc8c24ef6")
-		)
-		(pin "S"
-			(uuid "701b2993-832d-4246-91cf-0f50a84d59af")
-		)
-		(instances
-			(project "Mixer_circuit"
-				(path "/524c0fa7-20e0-4db6-ae4b-fc3b6fcd38d3"
-					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -12715,6 +12679,80 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Audio:AudioJack4")
+		(at 506.73 168.91 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "25729f13-c61b-4fae-a7bf-991febfd2699")
+		(property "Reference" "J12"
+			(at 509.27 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Left_out"
+			(at 509.27 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Audio:Jack_3.5mm_PJ320E_Horizontal"
+			(at 506.73 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C2939183.html?s_z=n_q_pj320e"
+			(at 506.73 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Audio Jack, 4 Poles (TRRS), LCSC:C2939183"
+			(at 506.73 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "T"
+			(uuid "28472917-85f6-4ee4-bc55-0dee54944e7a")
+		)
+		(pin "R1"
+			(uuid "1e9ec64c-7737-487b-afeb-f1b4433991b7")
+		)
+		(pin "R2"
+			(uuid "35a1d121-c1be-4b5c-afc1-6128d0e0e86b")
+		)
+		(pin "S"
+			(uuid "b3e1d839-c205-4dcb-ad4d-b1cd44655b82")
+		)
+		(instances
+			(project "Mixer_circuit"
+				(path "/524c0fa7-20e0-4db6-ae4b-fc3b6fcd38d3"
+					(reference "J12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
 		(at 383.54 241.3 180)
 		(unit 1)
@@ -13764,6 +13802,80 @@
 			(project "AudioMixer"
 				(path "/73500d36-8d33-4e8e-af4c-6d26a6542844/dac2f853-9ead-4fd0-b24f-852f6a1b88a9"
 					(reference "R93")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Audio:AudioJack4")
+		(at 266.7 367.03 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "38973a63-4011-4f15-b9f7-da545149e410")
+		(property "Reference" "J2"
+			(at 269.24 358.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FX_out"
+			(at 269.24 360.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Audio:Jack_3.5mm_PJ320E_Horizontal"
+			(at 266.7 367.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C2939183.html?s_z=n_q_pj320e"
+			(at 266.7 367.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Audio Jack, 4 Poles (TRRS), LCSC:C2939183"
+			(at 266.7 367.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "T"
+			(uuid "3192540b-3582-420c-8e20-b3559bc69d29")
+		)
+		(pin "R1"
+			(uuid "e5e1fed8-83a8-4872-b2ca-4c219d193606")
+		)
+		(pin "R2"
+			(uuid "6f203e86-d900-4148-978f-cdda7640b914")
+		)
+		(pin "S"
+			(uuid "6fac0026-41ad-4437-895a-a8fa6e4a692b")
+		)
+		(instances
+			(project "Mixer_circuit"
+				(path "/524c0fa7-20e0-4db6-ae4b-fc3b6fcd38d3"
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -18236,73 +18348,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 256.54 379.73 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "79fa04bd-48c5-4060-b113-085c947ec02a")
-		(property "Reference" "#PWR017"
-			(at 256.54 386.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 256.54 384.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 256.54 379.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 256.54 379.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 256.54 379.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2f202f91-70a8-44dd-a284-c4df4000ee7e")
-		)
-		(instances
-			(project "Mixer_circuit"
-				(path "/524c0fa7-20e0-4db6-ae4b-fc3b6fcd38d3"
-					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Amplifier_Operational:NE5532")
 		(at 77.47 123.19 0)
 		(mirror x)
@@ -19547,8 +19592,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 256.54 181.61 0)
-		(mirror y)
+		(at 259.08 177.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19557,7 +19601,7 @@
 		(fields_autoplaced yes)
 		(uuid "8d5a55c1-ffa6-435a-b93a-de3b70c56ed9")
 		(property "Reference" "#PWR016"
-			(at 256.54 187.96 0)
+			(at 259.08 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19566,15 +19610,16 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 256.54 186.69 0)
+			(at 261.62 179.0699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 256.54 181.61 0)
+			(at 259.08 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19583,7 +19628,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 256.54 181.61 0)
+			(at 259.08 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19592,7 +19637,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 256.54 181.61 0)
+			(at 259.08 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21106,6 +21151,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 259.08 375.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a4095721-ba14-4300-b514-800aa44f97fe")
+		(property "Reference" "#PWR017"
+			(at 259.08 382.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 261.62 377.1899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 259.08 375.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 259.08 375.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 259.08 375.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bfce3a89-a342-49e5-86b9-fb7a86669280")
+		)
+		(instances
+			(project "Mixer_circuit"
+				(path "/524c0fa7-20e0-4db6-ae4b-fc3b6fcd38d3"
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VSS")
 		(at 340.36 384.81 0)
 		(unit 1)
@@ -22069,80 +22181,8 @@
 	)
 	(symbol
 		(lib_id "Connector_Audio:AudioJack4")
-		(at 504.19 176.53 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ae36d941-d623-4895-abcd-cd58350016f1")
-		(property "Reference" "J12"
-			(at 506.73 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Left_out"
-			(at 506.73 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_Audio:Jack_3.5mm_PJ320E_Horizontal"
-			(at 504.19 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C2939183.html?s_z=n_q_pj320e"
-			(at 504.19 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Audio Jack, 4 Poles (TRRS), LCSC:C2939183"
-			(at 504.19 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "T"
-			(uuid "7df07f4b-c513-4567-8322-aa755a318690")
-		)
-		(pin "R1"
-			(uuid "f439e8e7-0fe0-4ff7-be02-a0bbba4c2833")
-		)
-		(pin "R2"
-			(uuid "9f1c9301-75c3-4db7-9ef4-4e5e14754849")
-		)
-		(pin "S"
-			(uuid "d69328c5-5d6d-4ef3-a6c3-c91c4bfcb2b1")
-		)
-		(instances
-			(project "Mixer_circuit"
-				(path "/524c0fa7-20e0-4db6-ae4b-fc3b6fcd38d3"
-					(reference "J12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Audio:AudioJack4")
-		(at 264.16 176.53 180)
+		(at 266.7 168.91 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22150,7 +22190,7 @@
 		(dnp no)
 		(uuid "ae54f064-d20e-4412-a955-18900d3cc948")
 		(property "Reference" "J1"
-			(at 266.7 185.42 0)
+			(at 269.24 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22158,7 +22198,7 @@
 			)
 		)
 		(property "Value" "Right_out"
-			(at 266.7 182.88 0)
+			(at 269.24 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22166,7 +22206,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Audio:Jack_3.5mm_PJ320E_Horizontal"
-			(at 264.16 176.53 0)
+			(at 266.7 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22175,7 +22215,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C2939183.html?s_z=n_q_pj320e"
-			(at 264.16 176.53 0)
+			(at 266.7 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22184,7 +22224,7 @@
 			)
 		)
 		(property "Description" "Audio Jack, 4 Poles (TRRS), LCSC:C2939183"
-			(at 264.16 176.53 0)
+			(at 266.7 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23091,73 +23131,6 @@
 			(project "Mixer_circuit"
 				(path "/524c0fa7-20e0-4db6-ae4b-fc3b6fcd38d3"
 					(reference "Q7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 496.57 181.61 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bda903bb-345f-498f-ab48-8fb7d634c15a")
-		(property "Reference" "#PWR052"
-			(at 496.57 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 496.57 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 496.57 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 496.57 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 496.57 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e5dfbd94-35be-496a-b64a-58187db6340a")
-		)
-		(instances
-			(project "Mixer_circuit"
-				(path "/524c0fa7-20e0-4db6-ae4b-fc3b6fcd38d3"
-					(reference "#PWR052")
 					(unit 1)
 				)
 			)

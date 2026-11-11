@@ -45,7 +45,13 @@ The frequency response is evaluated through LTspice AC analysis. Different equal
 
 ![Three-band audio equalizer](img/3-band-equalizer.png)
 
-### 3. Clipping Indicator
+### 3. Mixer Unit
+
+This stage combines the signals processed by the input stages (microphone/line preamplifier and three-band equalizer), summing the individual channels to generate the final audio output. The output is provided in differential mode through two dedicated buffer amplifiers, ensuring proper signal driving capability and output impedance.
+
+![Mixer unit](img/4channmixer.png)
+
+### 4. Clipping Indicator
 
 A dedicated clipping-indicator circuit is included in the LTspice project.
 
@@ -55,83 +61,93 @@ The circuit uses an LM393 comparator model to detect signal levels approaching t
 
 The comparator circuit is simulated separately to allow its operation and threshold behavior to be evaluated independently of the complete mixer.
 
-## Simulation
+## Simulations
 
-LTspice is used to investigate the behavior of the individual circuit blocks. The simulations currently focus on frequency response, signal conditioning, transient response, and noise performance.
+### 1. Three-Band Equalizer
 
-### 1. Three-Band Equalizer Response
+**Frequency Response Analysis**
 
-The following Bode plots show the equalizer response for different control settings.
+The frequency response of the three-band equalizer is analyzed for different control settings, including low-frequency, mid-frequency, and high-frequency attenuation.
 
 | Low-frequency cut | Mid-frequency cut | High-frequency cut |
 |:---:|:---:|:---:|
 | ![Low-frequency cut](img/bode_diagram_low_cut.png) | ![Mid-frequency cut](img/bode_diagram_medium_cut.png) | ![High-frequency cut](img/bode_diagram_high_cut.png) |
 
-The following plot shows the overall frequency response with all equalizer bands set to their neutral position (flat response).
+**Flat Frequency Response Analysis**
+
+The overall frequency response is evaluated with all equalizer controls set to their neutral positions.
 
 ![Frequency response without any cut frequency](img/bode_diagram.png)
 
-A Monte Carlo analysis was also performed, considering a **1% tolerance for resistors (0603 package)** and a **10% tolerance for ceramic X7R capacitors**.
+**Monte Carlo Frequency Response Analysis**
 
-The resulting frequency response is shown in the figure below, with no cutoff frequency applied.
+A Monte Carlo analysis is performed to evaluate the effect of component tolerances on the equalizer response, considering 1% resistor tolerances (0603 package) and 10% ceramic X7R capacitor tolerances.
 
 ![Monte Carlo frequency response without any cutoff frequency](img/AudioMixer%20-%203bEq_bode_montecarlo.png)
 
-### 2. Microphone/Line Preamplifier Frequency Response
+### 2. Microphone/Line Preamplifier
 
-The frequency response of the line preamplifier was evaluated through LTspice AC analysis.
+**AC Frequency Response Analysis**
+
+The frequency response of the line and XLR preamplifier configurations is evaluated through LTspice AC analysis to characterize their behavior across the audio frequency range.
+
+**Line Preamplifier:**
 
 ![Line preamplifier frequency response](img/Line%20preamplifier%20frequency%20response.png)
 
-The Bode plot shows the frequency response of the XLR preamplifier across the analyzed frequency range.
+**XLR Preamplifier:**
 
 ![XLR preamplifier frequency response](img/XLR%20preamplifier%20frequency%20response.png)
 
-The simulation provides an overview of the amplifier's behavior across the audio frequency range.
+**Transient Response Analysis – 5 kHz Differential Input**
 
-### 3. Microphone/Line Preamplifier Transient Response – 5 kHz Differential Input
+A 5 kHz differential sinusoidal signal is applied to the XLR preamplifier to evaluate its transient response under maximum and minimum gain configurations.
 
-Transient simulations are used to investigate the time-domain behavior of the microphone/line preamplifier.
-A 5 kHz differential sinusoidal signal is applied to the XLR preamplifier to evaluate its time-domain response.
+**Input Signal:**
 
 ![XLR 5 kHz differential sinusoidal input](img/XLR%205kHz%20Differential%20Sinusoidal%20input.png)
 
-The following plots show the output response for the maximum and minimum gain configurations.
-
-**Maximum gain configuration:**
+**Maximum Gain Configuration:**
 
 ![XLR preamplifier 5 kHz sinusoidal input response maximum gain](img/XLR%20Preamplifier%205kHz%20Sinusoidal%20input%20response%20Gmax.png)
 
-**Minimum gain configuration:**
+**Minimum Gain Configuration:**
 
 ![XLR preamplifier 5 kHz sinusoidal input response minimum gain](img/XLR%20Preamplifier%205kHz%20Sinusoidal%20input%20response%20Gmin.png)
 
-#### Monte Carlo Transient Analysis
+**Monte Carlo Transient Analysis**
 
-A Monte Carlo simulation consisting of **300 runs** was performed using a 5 kHz sinusoidal input signal.
-The analysis evaluates the variability of the XLR preamplifier response due to component tolerances. The results include the maximum and minimum gain configurations.
+A Monte Carlo simulation consisting of 300 runs is performed to evaluate the variability of the XLR preamplifier transient response due to component tolerances, considering both maximum and minimum gain configurations.
 
-**Maximum gain configuration:**
+**Maximum Gain Configuration:**
 
 ![Microphone line amplifier transient Monte Carlo maximum gain](img/Mic-Line-Amp_transientMontecarlo%20Gmax.png)
 
-**Minimum gain configuration:**
+**Minimum Gain Configuration:**
 
 ![Microphone line amplifier transient Monte Carlo minimum gain](img/Mic-Line-Amp_transientMontecarlo%20Gmin.png)
 
-These simulations help evaluate the variability of the amplifier response under different component tolerance conditions.
+**Noise Analysis**
 
-### 4. Microphone/Line Preamplifier Noise Analysis
-
-Noise performance is an important aspect of analog audio design, particularly in microphone preamplifier stages, where low-level input signals must be amplified.
-
-LTspice noise analysis is used to evaluate the output noise spectral density of the circuits. The results are also compared between different operational-amplifier configurations.
-
-The current comparison is part of the ongoing investigation into the noise contribution of the amplifier stages and their component models.
+LTspice noise analysis is performed to evaluate the output noise spectral density of the preamplifier stages. Different operational-amplifier configurations are compared to investigate their noise contributions.
 
 ![Noise spectral density comparison](img/noise_comparison.png)
 
-The noise simulations are still being refined. In particular, the accuracy of the operational-amplifier noise models and their agreement with datasheet specifications require further verification.
+The noise simulations are still being refined, particularly regarding the accuracy of the operational-amplifier noise models and their consistency with datasheet specifications.
+
+### 3. Mixer
+
+**Transient Response Analysis**
+
+Transient simulations are performed to evaluate the time-domain behavior of the mixer circuit.
+
+![Mixer Transient Analysis](img/Mixer%20Transient%20Analysis.png)
+
+**Monte Carlo Transient Analysis**
+
+A Monte Carlo simulation consisting of 300 runs is performed to investigate output voltage variations caused by component tolerances.
+
+![Mixer Output Voltage Monte Carlo Simulation (300 runs)](img/Mixer%20Output%20Voltage%20Monte%20Carlo%20Simulation%20(300%20runs).png)
 
 ## PCB Design
 
