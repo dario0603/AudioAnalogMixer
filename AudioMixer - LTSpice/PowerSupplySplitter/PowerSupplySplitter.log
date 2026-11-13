@@ -1,0 +1,18 @@
+LTspice 24.1.8 for Windows
+Circuit: C:\Users\posta\Desktop\KiCad files\AudioAnalogMixer\AudioMixer - LTSpice\PowerSupplySplitter\PowerSupplySplitter.net
+Start Time: Thu Nov 12 17:52:06 2026
+solver = Normal
+Maximum thread count: 12
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration for .op point succeeded.
+Total elapsed time: 0.073 seconds.
+
+Files loaded:
+C:\Users\posta\Desktop\KiCad files\AudioAnalogMixer\AudioMixer - LTSpice\PowerSupplySplitter\PowerSupplySplitter.net
+C:\Users\posta\AppData\Local\LTspice\lib\cmp\standard.bjt
+C:\Users\posta\Desktop\KiCad files\AudioAnalogMixer\AudioMixer - LTSpice\PowerSupplySplitter\NE5532.sub
+C:\Users\posta\Desktop\KiCad files\AudioAnalogMixer\AudioMixer - LTSpice\PowerSupplySplitter\BCX56.spice
+C:\Users\posta\Desktop\KiCad files\AudioAnalogMixer\AudioMixer - LTSpice\PowerSupplySplitter\BCX5316Q.spice
+

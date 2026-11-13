@@ -1496,6 +1496,192 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Jumper:SolderJumper_2_Open"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "JP"
+				(at 0 2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SolderJumper_2_Open"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Solder Jumper, 2-pole, open"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "solder jumper SPST"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SolderJumper*Open*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SolderJumper_2_Open_0_1"
+				(polyline
+					(pts
+						(xy -0.254 1.016) (xy -0.254 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.254 -1.016)
+					(mid -1.2656 0)
+					(end -0.254 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.254 -1.016)
+					(mid -1.2656 0)
+					(end -0.254 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(arc
+					(start 0.254 1.016)
+					(mid 1.2656 0)
+					(end 0.254 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0.254 1.016)
+					(mid 1.2656 0)
+					(end 0.254 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 1.016) (xy 0.254 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SolderJumper_2_Open_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Transistor_BJT:BCX53"
 			(pin_names
 				(offset 0)
@@ -2248,7 +2434,7 @@
 	)
 	(text "Power connection"
 		(exclude_from_sim no)
-		(at 376.174 375.92 0)
+		(at 368.554 361.95 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2265,6 +2451,16 @@
 			)
 		)
 		(uuid "2edb3244-e52b-4047-953f-062f1d6b29d2")
+	)
+	(text "Bridge SingleSupply if the board is\npowered with a single 30V power supply\nand not with a dual +-15V"
+		(exclude_from_sim no)
+		(at 467.868 359.41 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c14dd8fa-ae3d-4d7a-8c29-6697edf9ea40")
 	)
 	(text "Unused opamp"
 		(exclude_from_sim no)
@@ -2289,13 +2485,13 @@
 		(uuid "00abb737-2706-47fb-9bc9-e0307b84a127")
 	)
 	(junction
-		(at 514.35 285.75)
+		(at 513.08 262.89)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "02127408-431b-413e-977c-75db924eb263")
 	)
 	(junction
-		(at 394.97 327.66)
+		(at 393.7 304.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "05377e85-2e8f-46f1-b72d-184ed0ec540d")
@@ -2349,7 +2545,7 @@
 		(uuid "18741c3e-e5a7-468d-83cd-e1977186f77a")
 	)
 	(junction
-		(at 420.37 313.69)
+		(at 419.1 290.83)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1e53295b-f6de-419e-bbeb-377b18c62ea1")
@@ -2373,13 +2569,13 @@
 		(uuid "1fa78c2c-54b9-4a0a-81d1-12a5bb7b3b32")
 	)
 	(junction
-		(at 514.35 311.15)
+		(at 513.08 288.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "20e38531-eac4-4e91-9fde-69e5316e846a")
 	)
 	(junction
-		(at 349.25 351.79)
+		(at 347.98 328.93)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "22d93b4a-da43-4d59-a48c-34aa30744892")
@@ -2409,7 +2605,7 @@
 		(uuid "29bebf82-26ac-4812-90cf-340400e00cb5")
 	)
 	(junction
-		(at 382.27 288.29)
+		(at 381 265.43)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2e73a21d-b390-4a88-b0cd-fa06ddb687c1")
@@ -2433,7 +2629,7 @@
 		(uuid "332e23c4-acb9-4096-a7eb-7f94067c9091")
 	)
 	(junction
-		(at 480.06 288.29)
+		(at 478.79 265.43)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3355d9cc-431d-415e-9c34-fd2d36b7dde8")
@@ -2445,10 +2641,16 @@
 		(uuid "36bf4308-7efa-41f2-99aa-e1595cd82195")
 	)
 	(junction
-		(at 394.97 288.29)
+		(at 393.7 265.43)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "37db54f1-7d64-4127-840c-f70f92011bd5")
+	)
+	(junction
+		(at 405.13 381)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3aef0bbf-6858-4c3a-a9b8-4b97195bfe6e")
 	)
 	(junction
 		(at 228.6 394.97)
@@ -2457,19 +2659,19 @@
 		(uuid "3cef6d06-f90c-4c11-9ec8-72f52b41bed2")
 	)
 	(junction
-		(at 349.25 331.47)
+		(at 347.98 308.61)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3ffcb653-a160-4fca-9089-03bd00f3728f")
 	)
 	(junction
-		(at 349.25 292.1)
+		(at 347.98 269.24)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "42709279-e649-48ca-acf1-f7824017a4e1")
 	)
 	(junction
-		(at 360.68 331.47)
+		(at 359.41 308.61)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "44df8dfe-cb6b-4b29-b0f8-8eab3207455f")
@@ -2481,13 +2683,13 @@
 		(uuid "45b9cd40-ee2e-4f99-bfab-6529b48ce098")
 	)
 	(junction
-		(at 337.82 312.42)
+		(at 336.55 289.56)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "467e1816-50a5-43e4-8d80-dacf51319e42")
 	)
 	(junction
-		(at 420.37 353.06)
+		(at 419.1 330.2)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4b89776d-c6d1-4170-a137-8b62bae232d9")
@@ -2499,7 +2701,7 @@
 		(uuid "4b9b62de-54c6-40d4-b183-aa665d0ef79e")
 	)
 	(junction
-		(at 360.68 292.1)
+		(at 359.41 269.24)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4c1da517-59ba-4d3a-b356-e3ed2aff9843")
@@ -2511,7 +2713,7 @@
 		(uuid "50aa4cb0-6ace-4f0e-a2c1-bcfdc447363a")
 	)
 	(junction
-		(at 337.82 331.47)
+		(at 336.55 308.61)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5194325c-9d8f-4db9-88f7-a83ab2ea37a4")
@@ -2559,10 +2761,16 @@
 		(uuid "643f57a8-67e9-42b6-a3f0-649db18021d4")
 	)
 	(junction
-		(at 468.63 288.29)
+		(at 467.36 265.43)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6580a1ba-b1a0-4c56-abce-56fa870f0532")
+	)
+	(junction
+		(at 415.29 381)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6a3efa16-90f8-4388-a38f-396037809b18")
 	)
 	(junction
 		(at 100.33 212.09)
@@ -2577,7 +2785,7 @@
 		(uuid "6e15ce1c-bff7-459c-99e9-382aa0b73173")
 	)
 	(junction
-		(at 382.27 327.66)
+		(at 381 304.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "717df4ef-9d95-4eb0-8398-8d21101f8fcf")
@@ -2589,7 +2797,7 @@
 		(uuid "736e042e-2d5b-4fde-85cd-844578798360")
 	)
 	(junction
-		(at 420.37 327.66)
+		(at 419.1 304.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7442b7a4-eadb-4b81-a64b-1a080581d23b")
@@ -2619,13 +2827,13 @@
 		(uuid "76db5c56-a61b-4c20-ad4c-34bb76005a2c")
 	)
 	(junction
-		(at 360.68 351.79)
+		(at 359.41 328.93)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7739aa10-6562-4be0-88d2-e1c464d46c62")
 	)
 	(junction
-		(at 468.63 308.61)
+		(at 467.36 285.75)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "78e59fa8-d5f1-44b8-86bb-2bdbb486c28b")
@@ -2643,6 +2851,12 @@
 		(uuid "7bc5f902-84fd-4f98-b1a7-4eaa4b251716")
 	)
 	(junction
+		(at 415.29 393.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7cffacce-e074-4653-9b06-1380ef14d79b")
+	)
+	(junction
 		(at 149.86 337.82)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2655,10 +2869,16 @@
 		(uuid "7f2cd0c0-fd09-4dfb-a757-4728a4d7e252")
 	)
 	(junction
-		(at 394.97 313.69)
+		(at 393.7 290.83)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8277f05d-db5e-49f6-ad5b-e77393efefca")
+	)
+	(junction
+		(at 415.29 360.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "85cac0ae-90a5-4753-8d8e-ef9e8288cc11")
 	)
 	(junction
 		(at 100.33 113.03)
@@ -2739,7 +2959,13 @@
 		(uuid "a9763538-fe63-4038-93cf-bdbaf2cf81bb")
 	)
 	(junction
-		(at 407.67 327.66)
+		(at 433.07 347.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a9972d5d-e1c4-4b64-98fc-1d6943c569d4")
+	)
+	(junction
+		(at 406.4 304.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a9fab45b-9c20-4a5c-a407-40b59e6b9080")
@@ -2757,19 +2983,19 @@
 		(uuid "ac2b9a4d-8600-498d-bc48-74973a0d5ce8")
 	)
 	(junction
-		(at 337.82 292.1)
+		(at 336.55 269.24)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ad0f445a-8112-4ae8-a97a-2f97393943d5")
 	)
 	(junction
-		(at 420.37 288.29)
+		(at 419.1 265.43)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b0586af9-083f-40c9-a2a1-42c48d9ca655")
 	)
 	(junction
-		(at 360.68 312.42)
+		(at 359.41 289.56)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b260500c-95d1-4df6-9d62-0632b9a1ac4e")
@@ -2781,7 +3007,7 @@
 		(uuid "b4fff11f-996d-46bf-9d3e-7d82bb1f176c")
 	)
 	(junction
-		(at 337.82 351.79)
+		(at 336.55 328.93)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b68f8fa7-d228-4ccd-bc13-32d158cb770f")
@@ -2791,6 +3017,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b91f4bf3-e8bc-495c-9e3c-25d76e1ba683")
+	)
+	(junction
+		(at 405.13 360.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "baab28b5-7da2-4896-82c3-02e3e85ea5ac")
 	)
 	(junction
 		(at 120.65 66.04)
@@ -2817,7 +3049,7 @@
 		(uuid "c688a467-6b87-4822-a477-dde2a7a5293f")
 	)
 	(junction
-		(at 326.39 351.79)
+		(at 325.12 328.93)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c6d0ca16-216d-453e-a60b-e319e655ff66")
@@ -2835,19 +3067,19 @@
 		(uuid "c8f76b49-60cf-4469-8a4a-c73ee317a419")
 	)
 	(junction
-		(at 407.67 288.29)
+		(at 406.4 265.43)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cbde8c53-5872-4b30-ab4e-ff13e73eca5d")
 	)
 	(junction
-		(at 501.65 311.15)
+		(at 500.38 288.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cd9b6d54-ef02-48b2-96b2-5650f3302956")
 	)
 	(junction
-		(at 382.27 300.99)
+		(at 381 278.13)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d0009e23-71c7-4c01-b2aa-affc37b7db4a")
@@ -2859,7 +3091,7 @@
 		(uuid "d0361473-67d3-409a-a4b7-ac2b60a73103")
 	)
 	(junction
-		(at 326.39 312.42)
+		(at 325.12 289.56)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d0bacca1-d4a4-4302-91f5-f17e1e6114f3")
@@ -2877,7 +3109,7 @@
 		(uuid "d4837797-a0b4-492c-9d72-fa8aacc2c372")
 	)
 	(junction
-		(at 326.39 331.47)
+		(at 325.12 308.61)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d4977198-12a9-4812-8fbf-a99a778c1672")
@@ -2889,7 +3121,7 @@
 		(uuid "d565141b-278f-4cad-bb14-30c40a2c594f")
 	)
 	(junction
-		(at 480.06 308.61)
+		(at 478.79 285.75)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d68330dd-0e26-489f-a762-2e2526f45f2c")
@@ -2907,7 +3139,13 @@
 		(uuid "d9b48345-65c4-4eba-afb8-9a985b106fd0")
 	)
 	(junction
-		(at 407.67 353.06)
+		(at 415.29 347.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "daa76013-8216-4b8e-a40c-787c144c6cc4")
+	)
+	(junction
+		(at 406.4 330.2)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "daceff48-7bfa-4e53-98b4-11081b6b8d09")
@@ -2925,13 +3163,13 @@
 		(uuid "ddd72963-c1c0-4330-8b4b-0111c311963a")
 	)
 	(junction
-		(at 382.27 313.69)
+		(at 381 290.83)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e07e25db-e9b9-4f1b-ad3d-7cc70cabee9b")
 	)
 	(junction
-		(at 326.39 292.1)
+		(at 325.12 269.24)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e096c83b-30f1-4868-a26a-c80a0bbf061f")
@@ -2943,13 +3181,13 @@
 		(uuid "e42aef86-72e6-4a72-b04a-974bacb10033")
 	)
 	(junction
-		(at 394.97 353.06)
+		(at 393.7 330.2)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e435f878-4a82-4455-b3dd-29253f7ea4c1")
 	)
 	(junction
-		(at 501.65 285.75)
+		(at 500.38 262.89)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e4893aa2-bcc3-435d-b055-db4cc6ad5344")
@@ -2979,13 +3217,13 @@
 		(uuid "e6c3e01d-5522-4e0f-b19b-9d11bd69bdde")
 	)
 	(junction
-		(at 349.25 312.42)
+		(at 347.98 289.56)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e7f050ae-9cd3-46fb-a85a-87475eb3085f")
 	)
 	(junction
-		(at 382.27 353.06)
+		(at 381 330.2)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ea48b54d-f290-4b45-ab8d-0207c4f27fee")
@@ -3033,7 +3271,7 @@
 		(uuid "f8381ea7-167c-4b35-9b33-cc5bb3db7f52")
 	)
 	(junction
-		(at 407.67 313.69)
+		(at 406.4 290.83)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f8647224-b718-4960-b1a6-8e429a627de2")
@@ -3045,7 +3283,7 @@
 		(uuid "f8a0bf60-77d9-4b26-b1ab-151fd278df20")
 	)
 	(junction
-		(at 382.27 340.36)
+		(at 381 317.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f8ea46c1-f642-48ab-ac65-4e62caf9b973")
@@ -3055,6 +3293,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fadb739e-ad09-4da3-8b27-60ea685cc998")
+	)
+	(junction
+		(at 433.07 370.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fbdfd2b0-e6ab-44ff-a491-a1f2c7b00709")
+	)
+	(junction
+		(at 433.07 393.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fd67bebf-83ca-4369-80b1-84f324d3bdb4")
 	)
 	(junction
 		(at 340.36 113.03)
@@ -3084,7 +3334,7 @@
 	)
 	(wire
 		(pts
-			(xy 349.25 312.42) (xy 349.25 309.88)
+			(xy 347.98 289.56) (xy 347.98 287.02)
 		)
 		(stroke
 			(width 0)
@@ -3134,7 +3384,7 @@
 	)
 	(wire
 		(pts
-			(xy 433.07 311.15) (xy 433.07 313.69)
+			(xy 431.8 288.29) (xy 431.8 290.83)
 		)
 		(stroke
 			(width 0)
@@ -3161,6 +3411,16 @@
 			(type default)
 		)
 		(uuid "04669fa4-48cd-4ad0-9c17-e8a12829e4ba")
+	)
+	(wire
+		(pts
+			(xy 433.07 370.84) (xy 450.85 370.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "046741ec-d5f7-4704-9564-ba1d2c0b60ba")
 	)
 	(wire
 		(pts
@@ -3274,7 +3534,7 @@
 	)
 	(wire
 		(pts
-			(xy 337.82 309.88) (xy 337.82 312.42)
+			(xy 336.55 287.02) (xy 336.55 289.56)
 		)
 		(stroke
 			(width 0)
@@ -3294,7 +3554,7 @@
 	)
 	(wire
 		(pts
-			(xy 394.97 311.15) (xy 394.97 313.69)
+			(xy 393.7 288.29) (xy 393.7 290.83)
 		)
 		(stroke
 			(width 0)
@@ -3304,7 +3564,7 @@
 	)
 	(wire
 		(pts
-			(xy 326.39 328.93) (xy 326.39 331.47)
+			(xy 325.12 306.07) (xy 325.12 308.61)
 		)
 		(stroke
 			(width 0)
@@ -3314,7 +3574,7 @@
 	)
 	(wire
 		(pts
-			(xy 468.63 285.75) (xy 468.63 288.29)
+			(xy 467.36 262.89) (xy 467.36 265.43)
 		)
 		(stroke
 			(width 0)
@@ -3354,7 +3614,7 @@
 	)
 	(wire
 		(pts
-			(xy 372.11 312.42) (xy 360.68 312.42)
+			(xy 370.84 289.56) (xy 359.41 289.56)
 		)
 		(stroke
 			(width 0)
@@ -3364,7 +3624,7 @@
 	)
 	(wire
 		(pts
-			(xy 360.68 292.1) (xy 360.68 294.64)
+			(xy 359.41 269.24) (xy 359.41 271.78)
 		)
 		(stroke
 			(width 0)
@@ -3444,7 +3704,7 @@
 	)
 	(wire
 		(pts
-			(xy 527.05 285.75) (xy 514.35 285.75)
+			(xy 525.78 262.89) (xy 513.08 262.89)
 		)
 		(stroke
 			(width 0)
@@ -3504,7 +3764,7 @@
 	)
 	(wire
 		(pts
-			(xy 382.27 300.99) (xy 382.27 303.53)
+			(xy 381 278.13) (xy 381 280.67)
 		)
 		(stroke
 			(width 0)
@@ -3554,6 +3814,16 @@
 	)
 	(wire
 		(pts
+			(xy 415.29 381) (xy 415.29 383.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13af196a-60eb-4482-9285-39154ca661b2")
+	)
+	(wire
+		(pts
 			(xy 316.23 113.03) (xy 307.34 113.03)
 		)
 		(stroke
@@ -3584,7 +3854,7 @@
 	)
 	(wire
 		(pts
-			(xy 378.46 383.54) (xy 378.46 386.08)
+			(xy 370.84 369.57) (xy 370.84 372.11)
 		)
 		(stroke
 			(width 0)
@@ -3601,6 +3871,16 @@
 			(type default)
 		)
 		(uuid "15319e52-dd91-4bce-9b84-ab8ba1af4941")
+	)
+	(wire
+		(pts
+			(xy 405.13 381) (xy 405.13 360.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15369dc7-4838-48f8-8182-3f8046671b81")
 	)
 	(wire
 		(pts
@@ -3674,7 +3954,7 @@
 	)
 	(wire
 		(pts
-			(xy 378.46 386.08) (xy 375.92 386.08)
+			(xy 370.84 372.11) (xy 368.3 372.11)
 		)
 		(stroke
 			(width 0)
@@ -3734,7 +4014,7 @@
 	)
 	(wire
 		(pts
-			(xy 407.67 350.52) (xy 407.67 353.06)
+			(xy 406.4 327.66) (xy 406.4 330.2)
 		)
 		(stroke
 			(width 0)
@@ -3774,7 +4054,7 @@
 	)
 	(wire
 		(pts
-			(xy 360.68 351.79) (xy 360.68 349.25)
+			(xy 359.41 328.93) (xy 359.41 326.39)
 		)
 		(stroke
 			(width 0)
@@ -3784,7 +4064,7 @@
 	)
 	(wire
 		(pts
-			(xy 433.07 313.69) (xy 420.37 313.69)
+			(xy 431.8 290.83) (xy 419.1 290.83)
 		)
 		(stroke
 			(width 0)
@@ -3824,7 +4104,7 @@
 	)
 	(wire
 		(pts
-			(xy 394.97 313.69) (xy 382.27 313.69)
+			(xy 393.7 290.83) (xy 381 290.83)
 		)
 		(stroke
 			(width 0)
@@ -3904,7 +4184,7 @@
 	)
 	(wire
 		(pts
-			(xy 382.27 327.66) (xy 382.27 330.2)
+			(xy 381 304.8) (xy 381 307.34)
 		)
 		(stroke
 			(width 0)
@@ -4014,7 +4294,7 @@
 	)
 	(wire
 		(pts
-			(xy 501.65 295.91) (xy 501.65 300.99)
+			(xy 500.38 273.05) (xy 500.38 278.13)
 		)
 		(stroke
 			(width 0)
@@ -4034,7 +4314,7 @@
 	)
 	(wire
 		(pts
-			(xy 326.39 331.47) (xy 337.82 331.47)
+			(xy 325.12 308.61) (xy 336.55 308.61)
 		)
 		(stroke
 			(width 0)
@@ -4114,7 +4394,7 @@
 	)
 	(wire
 		(pts
-			(xy 326.39 351.79) (xy 326.39 354.33)
+			(xy 325.12 328.93) (xy 325.12 331.47)
 		)
 		(stroke
 			(width 0)
@@ -4224,7 +4504,7 @@
 	)
 	(wire
 		(pts
-			(xy 337.82 294.64) (xy 337.82 292.1)
+			(xy 336.55 271.78) (xy 336.55 269.24)
 		)
 		(stroke
 			(width 0)
@@ -4241,6 +4521,16 @@
 			(type default)
 		)
 		(uuid "32b50dad-fd91-41a5-8842-32d6b2799aff")
+	)
+	(wire
+		(pts
+			(xy 415.29 393.7) (xy 405.13 393.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33602669-c743-4cdb-ab28-3278b2c54924")
 	)
 	(wire
 		(pts
@@ -4264,7 +4554,7 @@
 	)
 	(wire
 		(pts
-			(xy 372.11 294.64) (xy 372.11 292.1)
+			(xy 370.84 271.78) (xy 370.84 269.24)
 		)
 		(stroke
 			(width 0)
@@ -4294,7 +4584,7 @@
 	)
 	(wire
 		(pts
-			(xy 420.37 313.69) (xy 407.67 313.69)
+			(xy 419.1 290.83) (xy 406.4 290.83)
 		)
 		(stroke
 			(width 0)
@@ -4324,7 +4614,7 @@
 	)
 	(wire
 		(pts
-			(xy 501.65 285.75) (xy 501.65 288.29)
+			(xy 500.38 262.89) (xy 500.38 265.43)
 		)
 		(stroke
 			(width 0)
@@ -4344,7 +4634,7 @@
 	)
 	(wire
 		(pts
-			(xy 394.97 327.66) (xy 382.27 327.66)
+			(xy 393.7 304.8) (xy 381 304.8)
 		)
 		(stroke
 			(width 0)
@@ -4354,7 +4644,7 @@
 	)
 	(wire
 		(pts
-			(xy 514.35 311.15) (xy 501.65 311.15)
+			(xy 513.08 288.29) (xy 500.38 288.29)
 		)
 		(stroke
 			(width 0)
@@ -4374,6 +4664,16 @@
 	)
 	(wire
 		(pts
+			(xy 458.47 370.84) (xy 461.01 370.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3876c9d6-bced-4c3c-8d8e-705907ff3923")
+	)
+	(wire
+		(pts
 			(xy 360.68 135.89) (xy 365.76 135.89)
 		)
 		(stroke
@@ -4381,6 +4681,16 @@
 			(type default)
 		)
 		(uuid "3891b9d9-026a-496e-aa94-800ee52572ea")
+	)
+	(wire
+		(pts
+			(xy 415.29 347.98) (xy 433.07 347.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39016bca-aab6-440e-89bd-432e630f31c6")
 	)
 	(wire
 		(pts
@@ -4434,6 +4744,16 @@
 	)
 	(wire
 		(pts
+			(xy 405.13 360.68) (xy 415.29 360.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c7db6bf-8ade-4c98-afa1-1c36a4bc7c93")
+	)
+	(wire
+		(pts
 			(xy 67.31 339.09) (xy 69.85 339.09)
 		)
 		(stroke
@@ -4454,7 +4774,7 @@
 	)
 	(wire
 		(pts
-			(xy 326.39 294.64) (xy 326.39 292.1)
+			(xy 325.12 271.78) (xy 325.12 269.24)
 		)
 		(stroke
 			(width 0)
@@ -4474,7 +4794,7 @@
 	)
 	(wire
 		(pts
-			(xy 420.37 288.29) (xy 420.37 290.83)
+			(xy 419.1 265.43) (xy 419.1 267.97)
 		)
 		(stroke
 			(width 0)
@@ -4484,7 +4804,7 @@
 	)
 	(wire
 		(pts
-			(xy 382.27 350.52) (xy 382.27 353.06)
+			(xy 381 327.66) (xy 381 330.2)
 		)
 		(stroke
 			(width 0)
@@ -4514,7 +4834,7 @@
 	)
 	(wire
 		(pts
-			(xy 407.67 327.66) (xy 394.97 327.66)
+			(xy 406.4 304.8) (xy 393.7 304.8)
 		)
 		(stroke
 			(width 0)
@@ -4564,7 +4884,7 @@
 	)
 	(wire
 		(pts
-			(xy 420.37 327.66) (xy 407.67 327.66)
+			(xy 419.1 304.8) (xy 406.4 304.8)
 		)
 		(stroke
 			(width 0)
@@ -4574,7 +4894,7 @@
 	)
 	(wire
 		(pts
-			(xy 433.07 327.66) (xy 420.37 327.66)
+			(xy 431.8 304.8) (xy 419.1 304.8)
 		)
 		(stroke
 			(width 0)
@@ -4624,7 +4944,7 @@
 	)
 	(wire
 		(pts
-			(xy 407.67 288.29) (xy 407.67 290.83)
+			(xy 406.4 265.43) (xy 406.4 267.97)
 		)
 		(stroke
 			(width 0)
@@ -4654,13 +4974,23 @@
 	)
 	(wire
 		(pts
-			(xy 433.07 337.82) (xy 433.07 342.9)
+			(xy 431.8 314.96) (xy 431.8 320.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "470cbab3-f1df-4c9c-a568-0ffd59a83764")
+	)
+	(wire
+		(pts
+			(xy 433.07 370.84) (xy 433.07 375.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48d593f8-d9de-454b-8de9-ee43737fdbfe")
 	)
 	(wire
 		(pts
@@ -4674,7 +5004,7 @@
 	)
 	(wire
 		(pts
-			(xy 349.25 292.1) (xy 360.68 292.1)
+			(xy 347.98 269.24) (xy 359.41 269.24)
 		)
 		(stroke
 			(width 0)
@@ -4694,7 +5024,7 @@
 	)
 	(wire
 		(pts
-			(xy 349.25 312.42) (xy 337.82 312.42)
+			(xy 347.98 289.56) (xy 336.55 289.56)
 		)
 		(stroke
 			(width 0)
@@ -4804,13 +5134,23 @@
 	)
 	(wire
 		(pts
-			(xy 337.82 312.42) (xy 326.39 312.42)
+			(xy 336.55 289.56) (xy 325.12 289.56)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "4e3e1a6d-c99d-4abc-ba6e-697bd7b12112")
+	)
+	(wire
+		(pts
+			(xy 433.07 393.7) (xy 433.07 386.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e6dd898-bbee-4e9c-8faa-122515730e5d")
 	)
 	(wire
 		(pts
@@ -4864,7 +5204,7 @@
 	)
 	(wire
 		(pts
-			(xy 527.05 295.91) (xy 527.05 300.99)
+			(xy 525.78 273.05) (xy 525.78 278.13)
 		)
 		(stroke
 			(width 0)
@@ -4894,7 +5234,17 @@
 	)
 	(wire
 		(pts
-			(xy 349.25 331.47) (xy 349.25 334.01)
+			(xy 425.45 360.68) (xy 415.29 360.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52673839-0a07-4d89-b457-5aaf7bf453be")
+	)
+	(wire
+		(pts
+			(xy 347.98 308.61) (xy 347.98 311.15)
 		)
 		(stroke
 			(width 0)
@@ -4911,6 +5261,26 @@
 			(type default)
 		)
 		(uuid "53cc0231-ff70-4690-aa6e-c7c3cdb283c1")
+	)
+	(wire
+		(pts
+			(xy 415.29 358.14) (xy 415.29 360.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5506c313-ba4c-4841-a312-f665ee38fafe")
+	)
+	(wire
+		(pts
+			(xy 415.29 391.16) (xy 415.29 393.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55178b7c-043f-48d3-bc42-cacaadc90228")
 	)
 	(wire
 		(pts
@@ -4934,7 +5304,7 @@
 	)
 	(wire
 		(pts
-			(xy 433.07 353.06) (xy 420.37 353.06)
+			(xy 431.8 330.2) (xy 419.1 330.2)
 		)
 		(stroke
 			(width 0)
@@ -4964,7 +5334,7 @@
 	)
 	(wire
 		(pts
-			(xy 337.82 292.1) (xy 349.25 292.1)
+			(xy 336.55 269.24) (xy 347.98 269.24)
 		)
 		(stroke
 			(width 0)
@@ -4974,7 +5344,7 @@
 	)
 	(wire
 		(pts
-			(xy 468.63 290.83) (xy 468.63 288.29)
+			(xy 467.36 267.97) (xy 467.36 265.43)
 		)
 		(stroke
 			(width 0)
@@ -5014,7 +5384,7 @@
 	)
 	(wire
 		(pts
-			(xy 407.67 311.15) (xy 407.67 313.69)
+			(xy 406.4 288.29) (xy 406.4 290.83)
 		)
 		(stroke
 			(width 0)
@@ -5024,7 +5394,7 @@
 	)
 	(wire
 		(pts
-			(xy 433.07 327.66) (xy 433.07 330.2)
+			(xy 431.8 304.8) (xy 431.8 307.34)
 		)
 		(stroke
 			(width 0)
@@ -5064,7 +5434,7 @@
 	)
 	(wire
 		(pts
-			(xy 360.68 331.47) (xy 360.68 334.01)
+			(xy 359.41 308.61) (xy 359.41 311.15)
 		)
 		(stroke
 			(width 0)
@@ -5074,7 +5444,7 @@
 	)
 	(wire
 		(pts
-			(xy 394.97 350.52) (xy 394.97 353.06)
+			(xy 393.7 327.66) (xy 393.7 330.2)
 		)
 		(stroke
 			(width 0)
@@ -5084,7 +5454,7 @@
 	)
 	(wire
 		(pts
-			(xy 372.11 351.79) (xy 372.11 349.25)
+			(xy 370.84 328.93) (xy 370.84 326.39)
 		)
 		(stroke
 			(width 0)
@@ -5144,7 +5514,7 @@
 	)
 	(wire
 		(pts
-			(xy 382.27 340.36) (xy 382.27 342.9)
+			(xy 381 317.5) (xy 381 320.04)
 		)
 		(stroke
 			(width 0)
@@ -5214,13 +5584,23 @@
 	)
 	(wire
 		(pts
-			(xy 349.25 351.79) (xy 349.25 349.25)
+			(xy 347.98 328.93) (xy 347.98 326.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "626bf8ff-29a8-4051-b0ef-27d23ad2fdad")
+	)
+	(wire
+		(pts
+			(xy 405.13 383.54) (xy 405.13 381)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62ed25d5-5ac2-4a9e-b66f-f2225a2bedf7")
 	)
 	(wire
 		(pts
@@ -5244,7 +5624,7 @@
 	)
 	(wire
 		(pts
-			(xy 433.07 350.52) (xy 433.07 353.06)
+			(xy 431.8 327.66) (xy 431.8 330.2)
 		)
 		(stroke
 			(width 0)
@@ -5271,6 +5651,16 @@
 			(type default)
 		)
 		(uuid "652c6456-eb90-4525-877f-fc870efe7fcd")
+	)
+	(wire
+		(pts
+			(xy 405.13 350.52) (xy 405.13 347.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "653b5514-b14d-490e-a7a0-215613d18e9a")
 	)
 	(wire
 		(pts
@@ -5354,6 +5744,16 @@
 	)
 	(wire
 		(pts
+			(xy 461.01 373.38) (xy 461.01 370.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6977ac83-7ce5-40bf-bd74-b8acb857c4c2")
+	)
+	(wire
+		(pts
 			(xy 67.31 236.22) (xy 67.31 243.84)
 		)
 		(stroke
@@ -5364,7 +5764,7 @@
 	)
 	(wire
 		(pts
-			(xy 433.07 288.29) (xy 420.37 288.29)
+			(xy 431.8 265.43) (xy 419.1 265.43)
 		)
 		(stroke
 			(width 0)
@@ -5374,7 +5774,7 @@
 	)
 	(wire
 		(pts
-			(xy 326.39 289.56) (xy 326.39 292.1)
+			(xy 325.12 266.7) (xy 325.12 269.24)
 		)
 		(stroke
 			(width 0)
@@ -5384,7 +5784,7 @@
 	)
 	(wire
 		(pts
-			(xy 491.49 308.61) (xy 491.49 306.07)
+			(xy 490.22 285.75) (xy 490.22 283.21)
 		)
 		(stroke
 			(width 0)
@@ -5424,6 +5824,16 @@
 	)
 	(wire
 		(pts
+			(xy 433.07 365.76) (xy 433.07 370.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6cd1f0a8-4e83-4381-9000-3de9e1aab8a9")
+	)
+	(wire
+		(pts
 			(xy 83.82 88.9) (xy 87.63 88.9)
 		)
 		(stroke
@@ -5434,7 +5844,7 @@
 	)
 	(wire
 		(pts
-			(xy 378.46 391.16) (xy 375.92 391.16)
+			(xy 370.84 377.19) (xy 368.3 377.19)
 		)
 		(stroke
 			(width 0)
@@ -5464,7 +5874,7 @@
 	)
 	(wire
 		(pts
-			(xy 360.68 351.79) (xy 349.25 351.79)
+			(xy 359.41 328.93) (xy 347.98 328.93)
 		)
 		(stroke
 			(width 0)
@@ -5474,7 +5884,7 @@
 	)
 	(wire
 		(pts
-			(xy 337.82 331.47) (xy 349.25 331.47)
+			(xy 336.55 308.61) (xy 347.98 308.61)
 		)
 		(stroke
 			(width 0)
@@ -5524,7 +5934,7 @@
 	)
 	(wire
 		(pts
-			(xy 382.27 298.45) (xy 382.27 300.99)
+			(xy 381 275.59) (xy 381 278.13)
 		)
 		(stroke
 			(width 0)
@@ -5544,7 +5954,7 @@
 	)
 	(wire
 		(pts
-			(xy 433.07 288.29) (xy 433.07 290.83)
+			(xy 431.8 265.43) (xy 431.8 267.97)
 		)
 		(stroke
 			(width 0)
@@ -5574,7 +5984,7 @@
 	)
 	(wire
 		(pts
-			(xy 382.27 340.36) (xy 444.5 340.36)
+			(xy 381 317.5) (xy 443.23 317.5)
 		)
 		(stroke
 			(width 0)
@@ -5584,7 +5994,7 @@
 	)
 	(wire
 		(pts
-			(xy 382.27 300.99) (xy 444.5 300.99)
+			(xy 381 278.13) (xy 443.23 278.13)
 		)
 		(stroke
 			(width 0)
@@ -5604,7 +6014,7 @@
 	)
 	(wire
 		(pts
-			(xy 420.37 288.29) (xy 407.67 288.29)
+			(xy 419.1 265.43) (xy 406.4 265.43)
 		)
 		(stroke
 			(width 0)
@@ -5724,7 +6134,7 @@
 	)
 	(wire
 		(pts
-			(xy 349.25 292.1) (xy 349.25 294.64)
+			(xy 347.98 269.24) (xy 347.98 271.78)
 		)
 		(stroke
 			(width 0)
@@ -5734,7 +6144,7 @@
 	)
 	(wire
 		(pts
-			(xy 337.82 334.01) (xy 337.82 331.47)
+			(xy 336.55 311.15) (xy 336.55 308.61)
 		)
 		(stroke
 			(width 0)
@@ -5764,7 +6174,7 @@
 	)
 	(wire
 		(pts
-			(xy 514.35 285.75) (xy 514.35 288.29)
+			(xy 513.08 262.89) (xy 513.08 265.43)
 		)
 		(stroke
 			(width 0)
@@ -5784,7 +6194,7 @@
 	)
 	(wire
 		(pts
-			(xy 480.06 288.29) (xy 491.49 288.29)
+			(xy 478.79 265.43) (xy 490.22 265.43)
 		)
 		(stroke
 			(width 0)
@@ -5804,7 +6214,7 @@
 	)
 	(wire
 		(pts
-			(xy 360.68 331.47) (xy 372.11 331.47)
+			(xy 359.41 308.61) (xy 370.84 308.61)
 		)
 		(stroke
 			(width 0)
@@ -5834,7 +6244,7 @@
 	)
 	(wire
 		(pts
-			(xy 407.67 313.69) (xy 394.97 313.69)
+			(xy 406.4 290.83) (xy 393.7 290.83)
 		)
 		(stroke
 			(width 0)
@@ -5854,7 +6264,7 @@
 	)
 	(wire
 		(pts
-			(xy 372.11 312.42) (xy 372.11 309.88)
+			(xy 370.84 289.56) (xy 370.84 287.02)
 		)
 		(stroke
 			(width 0)
@@ -5964,6 +6374,16 @@
 	)
 	(wire
 		(pts
+			(xy 433.07 345.44) (xy 433.07 347.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83369f7d-c6d0-44aa-b11e-19eba963f9d8")
+	)
+	(wire
+		(pts
 			(xy 67.31 344.17) (xy 69.85 344.17)
 		)
 		(stroke
@@ -5974,7 +6394,7 @@
 	)
 	(wire
 		(pts
-			(xy 407.67 337.82) (xy 407.67 342.9)
+			(xy 406.4 314.96) (xy 406.4 320.04)
 		)
 		(stroke
 			(width 0)
@@ -6054,7 +6474,7 @@
 	)
 	(wire
 		(pts
-			(xy 468.63 308.61) (xy 468.63 311.15)
+			(xy 467.36 285.75) (xy 467.36 288.29)
 		)
 		(stroke
 			(width 0)
@@ -6064,7 +6484,7 @@
 	)
 	(wire
 		(pts
-			(xy 407.67 327.66) (xy 407.67 330.2)
+			(xy 406.4 304.8) (xy 406.4 307.34)
 		)
 		(stroke
 			(width 0)
@@ -6104,13 +6524,33 @@
 	)
 	(wire
 		(pts
-			(xy 349.25 331.47) (xy 360.68 331.47)
+			(xy 347.98 308.61) (xy 359.41 308.61)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "8acb7a72-cc85-411f-9d4f-aeff44b670d9")
+	)
+	(wire
+		(pts
+			(xy 415.29 393.7) (xy 433.07 393.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b6ab2c6-a34f-44af-a7fb-14441d9020ea")
+	)
+	(wire
+		(pts
+			(xy 433.07 347.98) (xy 433.07 355.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ba9067c-a6a3-4be2-9c7c-4c32ad55a112")
 	)
 	(wire
 		(pts
@@ -6141,6 +6581,16 @@
 			(type default)
 		)
 		(uuid "8c818d90-359c-4600-b11c-7f8d4a6eb4d3")
+	)
+	(wire
+		(pts
+			(xy 415.29 347.98) (xy 415.29 350.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8cb4a616-78de-4a06-9b48-dd9315aa8be8")
 	)
 	(wire
 		(pts
@@ -6184,7 +6634,7 @@
 	)
 	(wire
 		(pts
-			(xy 491.49 308.61) (xy 480.06 308.61)
+			(xy 490.22 285.75) (xy 478.79 285.75)
 		)
 		(stroke
 			(width 0)
@@ -6224,7 +6674,7 @@
 	)
 	(wire
 		(pts
-			(xy 527.05 285.75) (xy 527.05 288.29)
+			(xy 525.78 262.89) (xy 525.78 265.43)
 		)
 		(stroke
 			(width 0)
@@ -6274,7 +6724,7 @@
 	)
 	(wire
 		(pts
-			(xy 407.67 288.29) (xy 394.97 288.29)
+			(xy 406.4 265.43) (xy 393.7 265.43)
 		)
 		(stroke
 			(width 0)
@@ -6284,7 +6734,7 @@
 	)
 	(wire
 		(pts
-			(xy 420.37 350.52) (xy 420.37 353.06)
+			(xy 419.1 327.66) (xy 419.1 330.2)
 		)
 		(stroke
 			(width 0)
@@ -6364,7 +6814,7 @@
 	)
 	(wire
 		(pts
-			(xy 387.35 391.16) (xy 387.35 388.62)
+			(xy 379.73 377.19) (xy 379.73 374.65)
 		)
 		(stroke
 			(width 0)
@@ -6394,7 +6844,7 @@
 	)
 	(wire
 		(pts
-			(xy 326.39 312.42) (xy 326.39 309.88)
+			(xy 325.12 289.56) (xy 325.12 287.02)
 		)
 		(stroke
 			(width 0)
@@ -6414,7 +6864,7 @@
 	)
 	(wire
 		(pts
-			(xy 444.5 342.9) (xy 444.5 340.36)
+			(xy 443.23 320.04) (xy 443.23 317.5)
 		)
 		(stroke
 			(width 0)
@@ -6424,7 +6874,7 @@
 	)
 	(wire
 		(pts
-			(xy 394.97 288.29) (xy 382.27 288.29)
+			(xy 393.7 265.43) (xy 381 265.43)
 		)
 		(stroke
 			(width 0)
@@ -6494,7 +6944,7 @@
 	)
 	(wire
 		(pts
-			(xy 468.63 288.29) (xy 480.06 288.29)
+			(xy 467.36 265.43) (xy 478.79 265.43)
 		)
 		(stroke
 			(width 0)
@@ -6504,7 +6954,7 @@
 	)
 	(wire
 		(pts
-			(xy 326.39 292.1) (xy 337.82 292.1)
+			(xy 325.12 269.24) (xy 336.55 269.24)
 		)
 		(stroke
 			(width 0)
@@ -6604,7 +7054,7 @@
 	)
 	(wire
 		(pts
-			(xy 480.06 290.83) (xy 480.06 288.29)
+			(xy 478.79 267.97) (xy 478.79 265.43)
 		)
 		(stroke
 			(width 0)
@@ -6674,7 +7124,7 @@
 	)
 	(wire
 		(pts
-			(xy 349.25 351.79) (xy 337.82 351.79)
+			(xy 347.98 328.93) (xy 336.55 328.93)
 		)
 		(stroke
 			(width 0)
@@ -6734,7 +7184,7 @@
 	)
 	(wire
 		(pts
-			(xy 501.65 308.61) (xy 501.65 311.15)
+			(xy 500.38 285.75) (xy 500.38 288.29)
 		)
 		(stroke
 			(width 0)
@@ -6764,7 +7214,7 @@
 	)
 	(wire
 		(pts
-			(xy 527.05 308.61) (xy 527.05 311.15)
+			(xy 525.78 285.75) (xy 525.78 288.29)
 		)
 		(stroke
 			(width 0)
@@ -6784,7 +7234,7 @@
 	)
 	(wire
 		(pts
-			(xy 360.68 312.42) (xy 349.25 312.42)
+			(xy 359.41 289.56) (xy 347.98 289.56)
 		)
 		(stroke
 			(width 0)
@@ -6824,7 +7274,7 @@
 	)
 	(wire
 		(pts
-			(xy 372.11 351.79) (xy 360.68 351.79)
+			(xy 370.84 328.93) (xy 359.41 328.93)
 		)
 		(stroke
 			(width 0)
@@ -6864,7 +7314,7 @@
 	)
 	(wire
 		(pts
-			(xy 514.35 285.75) (xy 501.65 285.75)
+			(xy 513.08 262.89) (xy 500.38 262.89)
 		)
 		(stroke
 			(width 0)
@@ -6884,7 +7334,7 @@
 	)
 	(wire
 		(pts
-			(xy 433.07 298.45) (xy 433.07 303.53)
+			(xy 431.8 275.59) (xy 431.8 280.67)
 		)
 		(stroke
 			(width 0)
@@ -6894,7 +7344,7 @@
 	)
 	(wire
 		(pts
-			(xy 394.97 353.06) (xy 382.27 353.06)
+			(xy 393.7 330.2) (xy 381 330.2)
 		)
 		(stroke
 			(width 0)
@@ -7054,7 +7504,7 @@
 	)
 	(wire
 		(pts
-			(xy 394.97 288.29) (xy 394.97 290.83)
+			(xy 393.7 265.43) (xy 393.7 267.97)
 		)
 		(stroke
 			(width 0)
@@ -7124,7 +7574,7 @@
 	)
 	(wire
 		(pts
-			(xy 326.39 351.79) (xy 326.39 349.25)
+			(xy 325.12 328.93) (xy 325.12 326.39)
 		)
 		(stroke
 			(width 0)
@@ -7134,7 +7584,7 @@
 	)
 	(wire
 		(pts
-			(xy 337.82 349.25) (xy 337.82 351.79)
+			(xy 336.55 326.39) (xy 336.55 328.93)
 		)
 		(stroke
 			(width 0)
@@ -7154,7 +7604,7 @@
 	)
 	(wire
 		(pts
-			(xy 420.37 327.66) (xy 420.37 330.2)
+			(xy 419.1 304.8) (xy 419.1 307.34)
 		)
 		(stroke
 			(width 0)
@@ -7224,7 +7674,7 @@
 	)
 	(wire
 		(pts
-			(xy 420.37 353.06) (xy 407.67 353.06)
+			(xy 419.1 330.2) (xy 406.4 330.2)
 		)
 		(stroke
 			(width 0)
@@ -7234,7 +7684,7 @@
 	)
 	(wire
 		(pts
-			(xy 326.39 312.42) (xy 326.39 314.96)
+			(xy 325.12 289.56) (xy 325.12 292.1)
 		)
 		(stroke
 			(width 0)
@@ -7284,6 +7734,16 @@
 	)
 	(wire
 		(pts
+			(xy 405.13 360.68) (xy 405.13 358.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b716a971-26e9-44f3-9eae-4d1e85f984dd")
+	)
+	(wire
+		(pts
 			(xy 87.63 41.91) (xy 90.17 41.91)
 		)
 		(stroke
@@ -7294,7 +7754,7 @@
 	)
 	(wire
 		(pts
-			(xy 372.11 334.01) (xy 372.11 331.47)
+			(xy 370.84 311.15) (xy 370.84 308.61)
 		)
 		(stroke
 			(width 0)
@@ -7304,7 +7764,7 @@
 	)
 	(wire
 		(pts
-			(xy 480.06 308.61) (xy 468.63 308.61)
+			(xy 478.79 285.75) (xy 467.36 285.75)
 		)
 		(stroke
 			(width 0)
@@ -7374,7 +7834,7 @@
 	)
 	(wire
 		(pts
-			(xy 480.06 306.07) (xy 480.06 308.61)
+			(xy 478.79 283.21) (xy 478.79 285.75)
 		)
 		(stroke
 			(width 0)
@@ -7414,7 +7874,7 @@
 	)
 	(wire
 		(pts
-			(xy 360.68 312.42) (xy 360.68 309.88)
+			(xy 359.41 289.56) (xy 359.41 287.02)
 		)
 		(stroke
 			(width 0)
@@ -7454,7 +7914,7 @@
 	)
 	(wire
 		(pts
-			(xy 394.97 327.66) (xy 394.97 330.2)
+			(xy 393.7 304.8) (xy 393.7 307.34)
 		)
 		(stroke
 			(width 0)
@@ -7504,7 +7964,7 @@
 	)
 	(wire
 		(pts
-			(xy 382.27 311.15) (xy 382.27 313.69)
+			(xy 381 288.29) (xy 381 290.83)
 		)
 		(stroke
 			(width 0)
@@ -7594,7 +8054,7 @@
 	)
 	(wire
 		(pts
-			(xy 420.37 298.45) (xy 420.37 303.53)
+			(xy 419.1 275.59) (xy 419.1 280.67)
 		)
 		(stroke
 			(width 0)
@@ -7734,7 +8194,7 @@
 	)
 	(wire
 		(pts
-			(xy 360.68 292.1) (xy 372.11 292.1)
+			(xy 359.41 269.24) (xy 370.84 269.24)
 		)
 		(stroke
 			(width 0)
@@ -7764,7 +8224,7 @@
 	)
 	(wire
 		(pts
-			(xy 375.92 388.62) (xy 387.35 388.62)
+			(xy 368.3 374.65) (xy 379.73 374.65)
 		)
 		(stroke
 			(width 0)
@@ -7784,7 +8244,7 @@
 	)
 	(wire
 		(pts
-			(xy 326.39 334.01) (xy 326.39 331.47)
+			(xy 325.12 311.15) (xy 325.12 308.61)
 		)
 		(stroke
 			(width 0)
@@ -7834,7 +8294,7 @@
 	)
 	(wire
 		(pts
-			(xy 514.35 308.61) (xy 514.35 311.15)
+			(xy 513.08 285.75) (xy 513.08 288.29)
 		)
 		(stroke
 			(width 0)
@@ -7844,7 +8304,7 @@
 	)
 	(wire
 		(pts
-			(xy 514.35 295.91) (xy 514.35 300.99)
+			(xy 513.08 273.05) (xy 513.08 278.13)
 		)
 		(stroke
 			(width 0)
@@ -7904,7 +8364,7 @@
 	)
 	(wire
 		(pts
-			(xy 337.82 351.79) (xy 326.39 351.79)
+			(xy 336.55 328.93) (xy 325.12 328.93)
 		)
 		(stroke
 			(width 0)
@@ -7944,7 +8404,7 @@
 	)
 	(wire
 		(pts
-			(xy 420.37 311.15) (xy 420.37 313.69)
+			(xy 419.1 288.29) (xy 419.1 290.83)
 		)
 		(stroke
 			(width 0)
@@ -7974,7 +8434,7 @@
 	)
 	(wire
 		(pts
-			(xy 407.67 298.45) (xy 407.67 303.53)
+			(xy 406.4 275.59) (xy 406.4 280.67)
 		)
 		(stroke
 			(width 0)
@@ -8104,6 +8564,16 @@
 	)
 	(wire
 		(pts
+			(xy 405.13 381) (xy 415.29 381)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dcffc94d-9986-4edb-bb9a-651953c46742")
+	)
+	(wire
+		(pts
 			(xy 307.34 88.9) (xy 307.34 96.52)
 		)
 		(stroke
@@ -8111,6 +8581,16 @@
 			(type default)
 		)
 		(uuid "dd4272b0-2d4d-4e8f-8411-53c2c170d233")
+	)
+	(wire
+		(pts
+			(xy 415.29 381) (xy 425.45 381)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd808598-afbd-4118-90f3-a7c5b504baf2")
 	)
 	(wire
 		(pts
@@ -8174,7 +8654,27 @@
 	)
 	(wire
 		(pts
-			(xy 382.27 288.29) (xy 382.27 290.83)
+			(xy 405.13 347.98) (xy 415.29 347.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e12a5db0-5f19-48bb-a7e5-2db52898db89")
+	)
+	(wire
+		(pts
+			(xy 405.13 393.7) (xy 405.13 391.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e18a96ae-6e05-4775-a11d-b353e06613e0")
+	)
+	(wire
+		(pts
+			(xy 381 265.43) (xy 381 267.97)
 		)
 		(stroke
 			(width 0)
@@ -8384,7 +8884,7 @@
 	)
 	(wire
 		(pts
-			(xy 468.63 308.61) (xy 468.63 306.07)
+			(xy 467.36 285.75) (xy 467.36 283.21)
 		)
 		(stroke
 			(width 0)
@@ -8464,7 +8964,7 @@
 	)
 	(wire
 		(pts
-			(xy 420.37 337.82) (xy 420.37 342.9)
+			(xy 419.1 314.96) (xy 419.1 320.04)
 		)
 		(stroke
 			(width 0)
@@ -8484,7 +8984,7 @@
 	)
 	(wire
 		(pts
-			(xy 407.67 353.06) (xy 394.97 353.06)
+			(xy 406.4 330.2) (xy 393.7 330.2)
 		)
 		(stroke
 			(width 0)
@@ -8494,7 +8994,7 @@
 	)
 	(wire
 		(pts
-			(xy 382.27 337.82) (xy 382.27 340.36)
+			(xy 381 314.96) (xy 381 317.5)
 		)
 		(stroke
 			(width 0)
@@ -8574,7 +9074,7 @@
 	)
 	(wire
 		(pts
-			(xy 394.97 337.82) (xy 394.97 342.9)
+			(xy 393.7 314.96) (xy 393.7 320.04)
 		)
 		(stroke
 			(width 0)
@@ -8664,7 +9164,7 @@
 	)
 	(wire
 		(pts
-			(xy 527.05 311.15) (xy 514.35 311.15)
+			(xy 525.78 288.29) (xy 513.08 288.29)
 		)
 		(stroke
 			(width 0)
@@ -8684,7 +9184,7 @@
 	)
 	(wire
 		(pts
-			(xy 394.97 298.45) (xy 394.97 303.53)
+			(xy 393.7 275.59) (xy 393.7 280.67)
 		)
 		(stroke
 			(width 0)
@@ -8814,7 +9314,7 @@
 	)
 	(wire
 		(pts
-			(xy 378.46 393.7) (xy 378.46 391.16)
+			(xy 370.84 379.73) (xy 370.84 377.19)
 		)
 		(stroke
 			(width 0)
@@ -8864,7 +9364,7 @@
 	)
 	(wire
 		(pts
-			(xy 491.49 288.29) (xy 491.49 290.83)
+			(xy 490.22 265.43) (xy 490.22 267.97)
 		)
 		(stroke
 			(width 0)
@@ -8884,7 +9384,7 @@
 	)
 	(wire
 		(pts
-			(xy 444.5 303.53) (xy 444.5 300.99)
+			(xy 443.23 280.67) (xy 443.23 278.13)
 		)
 		(stroke
 			(width 0)
@@ -8931,6 +9431,26 @@
 			(type default)
 		)
 		(uuid "fef61e8e-a504-49ee-91a4-07eb267673c2")
+	)
+	(wire
+		(pts
+			(xy 433.07 393.7) (xy 433.07 396.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fffd842e-bb7e-4706-8fe4-7e6dcc1dc462")
+	)
+	(label "Virtual_GND"
+		(at 436.88 370.84 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4c4b5868-8f11-438b-a38b-b56bfd3b9aeb")
 	)
 	(global_label "FX1_L"
 		(shape input)
@@ -9705,7 +10225,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 420.37 307.34 180)
+		(at 419.1 284.48 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9714,7 +10234,7 @@
 		(fields_autoplaced yes)
 		(uuid "022e647c-f10b-4c21-9284-8e97297c31c2")
 		(property "Reference" "C23"
-			(at 424.18 306.0699 0)
+			(at 422.91 283.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9723,7 +10243,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 424.18 308.6099 0)
+			(at 422.91 285.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9732,7 +10252,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 419.4048 303.53 0)
+			(at 418.1348 280.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9741,7 +10261,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C89632.html?s_z=n_q_t_capacitor"
-			(at 420.37 307.34 0)
+			(at 419.1 284.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9750,7 +10270,7 @@
 			)
 		)
 		(property "Description" "10uF 50V X7R capacitor LCSC:C89632"
-			(at 420.37 307.34 0)
+			(at 419.1 284.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10001,7 +10521,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 433.07 334.01 180)
+		(at 431.8 311.15 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10010,7 +10530,7 @@
 		(fields_autoplaced yes)
 		(uuid "06501383-b88a-425b-bd0e-ad9d66cc3552")
 		(property "Reference" "C28"
-			(at 436.88 332.7399 0)
+			(at 435.61 309.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10019,7 +10539,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 436.88 335.2799 0)
+			(at 435.61 312.4199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10028,7 +10548,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 432.1048 330.2 0)
+			(at 430.8348 307.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10037,7 +10557,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C89632.html?s_z=n_q_t_capacitor"
-			(at 433.07 334.01 0)
+			(at 431.8 311.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10046,7 +10566,7 @@
 			)
 		)
 		(property "Description" "10uF 50V X7R capacitor LCSC:C89632"
-			(at 433.07 334.01 0)
+			(at 431.8 311.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10213,7 +10733,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:NE5532")
-		(at 340.36 341.63 0)
+		(at 339.09 318.77 0)
 		(mirror x)
 		(unit 3)
 		(exclude_from_sim no)
@@ -10223,7 +10743,7 @@
 		(fields_autoplaced yes)
 		(uuid "07df3f5d-48c6-4ac6-a286-cc343658b47c")
 		(property "Reference" "U4"
-			(at 336.55 340.3599 0)
+			(at 335.28 317.4999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10232,7 +10752,7 @@
 			)
 		)
 		(property "Value" "NE5532"
-			(at 336.55 342.8999 0)
+			(at 335.28 320.0399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10241,7 +10761,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 340.36 341.63 0)
+			(at 339.09 318.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10250,7 +10770,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C22462564.html?s_z=n_q_l_ne5532"
-			(at 340.36 341.63 0)
+			(at 339.09 318.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10259,7 +10779,7 @@
 			)
 		)
 		(property "Description" "Dual Low-Noise Operational Amplifiers, DIP-8/SOIC-8 LCSC:C22462564"
-			(at 340.36 341.63 0)
+			(at 339.09 318.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10302,7 +10822,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 382.27 346.71 180)
+		(at 381 323.85 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10311,7 +10831,7 @@
 		(fields_autoplaced yes)
 		(uuid "09924da9-22a4-40c7-bd1b-3f4931b43b63")
 		(property "Reference" "C13"
-			(at 386.08 345.4399 0)
+			(at 384.81 322.5799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10320,7 +10840,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 386.08 347.9799 0)
+			(at 384.81 325.1199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10329,7 +10849,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 381.3048 342.9 0)
+			(at 380.0348 320.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10338,7 +10858,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C89632.html?s_z=n_q_t_capacitor"
-			(at 382.27 346.71 0)
+			(at 381 323.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10347,7 +10867,7 @@
 			)
 		)
 		(property "Description" "10uF 50V X7R capacitor LCSC:C89632"
-			(at 382.27 346.71 0)
+			(at 381 323.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10670,7 +11190,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 527.05 292.1 180)
+		(at 525.78 269.24 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10679,7 +11199,7 @@
 		(fields_autoplaced yes)
 		(uuid "10825fcb-91c4-43e1-a037-d2d158baa560")
 		(property "Reference" "C36"
-			(at 530.86 290.8299 0)
+			(at 529.59 267.9699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10688,7 +11208,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 530.86 293.3699 0)
+			(at 529.59 270.5099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10697,7 +11217,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 526.0848 288.29 0)
+			(at 524.8148 265.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10706,7 +11226,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C89632.html?s_z=n_q_t_capacitor"
-			(at 527.05 292.1 0)
+			(at 525.78 269.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10715,7 +11235,7 @@
 			)
 		)
 		(property "Description" "10uF 50V X7R capacitor LCSC:C89632"
-			(at 527.05 292.1 0)
+			(at 525.78 269.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10869,6 +11389,82 @@
 			(project "Mixer_circuit"
 				(path "/524c0fa7-20e0-4db6-ae4b-fc3b6fcd38d3"
 					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:BCX56")
+		(at 430.53 360.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1204806c-f447-442c-bdf1-66ad8686ad48")
+		(property "Reference" "Q13"
+			(at 435.61 359.4099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BCX56"
+			(at 435.61 361.9499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-89-3"
+			(at 435.61 362.585 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C100026.html?s_z=n_q_bcx56"
+			(at 430.53 360.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "1A Ic, 80V Vce, NPN Medium Power Transistor, SOT-89 LCSC:C100026"
+			(at 430.53 360.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "41bc4285-0a6c-448a-a177-79a0f153c1c7")
+		)
+		(pin "1"
+			(uuid "c515f34a-314e-474b-9328-7f34354d6eda")
+		)
+		(pin "3"
+			(uuid "1e8b2f7c-19a1-48e9-8175-5aefd033780a")
+		)
+		(instances
+			(project "Mixer_circuit"
+				(path "/524c0fa7-20e0-4db6-ae4b-fc3b6fcd38d3"
+					(reference "Q13")
 					(unit 1)
 				)
 			)
@@ -11197,7 +11793,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 514.35 304.8 180)
+		(at 513.08 281.94 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11206,7 +11802,7 @@
 		(fields_autoplaced yes)
 		(uuid "16ef8e75-b7c3-4eba-bfd7-662be22e9b2c")
 		(property "Reference" "C35"
-			(at 518.16 303.5299 0)
+			(at 516.89 280.6699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11215,7 +11811,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 518.16 306.0699 0)
+			(at 516.89 283.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11224,7 +11820,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 513.3848 300.99 0)
+			(at 512.1148 278.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11233,7 +11829,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C89632.html?s_z=n_q_t_capacitor"
-			(at 514.35 304.8 0)
+			(at 513.08 281.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11242,7 +11838,7 @@
 			)
 		)
 		(property "Description" "10uF 50V X7R capacitor LCSC:C89632"
-			(at 514.35 304.8 0)
+			(at 513.08 281.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11359,7 +11955,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:NE5532")
-		(at 363.22 302.26 0)
+		(at 361.95 279.4 0)
 		(mirror x)
 		(unit 3)
 		(exclude_from_sim no)
@@ -11369,7 +11965,7 @@
 		(fields_autoplaced yes)
 		(uuid "172c3eeb-e8a6-423a-9573-e7d5a0beb830")
 		(property "Reference" "U12"
-			(at 359.41 300.9899 0)
+			(at 358.14 278.1299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11378,7 +11974,7 @@
 			)
 		)
 		(property "Value" "NE5532"
-			(at 359.41 303.5299 0)
+			(at 358.14 280.6699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11387,7 +11983,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 363.22 302.26 0)
+			(at 361.95 279.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11396,7 +11992,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C22462564.html?s_z=n_q_l_ne5532"
-			(at 363.22 302.26 0)
+			(at 361.95 279.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11405,7 +12001,7 @@
 			)
 		)
 		(property "Description" "Dual Low-Noise Operational Amplifiers, DIP-8/SOIC-8 LCSC:C22462564"
-			(at 363.22 302.26 0)
+			(at 361.95 279.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11634,7 +12230,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:NE5532")
-		(at 374.65 341.63 0)
+		(at 373.38 318.77 0)
 		(mirror x)
 		(unit 3)
 		(exclude_from_sim no)
@@ -11644,7 +12240,7 @@
 		(fields_autoplaced yes)
 		(uuid "18632562-8b04-43df-9cb3-19cbc94370e0")
 		(property "Reference" "U6"
-			(at 370.84 340.3599 0)
+			(at 369.57 317.4999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11653,7 +12249,7 @@
 			)
 		)
 		(property "Value" "NE5532"
-			(at 370.84 342.8999 0)
+			(at 369.57 320.0399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11662,7 +12258,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 374.65 341.63 0)
+			(at 373.38 318.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11671,7 +12267,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C22462564.html?s_z=n_q_l_ne5532"
-			(at 374.65 341.63 0)
+			(at 373.38 318.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11680,7 +12276,7 @@
 			)
 		)
 		(property "Description" "Dual Low-Noise Operational Amplifiers, DIP-8/SOIC-8 LCSC:C22462564"
-			(at 374.65 341.63 0)
+			(at 373.38 318.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12015,7 +12611,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 433.07 307.34 180)
+		(at 431.8 284.48 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12024,7 +12620,7 @@
 		(fields_autoplaced yes)
 		(uuid "1c1d6a81-c0b5-4c40-aa1f-df52d3cd731a")
 		(property "Reference" "C27"
-			(at 436.88 306.0699 0)
+			(at 435.61 283.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12033,7 +12629,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 436.88 308.6099 0)
+			(at 435.61 285.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12042,7 +12638,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 432.1048 303.53 0)
+			(at 430.8348 280.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12051,7 +12647,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C89632.html?s_z=n_q_t_capacitor"
-			(at 433.07 307.34 0)
+			(at 431.8 284.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12060,7 +12656,7 @@
 			)
 		)
 		(property "Description" "10uF 50V X7R capacitor LCSC:C89632"
-			(at 433.07 307.34 0)
+			(at 431.8 284.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12525,7 +13121,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:NE5532")
-		(at 328.93 341.63 0)
+		(at 327.66 318.77 0)
 		(mirror x)
 		(unit 3)
 		(exclude_from_sim no)
@@ -12535,7 +13131,7 @@
 		(fields_autoplaced yes)
 		(uuid "203a4727-a592-406f-b2ca-02bbb7d0667c")
 		(property "Reference" "U3"
-			(at 325.12 340.3599 0)
+			(at 323.85 317.4999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12544,7 +13140,7 @@
 			)
 		)
 		(property "Value" "NE5532"
-			(at 325.12 342.8999 0)
+			(at 323.85 320.0399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12553,7 +13149,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 328.93 341.63 0)
+			(at 327.66 318.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12562,7 +13158,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C22462564.html?s_z=n_q_l_ne5532"
-			(at 328.93 341.63 0)
+			(at 327.66 318.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12571,7 +13167,7 @@
 			)
 		)
 		(property "Description" "Dual Low-Noise Operational Amplifiers, DIP-8/SOIC-8 LCSC:C22462564"
-			(at 328.93 341.63 0)
+			(at 327.66 318.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12608,6 +13204,72 @@
 				(path "/524c0fa7-20e0-4db6-ae4b-fc3b6fcd38d3"
 					(reference "U3")
 					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VSS")
+		(at 433.07 396.24 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "21a2f750-49c9-410d-978b-69c9934aef63")
+		(property "Reference" "#PWR073"
+			(at 433.07 392.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VSS"
+			(at 433.07 401.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 433.07 396.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 433.07 396.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VSS\""
+			(at 433.07 396.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5ed85b38-db14-4f5c-a5f4-1e3b52b126d9")
+		)
+		(instances
+			(project "Mixer_circuit"
+				(path "/524c0fa7-20e0-4db6-ae4b-fc3b6fcd38d3"
+					(reference "#PWR073")
+					(unit 1)
 				)
 			)
 		)
@@ -12960,7 +13622,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 382.27 327.66 0)
+		(at 381 304.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12969,7 +13631,7 @@
 		(fields_autoplaced yes)
 		(uuid "26fcf4e5-29ef-451f-b986-c08031255a2d")
 		(property "Reference" "#PWR036"
-			(at 382.27 331.47 0)
+			(at 381 308.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12978,7 +13640,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 382.27 322.58 0)
+			(at 381 299.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12986,7 +13648,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 382.27 327.66 0)
+			(at 381 304.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12995,7 +13657,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 382.27 327.66 0)
+			(at 381 304.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13004,7 +13666,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 382.27 327.66 0)
+			(at 381 304.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13026,7 +13688,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 407.67 346.71 180)
+		(at 406.4 323.85 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13035,7 +13697,7 @@
 		(fields_autoplaced yes)
 		(uuid "27763563-5c1c-4589-a378-4cc1c3bd8e1d")
 		(property "Reference" "C21"
-			(at 411.48 345.4399 0)
+			(at 410.21 322.5799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13044,7 +13706,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 411.48 347.9799 0)
+			(at 410.21 325.1199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13053,7 +13715,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 406.7048 342.9 0)
+			(at 405.4348 320.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13062,7 +13724,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C89632.html?s_z=n_q_t_capacitor"
-			(at 407.67 346.71 0)
+			(at 406.4 323.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13071,7 +13733,7 @@
 			)
 		)
 		(property "Description" "10uF 50V X7R capacitor LCSC:C89632"
-			(at 407.67 346.71 0)
+			(at 406.4 323.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13096,7 +13758,7 @@
 	)
 	(symbol
 		(lib_id "power:VSS")
-		(at 378.46 393.7 180)
+		(at 370.84 379.73 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13105,7 +13767,7 @@
 		(fields_autoplaced yes)
 		(uuid "297e8649-1e60-4464-b3af-72c84632795e")
 		(property "Reference" "#PWR033"
-			(at 378.46 389.89 0)
+			(at 370.84 375.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13114,7 +13776,7 @@
 			)
 		)
 		(property "Value" "VSS"
-			(at 381 394.9699 0)
+			(at 373.38 380.9999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13123,7 +13785,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 378.46 393.7 0)
+			(at 370.84 379.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13132,7 +13794,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 378.46 393.7 0)
+			(at 370.84 379.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13141,7 +13803,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VSS\""
-			(at 378.46 393.7 0)
+			(at 370.84 379.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13449,7 +14111,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 394.97 334.01 180)
+		(at 393.7 311.15 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13458,7 +14120,7 @@
 		(fields_autoplaced yes)
 		(uuid "2f14c7a2-bbee-46db-aa7d-5b9144cc4457")
 		(property "Reference" "C16"
-			(at 398.78 332.7399 0)
+			(at 397.51 309.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13467,7 +14129,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 398.78 335.2799 0)
+			(at 397.51 312.4199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13476,7 +14138,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 394.0048 330.2 0)
+			(at 392.7348 307.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13485,7 +14147,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C89632.html?s_z=n_q_t_capacitor"
-			(at 394.97 334.01 0)
+			(at 393.7 311.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13494,7 +14156,7 @@
 			)
 		)
 		(property "Description" "10uF 50V X7R capacitor LCSC:C89632"
-			(at 394.97 334.01 0)
+			(at 393.7 311.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13519,7 +14181,7 @@
 	)
 	(symbol
 		(lib_id "power:VSS")
-		(at 326.39 314.96 180)
+		(at 325.12 292.1 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13528,7 +14190,7 @@
 		(fields_autoplaced yes)
 		(uuid "30cfec04-10d6-4734-a5c5-9a8cbabc0c18")
 		(property "Reference" "#PWR019"
-			(at 326.39 311.15 0)
+			(at 325.12 288.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13537,7 +14199,7 @@
 			)
 		)
 		(property "Value" "VSS"
-			(at 326.39 320.04 0)
+			(at 325.12 297.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13545,7 +14207,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 326.39 314.96 0)
+			(at 325.12 292.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13554,7 +14216,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 326.39 314.96 0)
+			(at 325.12 292.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13563,7 +14225,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VSS\""
-			(at 326.39 314.96 0)
+			(at 325.12 292.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14026,7 +14688,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 527.05 304.8 180)
+		(at 525.78 281.94 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14035,7 +14697,7 @@
 		(fields_autoplaced yes)
 		(uuid "3cae0ca5-de09-4960-991c-216f2451aff9")
 		(property "Reference" "C37"
-			(at 530.86 303.5299 0)
+			(at 529.59 280.6699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14044,7 +14706,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 530.86 306.0699 0)
+			(at 529.59 283.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14053,7 +14715,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 526.0848 300.99 0)
+			(at 524.8148 278.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14062,7 +14724,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C89632.html?s_z=n_q_t_capacitor"
-			(at 527.05 304.8 0)
+			(at 525.78 281.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14071,7 +14733,7 @@
 			)
 		)
 		(property "Description" "10uF 50V X7R capacitor LCSC:C89632"
-			(at 527.05 304.8 0)
+			(at 525.78 281.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14096,7 +14758,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 444.5 342.9 0)
+		(at 443.23 320.04 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14104,7 +14766,7 @@
 		(dnp no)
 		(uuid "41e226e4-a0de-4b10-83ec-f2c9f55e8db4")
 		(property "Reference" "#PWR047"
-			(at 444.5 349.25 0)
+			(at 443.23 326.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14113,7 +14775,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 444.5 347.726 0)
+			(at 443.23 324.866 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14121,7 +14783,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 444.5 342.9 0)
+			(at 443.23 320.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14130,7 +14792,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 444.5 342.9 0)
+			(at 443.23 320.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14139,7 +14801,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 444.5 342.9 0)
+			(at 443.23 320.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14154,6 +14816,76 @@
 			(project "Mixer_circuit"
 				(path "/524c0fa7-20e0-4db6-ae4b-fc3b6fcd38d3"
 					(reference "#PWR047")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 415.29 387.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "422d7ea7-2190-450a-93ae-4d75fa3ae125")
+		(property "Reference" "R61"
+			(at 417.83 386.0799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47k"
+			(at 417.83 388.6199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 416.306 387.604 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C2907042.html?s_z=n_q_t_Resistor"
+			(at 415.29 387.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "LCSC:C2907042"
+			(at 415.29 387.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4bc997bc-f1d9-4c0c-8be3-68d095f9a7ea")
+		)
+		(pin "2"
+			(uuid "5413df65-a72c-413b-84bf-8d330cdafc6f")
+		)
+		(instances
+			(project "Mixer_circuit"
+				(path "/524c0fa7-20e0-4db6-ae4b-fc3b6fcd38d3"
+					(reference "R61")
 					(unit 1)
 				)
 			)
@@ -14371,7 +15103,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:NE5532")
-		(at 340.36 302.26 0)
+		(at 339.09 279.4 0)
 		(mirror x)
 		(unit 3)
 		(exclude_from_sim no)
@@ -14381,7 +15113,7 @@
 		(fields_autoplaced yes)
 		(uuid "439b73b0-2e52-4b99-97e9-589396ae5bfe")
 		(property "Reference" "U2"
-			(at 336.55 300.9899 0)
+			(at 335.28 278.1299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14390,7 +15122,7 @@
 			)
 		)
 		(property "Value" "NE5532"
-			(at 336.55 303.5299 0)
+			(at 335.28 280.6699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14399,7 +15131,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 340.36 302.26 0)
+			(at 339.09 279.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14408,7 +15140,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C22462564.html?s_z=n_q_l_ne5532"
-			(at 340.36 302.26 0)
+			(at 339.09 279.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14417,7 +15149,7 @@
 			)
 		)
 		(property "Description" "Dual Low-Noise Operational Amplifiers, DIP-8/SOIC-8 LCSC:C22462564"
-			(at 340.36 302.26 0)
+			(at 339.09 279.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14886,7 +15618,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 407.67 294.64 180)
+		(at 406.4 271.78 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14895,7 +15627,7 @@
 		(fields_autoplaced yes)
 		(uuid "4b4af6be-c5e9-49b7-9d87-4224390ea3f1")
 		(property "Reference" "C18"
-			(at 411.48 293.3699 0)
+			(at 410.21 270.5099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14904,7 +15636,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 411.48 295.9099 0)
+			(at 410.21 273.0499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14913,7 +15645,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 406.7048 290.83 0)
+			(at 405.4348 267.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14922,7 +15654,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C89632.html?s_z=n_q_t_capacitor"
-			(at 407.67 294.64 0)
+			(at 406.4 271.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14931,7 +15663,7 @@
 			)
 		)
 		(property "Description" "10uF 50V X7R capacitor LCSC:C89632"
-			(at 407.67 294.64 0)
+			(at 406.4 271.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14962,7 +15694,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:NE5532")
-		(at 351.79 341.63 0)
+		(at 350.52 318.77 0)
 		(mirror x)
 		(unit 3)
 		(exclude_from_sim no)
@@ -14972,7 +15704,7 @@
 		(fields_autoplaced yes)
 		(uuid "4b58a882-ecaa-4b0d-9f4a-c1ead7871432")
 		(property "Reference" "U8"
-			(at 347.98 340.3599 0)
+			(at 346.71 317.4999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14981,7 +15713,7 @@
 			)
 		)
 		(property "Value" "NE5532"
-			(at 347.98 342.8999 0)
+			(at 346.71 320.0399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14990,7 +15722,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 351.79 341.63 0)
+			(at 350.52 318.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14999,7 +15731,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C22462564.html?s_z=n_q_l_ne5532"
-			(at 351.79 341.63 0)
+			(at 350.52 318.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15008,7 +15740,7 @@
 			)
 		)
 		(property "Description" "Dual Low-Noise Operational Amplifiers, DIP-8/SOIC-8 LCSC:C22462564"
-			(at 351.79 341.63 0)
+			(at 350.52 318.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15685,7 +16417,7 @@
 	)
 	(symbol
 		(lib_id "power:VSS")
-		(at 382.27 313.69 180)
+		(at 381 290.83 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15694,7 +16426,7 @@
 		(fields_autoplaced yes)
 		(uuid "591a3072-921e-4404-b6ab-53c08dde7364")
 		(property "Reference" "#PWR035"
-			(at 382.27 309.88 0)
+			(at 381 287.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15703,7 +16435,7 @@
 			)
 		)
 		(property "Value" "VSS"
-			(at 382.27 318.77 0)
+			(at 381 295.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15711,7 +16443,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 382.27 313.69 0)
+			(at 381 290.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15720,7 +16452,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 382.27 313.69 0)
+			(at 381 290.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15729,7 +16461,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VSS\""
-			(at 382.27 313.69 0)
+			(at 381 290.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15757,7 +16489,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 378.46 383.54 0)
+		(at 370.84 369.57 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15766,7 +16498,7 @@
 		(fields_autoplaced yes)
 		(uuid "59e25a68-32ee-4539-80b4-569f864592d2")
 		(property "Reference" "#PWR032"
-			(at 378.46 387.35 0)
+			(at 370.84 373.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15775,7 +16507,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 378.46 378.46 0)
+			(at 370.84 364.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15783,7 +16515,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 378.46 383.54 0)
+			(at 370.84 369.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15792,7 +16524,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 378.46 383.54 0)
+			(at 370.84 369.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15801,7 +16533,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 378.46 383.54 0)
+			(at 370.84 369.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16418,7 +17150,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
-		(at 327.66 388.62 0)
+		(at 320.04 374.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16427,7 +17159,7 @@
 		(fields_autoplaced yes)
 		(uuid "6171b5e5-20fd-4784-bfc9-8c41fb5f8305")
 		(property "Reference" "C7"
-			(at 331.47 386.4609 0)
+			(at 323.85 372.4909 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16436,7 +17168,7 @@
 			)
 		)
 		(property "Value" "100u"
-			(at 331.47 389.0009 0)
+			(at 323.85 375.0309 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16445,7 +17177,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:CP_Elec_10x10.5"
-			(at 328.6252 392.43 0)
+			(at 321.0052 378.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16454,7 +17186,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C54321630.html?s_z=h_q_t_capacitors"
-			(at 327.66 388.62 0)
+			(at 320.04 374.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16463,7 +17195,7 @@
 			)
 		)
 		(property "Description" "100uF 63V LCSC:C54321630"
-			(at 327.66 388.62 0)
+			(at 320.04 374.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16557,8 +17289,78 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_US")
+		(at 415.29 354.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "63d53dab-4999-4650-8d02-7e865013b7d1")
+		(property "Reference" "R60"
+			(at 417.83 353.0599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47k"
+			(at 417.83 355.5999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 416.306 354.584 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C2907042.html?s_z=n_q_t_Resistor"
+			(at 415.29 354.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "LCSC:C2907042"
+			(at 415.29 354.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8bed0c85-a629-4fdd-a97e-1563bf306e9c")
+		)
+		(pin "2"
+			(uuid "be679742-075b-45fd-95fc-0b96d64c1aad")
+		)
+		(instances
+			(project "Mixer_circuit"
+				(path "/524c0fa7-20e0-4db6-ae4b-fc3b6fcd38d3"
+					(reference "R60")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VCC")
-		(at 468.63 285.75 0)
+		(at 467.36 262.89 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16567,7 +17369,7 @@
 		(fields_autoplaced yes)
 		(uuid "6495865f-6b65-41e7-95d0-366b2f343a13")
 		(property "Reference" "#PWR050"
-			(at 468.63 289.56 0)
+			(at 467.36 266.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16576,7 +17378,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 468.63 280.67 0)
+			(at 467.36 257.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16584,7 +17386,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 468.63 285.75 0)
+			(at 467.36 262.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16593,7 +17395,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 468.63 285.75 0)
+			(at 467.36 262.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16602,7 +17404,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 468.63 285.75 0)
+			(at 467.36 262.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16697,7 +17499,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 382.27 334.01 180)
+		(at 381 311.15 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16706,7 +17508,7 @@
 		(fields_autoplaced yes)
 		(uuid "6626aba3-7b00-4454-99e9-366de1a15f77")
 		(property "Reference" "C12"
-			(at 386.08 332.7399 0)
+			(at 384.81 309.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16715,7 +17517,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 386.08 335.2799 0)
+			(at 384.81 312.4199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16724,7 +17526,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 381.3048 330.2 0)
+			(at 380.0348 307.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16733,7 +17535,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C89632.html?s_z=n_q_t_capacitor"
-			(at 382.27 334.01 0)
+			(at 381 311.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16742,7 +17544,7 @@
 			)
 		)
 		(property "Description" "10uF 50V X7R capacitor LCSC:C89632"
-			(at 382.27 334.01 0)
+			(at 381 311.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16911,7 +17713,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 433.07 294.64 180)
+		(at 431.8 271.78 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16920,7 +17722,7 @@
 		(fields_autoplaced yes)
 		(uuid "68d4d48f-a41d-4340-93a9-c4d9c61ccf8e")
 		(property "Reference" "C26"
-			(at 436.88 293.3699 0)
+			(at 435.61 270.5099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16929,7 +17731,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 436.88 295.9099 0)
+			(at 435.61 273.0499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16938,7 +17740,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 432.1048 290.83 0)
+			(at 430.8348 267.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16947,7 +17749,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C89632.html?s_z=n_q_t_capacitor"
-			(at 433.07 294.64 0)
+			(at 431.8 271.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16956,7 +17758,7 @@
 			)
 		)
 		(property "Description" "10uF 50V X7R capacitor LCSC:C89632"
-			(at 433.07 294.64 0)
+			(at 431.8 271.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17114,6 +17916,76 @@
 			(project "Mixer_circuit"
 				(path "/524c0fa7-20e0-4db6-ae4b-fc3b6fcd38d3"
 					(reference "#PWR039")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 405.13 387.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6a7d3919-cd45-4d92-96fe-87fa2badd1db")
+		(property "Reference" "C39"
+			(at 408.94 386.0799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 408.94 388.6199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 406.0952 391.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C22367830.html?s_z=n_q_t_capacitor"
+			(at 405.13 387.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10uF 50V X5R capacitor LCSC:C22367830"
+			(at 405.13 387.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4f1c1ea9-69cb-4e21-a8bb-f7004626aa95")
+		)
+		(pin "2"
+			(uuid "a370fd98-41da-46cb-b437-85e867178793")
+		)
+		(instances
+			(project "Mixer_circuit"
+				(path "/524c0fa7-20e0-4db6-ae4b-fc3b6fcd38d3"
+					(reference "C39")
 					(unit 1)
 				)
 			)
@@ -17347,7 +18219,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 501.65 292.1 180)
+		(at 500.38 269.24 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17356,7 +18228,7 @@
 		(fields_autoplaced yes)
 		(uuid "6b9c264a-7596-42fa-a673-b84b6dd78908")
 		(property "Reference" "C32"
-			(at 505.46 290.8299 0)
+			(at 504.19 267.9699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17365,7 +18237,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 505.46 293.3699 0)
+			(at 504.19 270.5099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17374,7 +18246,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 500.6848 288.29 0)
+			(at 499.4148 265.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17383,7 +18255,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C89632.html?s_z=n_q_t_capacitor"
-			(at 501.65 292.1 0)
+			(at 500.38 269.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17392,7 +18264,7 @@
 			)
 		)
 		(property "Description" "10uF 50V X7R capacitor LCSC:C89632"
-			(at 501.65 292.1 0)
+			(at 500.38 269.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17417,7 +18289,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 407.67 334.01 180)
+		(at 406.4 311.15 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17426,7 +18298,7 @@
 		(fields_autoplaced yes)
 		(uuid "6bf25b01-d8ba-4b44-8e41-cc9f1a215be3")
 		(property "Reference" "C20"
-			(at 411.48 332.7399 0)
+			(at 410.21 309.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17435,7 +18307,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 411.48 335.2799 0)
+			(at 410.21 312.4199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17444,7 +18316,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 406.7048 330.2 0)
+			(at 405.4348 307.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17453,7 +18325,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C89632.html?s_z=n_q_t_capacitor"
-			(at 407.67 334.01 0)
+			(at 406.4 311.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17462,7 +18334,7 @@
 			)
 		)
 		(property "Description" "10uF 50V X7R capacitor LCSC:C89632"
-			(at 407.67 334.01 0)
+			(at 406.4 311.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17715,7 +18587,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 326.39 289.56 0)
+		(at 325.12 266.7 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17724,7 +18596,7 @@
 		(fields_autoplaced yes)
 		(uuid "72b5c72b-2dff-4d77-b335-2ada39b1ff7b")
 		(property "Reference" "#PWR018"
-			(at 326.39 293.37 0)
+			(at 325.12 270.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17733,7 +18605,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 326.39 284.48 0)
+			(at 325.12 261.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17741,7 +18613,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 326.39 289.56 0)
+			(at 325.12 266.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17750,7 +18622,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 326.39 289.56 0)
+			(at 325.12 266.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17759,7 +18631,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 326.39 289.56 0)
+			(at 325.12 266.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17787,7 +18659,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 501.65 285.75 0)
+		(at 500.38 262.89 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17796,7 +18668,7 @@
 		(fields_autoplaced yes)
 		(uuid "736ea87d-af2d-4c34-896a-2b73626dd94a")
 		(property "Reference" "#PWR053"
-			(at 501.65 289.56 0)
+			(at 500.38 266.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17805,7 +18677,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 501.65 280.67 0)
+			(at 500.38 257.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17813,7 +18685,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 501.65 285.75 0)
+			(at 500.38 262.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17822,7 +18694,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 501.65 285.75 0)
+			(at 500.38 262.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17831,7 +18703,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 501.65 285.75 0)
+			(at 500.38 262.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18145,7 +19017,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 327.66 392.43 0)
+		(at 320.04 378.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18154,7 +19026,7 @@
 		(fields_autoplaced yes)
 		(uuid "778cdded-8188-4255-a896-e2ba34669a40")
 		(property "Reference" "#PWR023"
-			(at 327.66 398.78 0)
+			(at 320.04 384.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18163,7 +19035,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 327.66 397.51 0)
+			(at 320.04 383.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18171,7 +19043,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 327.66 392.43 0)
+			(at 320.04 378.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18180,7 +19052,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 327.66 392.43 0)
+			(at 320.04 378.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18189,7 +19061,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 327.66 392.43 0)
+			(at 320.04 378.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18742,7 +19614,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:NE5532")
-		(at 363.22 341.63 0)
+		(at 361.95 318.77 0)
 		(mirror x)
 		(unit 3)
 		(exclude_from_sim no)
@@ -18752,7 +19624,7 @@
 		(fields_autoplaced yes)
 		(uuid "7fd34f77-cfdf-4427-a363-e29c7df71ed6")
 		(property "Reference" "U5"
-			(at 359.41 340.3599 0)
+			(at 358.14 317.4999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18761,7 +19633,7 @@
 			)
 		)
 		(property "Value" "NE5532"
-			(at 359.41 342.8999 0)
+			(at 358.14 320.0399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18770,7 +19642,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 363.22 341.63 0)
+			(at 361.95 318.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18779,7 +19651,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C22462564.html?s_z=n_q_l_ne5532"
-			(at 363.22 341.63 0)
+			(at 361.95 318.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18788,7 +19660,7 @@
 			)
 		)
 		(property "Description" "Dual Low-Noise Operational Amplifiers, DIP-8/SOIC-8 LCSC:C22462564"
-			(at 363.22 341.63 0)
+			(at 361.95 318.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18977,7 +19849,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 420.37 294.64 180)
+		(at 419.1 271.78 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18986,7 +19858,7 @@
 		(fields_autoplaced yes)
 		(uuid "81e29550-0920-46b5-9828-3f9d017cf021")
 		(property "Reference" "C22"
-			(at 424.18 293.3699 0)
+			(at 422.91 270.5099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18995,7 +19867,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 424.18 295.9099 0)
+			(at 422.91 273.0499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19004,7 +19876,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 419.4048 290.83 0)
+			(at 418.1348 267.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19013,7 +19885,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C89632.html?s_z=n_q_t_capacitor"
-			(at 420.37 294.64 0)
+			(at 419.1 271.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19022,7 +19894,7 @@
 			)
 		)
 		(property "Description" "10uF 50V X7R capacitor LCSC:C89632"
-			(at 420.37 294.64 0)
+			(at 419.1 271.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19265,7 +20137,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
-		(at 370.84 388.62 180)
+		(at 363.22 374.65 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19273,7 +20145,7 @@
 		(dnp no)
 		(uuid "8a730c4f-25c8-4a3d-bd39-30fecd07fa00")
 		(property "Reference" "J7"
-			(at 361.696 388.112 0)
+			(at 354.076 374.142 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19281,7 +20153,7 @@
 			)
 		)
 		(property "Value" "Dual_Power_Supply"
-			(at 359.41 390.144 0)
+			(at 351.79 376.174 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19289,7 +20161,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 370.84 388.62 0)
+			(at 363.22 374.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19298,7 +20170,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 370.84 388.62 0)
+			(at 363.22 374.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19307,7 +20179,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 370.84 388.62 0)
+			(at 363.22 374.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19428,7 +20300,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 394.97 294.64 180)
+		(at 393.7 271.78 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19437,7 +20309,7 @@
 		(fields_autoplaced yes)
 		(uuid "8aa09301-cdb7-44db-b0fe-504440bc738b")
 		(property "Reference" "C14"
-			(at 398.78 293.3699 0)
+			(at 397.51 270.5099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19446,7 +20318,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 398.78 295.9099 0)
+			(at 397.51 273.0499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19455,7 +20327,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 394.0048 290.83 0)
+			(at 392.7348 267.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19464,7 +20336,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C89632.html?s_z=n_q_t_capacitor"
-			(at 394.97 294.64 0)
+			(at 393.7 271.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19473,7 +20345,7 @@
 			)
 		)
 		(property "Description" "10uF 50V X7R capacitor LCSC:C89632"
-			(at 394.97 294.64 0)
+			(at 393.7 271.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19811,6 +20683,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_BJT:BCX53")
+		(at 430.53 381 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8f339923-001d-4768-9f91-3f0015e5445d")
+		(property "Reference" "Q14"
+			(at 435.61 382.2701 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BCX53"
+			(at 435.61 379.7301 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-89-3"
+			(at 435.61 379.095 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C47787.html?s_z=n_q_bcx53"
+			(at 430.53 381 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "1A Ic, 80V Vce, PNP Medium Power Transistor, SOT-89 LCSC:C47787"
+			(at 430.53 381 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c3d49c99-acf1-4066-b8ff-90f1f5a8635c")
+		)
+		(pin "2"
+			(uuid "d8a9d3d6-82d0-4e34-957c-d3bfbacaa1d0")
+		)
+		(pin "3"
+			(uuid "8be393a4-6646-448a-b941-e768231e6c44")
+		)
+		(instances
+			(project "Mixer_circuit"
+				(path "/524c0fa7-20e0-4db6-ae4b-fc3b6fcd38d3"
+					(reference "Q14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VSS")
 		(at 228.6 199.39 180)
 		(unit 1)
@@ -19944,7 +20892,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 382.27 288.29 0)
+		(at 381 265.43 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19953,7 +20901,7 @@
 		(fields_autoplaced yes)
 		(uuid "91e970ca-739d-4303-a875-35a330e06663")
 		(property "Reference" "#PWR034"
-			(at 382.27 292.1 0)
+			(at 381 269.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19962,7 +20910,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 382.27 283.21 0)
+			(at 381 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19970,7 +20918,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 382.27 288.29 0)
+			(at 381 265.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19979,7 +20927,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 382.27 288.29 0)
+			(at 381 265.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19988,7 +20936,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 382.27 288.29 0)
+			(at 381 265.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20009,6 +20957,76 @@
 			(project "AudioMixer"
 				(path "/73500d36-8d33-4e8e-af4c-6d26a6542844/dac2f853-9ead-4fd0-b24f-852f6a1b88a9"
 					(reference "#PWR084")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 405.13 354.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "923e9e30-47e5-4e02-bb56-a868c8d56c93")
+		(property "Reference" "C38"
+			(at 408.94 353.0599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 408.94 355.5999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 406.0952 358.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C22367830.html?s_z=n_q_t_capacitor"
+			(at 405.13 354.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10uF 50V X5R capacitor LCSC:C22367830"
+			(at 405.13 354.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c7e8310f-8bbe-4cb8-ad0e-c75ecdc0c439")
+		)
+		(pin "2"
+			(uuid "6925101e-b9a6-4df6-bf87-c658c885eaae")
+		)
+		(instances
+			(project "Mixer_circuit"
+				(path "/524c0fa7-20e0-4db6-ae4b-fc3b6fcd38d3"
+					(reference "C38")
 					(unit 1)
 				)
 			)
@@ -20170,7 +21188,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:NE5532")
-		(at 351.79 302.26 0)
+		(at 350.52 279.4 0)
 		(mirror x)
 		(unit 3)
 		(exclude_from_sim no)
@@ -20180,7 +21198,7 @@
 		(fields_autoplaced yes)
 		(uuid "952d3adf-e5e1-445a-b383-b80e82cf3118")
 		(property "Reference" "U7"
-			(at 347.98 300.9899 0)
+			(at 346.71 278.1299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20189,7 +21207,7 @@
 			)
 		)
 		(property "Value" "NE5532"
-			(at 347.98 303.5299 0)
+			(at 346.71 280.6699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20198,7 +21216,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 351.79 302.26 0)
+			(at 350.52 279.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20207,7 +21225,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C22462564.html?s_z=n_q_l_ne5532"
-			(at 351.79 302.26 0)
+			(at 350.52 279.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20216,7 +21234,7 @@
 			)
 		)
 		(property "Description" "Dual Low-Noise Operational Amplifiers, DIP-8/SOIC-8 LCSC:C22462564"
-			(at 351.79 302.26 0)
+			(at 350.52 279.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20264,17 +21282,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 340.36 392.43 0)
+		(lib_id "power:VCC")
+		(at 433.07 345.44 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "972b5d37-d025-4b56-8423-e54278f59abd")
-		(property "Reference" "#PWR026"
-			(at 340.36 398.78 0)
+		(uuid "95a2e5fc-66f4-494d-824f-93611053a5fa")
+		(property "Reference" "#PWR072"
+			(at 433.07 349.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20282,8 +21300,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 340.36 397.51 0)
+		(property "Value" "VCC"
+			(at 433.07 340.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20291,7 +21309,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 340.36 392.43 0)
+			(at 433.07 345.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20300,7 +21318,73 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 340.36 392.43 0)
+			(at 433.07 345.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 433.07 345.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b5e66def-f50f-4132-8364-d2592e2c5737")
+		)
+		(instances
+			(project "Mixer_circuit"
+				(path "/524c0fa7-20e0-4db6-ae4b-fc3b6fcd38d3"
+					(reference "#PWR072")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 332.74 378.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "972b5d37-d025-4b56-8423-e54278f59abd")
+		(property "Reference" "#PWR026"
+			(at 332.74 384.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 332.74 383.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 332.74 378.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 332.74 378.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20309,7 +21393,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 340.36 392.43 0)
+			(at 332.74 378.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20645,7 +21729,7 @@
 	)
 	(symbol
 		(lib_id "power:VSS")
-		(at 468.63 311.15 180)
+		(at 467.36 288.29 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -20654,7 +21738,7 @@
 		(fields_autoplaced yes)
 		(uuid "9b3ea1ff-1d1d-44f2-973f-be1db42f8631")
 		(property "Reference" "#PWR051"
-			(at 468.63 307.34 0)
+			(at 467.36 284.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20663,7 +21747,7 @@
 			)
 		)
 		(property "Value" "VSS"
-			(at 468.63 316.23 0)
+			(at 467.36 293.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20671,7 +21755,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 468.63 311.15 0)
+			(at 467.36 288.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20680,7 +21764,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 468.63 311.15 0)
+			(at 467.36 288.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20689,7 +21773,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VSS\""
-			(at 468.63 311.15 0)
+			(at 467.36 288.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20922,7 +22006,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 420.37 334.01 180)
+		(at 419.1 311.15 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -20931,7 +22015,7 @@
 		(fields_autoplaced yes)
 		(uuid "a0d7a7da-c471-4482-a0a8-7f492c7817cd")
 		(property "Reference" "C24"
-			(at 424.18 332.7399 0)
+			(at 422.91 309.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20940,7 +22024,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 424.18 335.2799 0)
+			(at 422.91 312.4199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20949,7 +22033,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 419.4048 330.2 0)
+			(at 418.1348 307.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20958,7 +22042,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C89632.html?s_z=n_q_t_capacitor"
-			(at 420.37 334.01 0)
+			(at 419.1 311.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20967,7 +22051,7 @@
 			)
 		)
 		(property "Description" "10uF 50V X7R capacitor LCSC:C89632"
-			(at 420.37 334.01 0)
+			(at 419.1 311.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20992,7 +22076,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 444.5 303.53 0)
+		(at 443.23 280.67 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21000,7 +22084,7 @@
 		(dnp no)
 		(uuid "a1768879-6d4e-4ac4-a402-b76729ee3ef1")
 		(property "Reference" "#PWR046"
-			(at 444.5 309.88 0)
+			(at 443.23 287.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21009,7 +22093,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 444.5 308.356 0)
+			(at 443.23 285.496 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21017,7 +22101,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 444.5 303.53 0)
+			(at 443.23 280.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21026,7 +22110,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 444.5 303.53 0)
+			(at 443.23 280.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21035,7 +22119,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 444.5 303.53 0)
+			(at 443.23 280.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21063,7 +22147,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:NE5532")
-		(at 494.03 298.45 0)
+		(at 492.76 275.59 0)
 		(mirror x)
 		(unit 3)
 		(exclude_from_sim no)
@@ -21073,7 +22157,7 @@
 		(fields_autoplaced yes)
 		(uuid "a39fd4f9-e4c1-45c8-998b-be796b6c108d")
 		(property "Reference" "U14"
-			(at 490.22 297.1799 0)
+			(at 488.95 274.3199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21082,7 +22166,7 @@
 			)
 		)
 		(property "Value" "NE5532"
-			(at 490.22 299.7199 0)
+			(at 488.95 276.8599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21091,7 +22175,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 494.03 298.45 0)
+			(at 492.76 275.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21100,7 +22184,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C22462564.html?s_z=n_q_l_ne5532"
-			(at 494.03 298.45 0)
+			(at 492.76 275.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21109,7 +22193,7 @@
 			)
 		)
 		(property "Description" "Dual Low-Noise Operational Amplifiers, DIP-8/SOIC-8 LCSC:C22462564"
-			(at 494.03 298.45 0)
+			(at 492.76 275.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21219,7 +22303,7 @@
 	)
 	(symbol
 		(lib_id "power:VSS")
-		(at 340.36 384.81 0)
+		(at 332.74 370.84 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21228,7 +22312,7 @@
 		(fields_autoplaced yes)
 		(uuid "a5de6095-4842-43b9-8dfa-f893c9d3409e")
 		(property "Reference" "#PWR025"
-			(at 340.36 388.62 0)
+			(at 332.74 374.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21237,7 +22321,7 @@
 			)
 		)
 		(property "Value" "VSS"
-			(at 340.36 379.73 0)
+			(at 332.74 365.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21245,7 +22329,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 340.36 384.81 0)
+			(at 332.74 370.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21254,7 +22338,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 340.36 384.81 0)
+			(at 332.74 370.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21263,7 +22347,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VSS\""
-			(at 340.36 384.81 0)
+			(at 332.74 370.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21285,7 +22369,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 327.66 384.81 0)
+		(at 320.04 370.84 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21294,7 +22378,7 @@
 		(fields_autoplaced yes)
 		(uuid "a64e3c55-da77-4126-9b38-544f390b4bec")
 		(property "Reference" "#PWR022"
-			(at 327.66 388.62 0)
+			(at 320.04 374.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21303,7 +22387,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 327.66 379.73 0)
+			(at 320.04 365.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21311,7 +22395,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 327.66 384.81 0)
+			(at 320.04 370.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21320,7 +22404,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 327.66 384.81 0)
+			(at 320.04 370.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21329,7 +22413,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 327.66 384.81 0)
+			(at 320.04 370.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21351,7 +22435,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 382.27 307.34 180)
+		(at 381 284.48 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21360,7 +22444,7 @@
 		(fields_autoplaced yes)
 		(uuid "a87e98bb-2620-4bb4-bbbd-f5a7879f95bc")
 		(property "Reference" "C11"
-			(at 386.08 306.0699 0)
+			(at 384.81 283.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21369,7 +22453,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 386.08 308.6099 0)
+			(at 384.81 285.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21378,7 +22462,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 381.3048 303.53 0)
+			(at 380.0348 280.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21387,7 +22471,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C89632.html?s_z=n_q_t_capacitor"
-			(at 382.27 307.34 0)
+			(at 381 284.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21396,7 +22480,7 @@
 			)
 		)
 		(property "Description" "10uF 50V X7R capacitor LCSC:C89632"
-			(at 382.27 307.34 0)
+			(at 381 284.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21493,7 +22577,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
-		(at 340.36 388.62 0)
+		(at 332.74 374.65 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21502,7 +22586,7 @@
 		(dnp no)
 		(uuid "aa35037a-6da8-49ee-a8c3-614256fa148f")
 		(property "Reference" "C8"
-			(at 344.17 390.7791 0)
+			(at 336.55 376.8091 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21511,7 +22595,7 @@
 			)
 		)
 		(property "Value" "100u"
-			(at 344.17 388.2391 0)
+			(at 336.55 374.2691 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21520,7 +22604,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:CP_Elec_10x10.5"
-			(at 341.3252 384.81 0)
+			(at 333.7052 370.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21529,7 +22613,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C54321630.html?s_z=h_q_t_capacitors"
-			(at 340.36 388.62 0)
+			(at 332.74 374.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21538,7 +22622,7 @@
 			)
 		)
 		(property "Description" "100uF 63V LCSC:C54321630"
-			(at 340.36 388.62 0)
+			(at 332.74 374.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21791,7 +22875,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 514.35 292.1 180)
+		(at 513.08 269.24 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21800,7 +22884,7 @@
 		(fields_autoplaced yes)
 		(uuid "ab5790b4-dd90-406b-b8c5-bd943095286f")
 		(property "Reference" "C34"
-			(at 518.16 290.8299 0)
+			(at 516.89 267.9699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21809,7 +22893,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 518.16 293.3699 0)
+			(at 516.89 270.5099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21818,7 +22902,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 513.3848 288.29 0)
+			(at 512.1148 265.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21827,7 +22911,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C89632.html?s_z=n_q_t_capacitor"
-			(at 514.35 292.1 0)
+			(at 513.08 269.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21836,7 +22920,7 @@
 			)
 		)
 		(property "Description" "10uF 50V X7R capacitor LCSC:C89632"
-			(at 514.35 292.1 0)
+			(at 513.08 269.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21861,7 +22945,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:NE5532")
-		(at 374.65 302.26 0)
+		(at 373.38 279.4 0)
 		(mirror x)
 		(unit 3)
 		(exclude_from_sim no)
@@ -21871,7 +22955,7 @@
 		(fields_autoplaced yes)
 		(uuid "ab705fac-6893-440b-aed2-3ad6d5e557cf")
 		(property "Reference" "U13"
-			(at 370.84 300.9899 0)
+			(at 369.57 278.1299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21880,7 +22964,7 @@
 			)
 		)
 		(property "Value" "NE5532"
-			(at 370.84 303.5299 0)
+			(at 369.57 280.6699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21889,7 +22973,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 374.65 302.26 0)
+			(at 373.38 279.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21898,7 +22982,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C22462564.html?s_z=n_q_l_ne5532"
-			(at 374.65 302.26 0)
+			(at 373.38 279.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21907,7 +22991,7 @@
 			)
 		)
 		(property "Description" "Dual Low-Noise Operational Amplifiers, DIP-8/SOIC-8 LCSC:C22462564"
-			(at 374.65 302.26 0)
+			(at 373.38 279.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22469,7 +23553,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 501.65 304.8 180)
+		(at 500.38 281.94 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22478,7 +23562,7 @@
 		(fields_autoplaced yes)
 		(uuid "b1ab3f94-cb4a-4da7-b851-150d8fca2d9f")
 		(property "Reference" "C33"
-			(at 505.46 303.5299 0)
+			(at 504.19 280.6699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22487,7 +23571,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 505.46 306.0699 0)
+			(at 504.19 283.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22496,7 +23580,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 500.6848 300.99 0)
+			(at 499.4148 278.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22505,7 +23589,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C89632.html?s_z=n_q_t_capacitor"
-			(at 501.65 304.8 0)
+			(at 500.38 281.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22514,7 +23598,7 @@
 			)
 		)
 		(property "Description" "10uF 50V X7R capacitor LCSC:C89632"
-			(at 501.65 304.8 0)
+			(at 500.38 281.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22539,7 +23623,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 394.97 346.71 180)
+		(at 393.7 323.85 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22548,7 +23632,7 @@
 		(fields_autoplaced yes)
 		(uuid "b27cf0f9-ffcc-4eca-b375-3280a3bb67f6")
 		(property "Reference" "C17"
-			(at 398.78 345.4399 0)
+			(at 397.51 322.5799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22557,7 +23641,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 398.78 347.9799 0)
+			(at 397.51 325.1199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22566,7 +23650,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 394.0048 342.9 0)
+			(at 392.7348 320.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22575,7 +23659,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C89632.html?s_z=n_q_t_capacitor"
-			(at 394.97 346.71 0)
+			(at 393.7 323.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22584,7 +23668,7 @@
 			)
 		)
 		(property "Description" "10uF 50V X7R capacitor LCSC:C89632"
-			(at 394.97 346.71 0)
+			(at 393.7 323.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22609,7 +23693,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 420.37 346.71 180)
+		(at 419.1 323.85 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22618,7 +23702,7 @@
 		(fields_autoplaced yes)
 		(uuid "b29723a6-150b-4c32-ba2e-c631658676a4")
 		(property "Reference" "C25"
-			(at 424.18 345.4399 0)
+			(at 422.91 322.5799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22627,7 +23711,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 424.18 347.9799 0)
+			(at 422.91 325.1199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22636,7 +23720,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 419.4048 342.9 0)
+			(at 418.1348 320.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22645,7 +23729,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C89632.html?s_z=n_q_t_capacitor"
-			(at 420.37 346.71 0)
+			(at 419.1 323.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22654,7 +23738,7 @@
 			)
 		)
 		(property "Description" "10uF 50V X7R capacitor LCSC:C89632"
-			(at 420.37 346.71 0)
+			(at 419.1 323.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22679,7 +23763,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 326.39 328.93 0)
+		(at 325.12 306.07 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22688,7 +23772,7 @@
 		(fields_autoplaced yes)
 		(uuid "b4720e62-714a-4910-a984-f36b8e5b9417")
 		(property "Reference" "#PWR020"
-			(at 326.39 332.74 0)
+			(at 325.12 309.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22697,7 +23781,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 326.39 323.85 0)
+			(at 325.12 300.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22705,7 +23789,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 326.39 328.93 0)
+			(at 325.12 306.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22714,7 +23798,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 326.39 328.93 0)
+			(at 325.12 306.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22723,7 +23807,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 326.39 328.93 0)
+			(at 325.12 306.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22967,7 +24051,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:NE5532")
-		(at 328.93 302.26 0)
+		(at 327.66 279.4 0)
 		(mirror x)
 		(unit 3)
 		(exclude_from_sim no)
@@ -22977,7 +24061,7 @@
 		(fields_autoplaced yes)
 		(uuid "ba729fc8-144e-4ef5-b0b4-1306bc1e920e")
 		(property "Reference" "U1"
-			(at 325.12 300.9899 0)
+			(at 323.85 278.1299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22986,7 +24070,7 @@
 			)
 		)
 		(property "Value" "NE5532"
-			(at 325.12 303.5299 0)
+			(at 323.85 280.6699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22995,7 +24079,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 328.93 302.26 0)
+			(at 327.66 279.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23004,7 +24088,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C22462564.html?s_z=n_q_l_ne5532"
-			(at 328.93 302.26 0)
+			(at 327.66 279.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23013,7 +24097,7 @@
 			)
 		)
 		(property "Description" "Dual Low-Noise Operational Amplifiers, DIP-8/SOIC-8 LCSC:C22462564"
-			(at 328.93 302.26 0)
+			(at 327.66 279.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23138,7 +24222,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 382.27 294.64 180)
+		(at 381 271.78 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -23147,7 +24231,7 @@
 		(fields_autoplaced yes)
 		(uuid "bdec7f0b-3df5-49d8-a88e-4a1c1753d291")
 		(property "Reference" "C10"
-			(at 386.08 293.3699 0)
+			(at 384.81 270.5099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23156,7 +24240,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 386.08 295.9099 0)
+			(at 384.81 273.0499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23165,7 +24249,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 381.3048 290.83 0)
+			(at 380.0348 267.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23174,7 +24258,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C89632.html?s_z=n_q_t_capacitor"
-			(at 382.27 294.64 0)
+			(at 381 271.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23183,7 +24267,7 @@
 			)
 		)
 		(property "Description" "10uF 50V X7R capacitor LCSC:C89632"
-			(at 382.27 294.64 0)
+			(at 381 271.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23444,6 +24528,72 @@
 			(project "AudioMixer"
 				(path "/73500d36-8d33-4e8e-af4c-6d26a6542844/dac2f853-9ead-4fd0-b24f-852f6a1b88a9"
 					(reference "U11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 461.01 373.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c6b5ebec-585e-4b25-88d7-3e19b6ee174a")
+		(property "Reference" "#PWR074"
+			(at 461.01 379.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 461.01 378.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 461.01 373.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 461.01 373.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 461.01 373.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c9a779b1-efc3-401d-bf80-6c186c121224")
+		)
+		(instances
+			(project "Mixer_circuit"
+				(path "/524c0fa7-20e0-4db6-ae4b-fc3b6fcd38d3"
+					(reference "#PWR074")
 					(unit 1)
 				)
 			)
@@ -24567,7 +25717,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:NE5532")
-		(at 482.6 298.45 0)
+		(at 481.33 275.59 0)
 		(mirror x)
 		(unit 3)
 		(exclude_from_sim no)
@@ -24577,7 +25727,7 @@
 		(fields_autoplaced yes)
 		(uuid "dfb4b220-8b36-46d7-acd5-1cfcebfffc93")
 		(property "Reference" "U10"
-			(at 478.79 297.1799 0)
+			(at 477.52 274.3199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24586,7 +25736,7 @@
 			)
 		)
 		(property "Value" "NE5532"
-			(at 478.79 299.7199 0)
+			(at 477.52 276.8599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24595,7 +25745,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 482.6 298.45 0)
+			(at 481.33 275.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24604,7 +25754,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C22462564.html?s_z=n_q_l_ne5532"
-			(at 482.6 298.45 0)
+			(at 481.33 275.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24613,7 +25763,7 @@
 			)
 		)
 		(property "Description" "Dual Low-Noise Operational Amplifiers, DIP-8/SOIC-8 LCSC:C22462564"
-			(at 482.6 298.45 0)
+			(at 481.33 275.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24805,8 +25955,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 454.66 370.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "e27695ed-8b5a-4191-a6ed-d02b168b3b77")
+		(property "Reference" "JP9"
+			(at 454.66 366.014 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DualSupply"
+			(at 454.66 368.554 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+			(at 454.66 370.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 454.66 370.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 454.66 370.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ea52e8ca-1a39-4fee-a456-bc2cbaa082df")
+		)
+		(pin "2"
+			(uuid "6a3af1d5-ecfc-4219-8314-52c2c46af630")
+		)
+		(instances
+			(project "Mixer_circuit"
+				(path "/524c0fa7-20e0-4db6-ae4b-fc3b6fcd38d3"
+					(reference "JP9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Amplifier_Operational:NE5532")
-		(at 471.17 298.45 0)
+		(at 469.9 275.59 0)
 		(mirror x)
 		(unit 3)
 		(exclude_from_sim no)
@@ -24816,7 +26033,7 @@
 		(fields_autoplaced yes)
 		(uuid "e3093c6a-b97c-4aea-8289-f8dd1d05af9d")
 		(property "Reference" "U9"
-			(at 467.36 297.1799 0)
+			(at 466.09 274.3199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24825,7 +26042,7 @@
 			)
 		)
 		(property "Value" "NE5532"
-			(at 467.36 299.7199 0)
+			(at 466.09 276.8599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24834,7 +26051,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 471.17 298.45 0)
+			(at 469.9 275.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24843,7 +26060,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C22462564.html?s_z=n_q_l_ne5532"
-			(at 471.17 298.45 0)
+			(at 469.9 275.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24852,7 +26069,7 @@
 			)
 		)
 		(property "Description" "Dual Low-Noise Operational Amplifiers, DIP-8/SOIC-8 LCSC:C22462564"
-			(at 471.17 298.45 0)
+			(at 469.9 275.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25095,7 +26312,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 387.35 391.16 0)
+		(at 379.73 377.19 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25104,7 +26321,7 @@
 		(fields_autoplaced yes)
 		(uuid "e94c35e2-8166-44a1-aad2-d46981245465")
 		(property "Reference" "#PWR038"
-			(at 387.35 397.51 0)
+			(at 379.73 383.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25113,7 +26330,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 387.35 396.24 0)
+			(at 379.73 382.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25121,7 +26338,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 387.35 391.16 0)
+			(at 379.73 377.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25130,7 +26347,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 387.35 391.16 0)
+			(at 379.73 377.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25139,7 +26356,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 387.35 391.16 0)
+			(at 379.73 377.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25484,7 +26701,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 394.97 307.34 180)
+		(at 393.7 284.48 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25493,7 +26710,7 @@
 		(fields_autoplaced yes)
 		(uuid "edeaf5d5-1aba-42d8-9eed-e1c3e4fc1670")
 		(property "Reference" "C15"
-			(at 398.78 306.0699 0)
+			(at 397.51 283.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25502,7 +26719,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 398.78 308.6099 0)
+			(at 397.51 285.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25511,7 +26728,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 394.0048 303.53 0)
+			(at 392.7348 280.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25520,7 +26737,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C89632.html?s_z=n_q_t_capacitor"
-			(at 394.97 307.34 0)
+			(at 393.7 284.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25529,7 +26746,7 @@
 			)
 		)
 		(property "Description" "10uF 50V X7R capacitor LCSC:C89632"
-			(at 394.97 307.34 0)
+			(at 393.7 284.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25560,7 +26777,7 @@
 	)
 	(symbol
 		(lib_id "power:VSS")
-		(at 326.39 354.33 180)
+		(at 325.12 331.47 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25569,7 +26786,7 @@
 		(fields_autoplaced yes)
 		(uuid "f0808068-543c-47d3-85bf-122f86de8fa0")
 		(property "Reference" "#PWR021"
-			(at 326.39 350.52 0)
+			(at 325.12 327.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25578,7 +26795,7 @@
 			)
 		)
 		(property "Value" "VSS"
-			(at 326.39 359.41 0)
+			(at 325.12 336.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25586,7 +26803,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 326.39 354.33 0)
+			(at 325.12 331.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25595,7 +26812,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 326.39 354.33 0)
+			(at 325.12 331.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25604,7 +26821,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VSS\""
-			(at 326.39 354.33 0)
+			(at 325.12 331.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25768,7 +26985,7 @@
 	)
 	(symbol
 		(lib_id "power:VSS")
-		(at 501.65 311.15 180)
+		(at 500.38 288.29 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25777,7 +26994,7 @@
 		(fields_autoplaced yes)
 		(uuid "f6b51542-e207-48d6-9114-b587ac7338d7")
 		(property "Reference" "#PWR054"
-			(at 501.65 307.34 0)
+			(at 500.38 284.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25786,7 +27003,7 @@
 			)
 		)
 		(property "Value" "VSS"
-			(at 501.65 316.23 0)
+			(at 500.38 293.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25794,7 +27011,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 501.65 311.15 0)
+			(at 500.38 288.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25803,7 +27020,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 501.65 311.15 0)
+			(at 500.38 288.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25812,7 +27029,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VSS\""
-			(at 501.65 311.15 0)
+			(at 500.38 288.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25834,7 +27051,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 433.07 346.71 180)
+		(at 431.8 323.85 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25843,7 +27060,7 @@
 		(fields_autoplaced yes)
 		(uuid "f7a0923e-401b-4dd8-8d5a-1792a17e5395")
 		(property "Reference" "C29"
-			(at 436.88 345.4399 0)
+			(at 435.61 322.5799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25852,7 +27069,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 436.88 347.9799 0)
+			(at 435.61 325.1199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25861,7 +27078,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 432.1048 342.9 0)
+			(at 430.8348 320.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25870,7 +27087,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C89632.html?s_z=n_q_t_capacitor"
-			(at 433.07 346.71 0)
+			(at 431.8 323.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25879,7 +27096,7 @@
 			)
 		)
 		(property "Description" "10uF 50V X7R capacitor LCSC:C89632"
-			(at 433.07 346.71 0)
+			(at 431.8 323.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25977,7 +27194,7 @@
 	)
 	(symbol
 		(lib_id "power:VSS")
-		(at 382.27 353.06 180)
+		(at 381 330.2 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25986,7 +27203,7 @@
 		(fields_autoplaced yes)
 		(uuid "f9005a27-02de-4906-a6ce-bc0563afc2ca")
 		(property "Reference" "#PWR037"
-			(at 382.27 349.25 0)
+			(at 381 326.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25995,7 +27212,7 @@
 			)
 		)
 		(property "Value" "VSS"
-			(at 382.27 358.14 0)
+			(at 381 335.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26003,7 +27220,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 382.27 353.06 0)
+			(at 381 330.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26012,7 +27229,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 382.27 353.06 0)
+			(at 381 330.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26021,7 +27238,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VSS\""
-			(at 382.27 353.06 0)
+			(at 381 330.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26043,7 +27260,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 407.67 307.34 180)
+		(at 406.4 284.48 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -26052,7 +27269,7 @@
 		(fields_autoplaced yes)
 		(uuid "fa8a262e-a18d-4fe5-bf2a-16d6fca4f5af")
 		(property "Reference" "C19"
-			(at 411.48 306.0699 0)
+			(at 410.21 283.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26061,7 +27278,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 411.48 308.6099 0)
+			(at 410.21 285.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26070,7 +27287,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 406.7048 303.53 0)
+			(at 405.4348 280.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26079,7 +27296,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C89632.html?s_z=n_q_t_capacitor"
-			(at 407.67 307.34 0)
+			(at 406.4 284.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26088,7 +27305,7 @@
 			)
 		)
 		(property "Description" "10uF 50V X7R capacitor LCSC:C89632"
-			(at 407.67 307.34 0)
+			(at 406.4 284.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)

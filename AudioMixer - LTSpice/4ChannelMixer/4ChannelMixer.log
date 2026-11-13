@@ -1,6 +1,6 @@
 LTspice 24.1.8 for Windows
 Circuit: C:\Users\posta\Desktop\KiCad files\AudioAnalogMixer\AudioMixer - LTSpice\4ChannelMixer\4ChannelMixer.net
-Start Time: Wed Nov 11 18:18:07 2026
+Start Time: Thu Nov 12 15:12:59 2026
 solver = Normal
 Maximum thread count: 12
 tnom = 27
@@ -34,7 +34,7 @@ Source Step = 63.6364%
 Source Step = 93.9394%
 Source stepping succeeded in finding the operating point.
 
-Total elapsed time: 1.998 seconds.
+Total elapsed time: 1.677 seconds.
 
 Files loaded:
 C:\Users\posta\Desktop\KiCad files\AudioAnalogMixer\AudioMixer - LTSpice\4ChannelMixer\4ChannelMixer.net

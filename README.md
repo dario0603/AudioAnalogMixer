@@ -162,6 +162,9 @@ The board is intended to provide the central platform for combining the individu
 ### 2. Single-Channel Microphone/Line Board
 
 The `SignalConditioning - OneChannel - Mic-Line` project contains the signal-conditioning design for a single microphone/line input channel.
+The PCB layout brings the microphone/line preamplifier, three-band equalizer, level and FX-send circuitry, and power supply together on a single board.
+
+![Single-channel microphone/line signal-conditioning PCB](img/SignalConditioning%20-%20OneChannel%20-%20Mic-Line%20PCB.png)
 
 The project includes the following schematic sections:
 
