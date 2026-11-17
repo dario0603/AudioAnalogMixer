@@ -4077,6 +4077,92 @@
 		)
 	)
 	(symbol
+		(lib_id "Amplifier_Operational:NE5532")
+		(at 128.27 163.83 0)
+		(mirror x)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "09c41196-2758-43c9-aed5-6bf43407fda0")
+		(property "Reference" "U4"
+			(at 128.27 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NE5532"
+			(at 128.27 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 128.27 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C22462564.html?s_z=n_q_l_ne5532"
+			(at 128.27 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual Low-Noise Operational Amplifiers, DIP-8/SOIC-8 LCSC:C22462564"
+			(at 128.27 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "55e662f2-3a21-40da-86c4-53c5409c1b13")
+		)
+		(pin "7"
+			(uuid "6258854c-dbf7-448f-b600-3e28cfefa283")
+		)
+		(pin "5"
+			(uuid "81dc21aa-0949-4448-9cda-6a3f3508a78e")
+		)
+		(pin "3"
+			(uuid "63453db4-e64e-4041-9696-85df80603b96")
+		)
+		(pin "6"
+			(uuid "901a4a10-bd76-48e2-ae29-182c339125cf")
+		)
+		(pin "2"
+			(uuid "2c7f8468-a49b-424d-ad43-ab265fb2c315")
+		)
+		(pin "8"
+			(uuid "69b2c9eb-1a27-4d0b-87df-93eef9fd888d")
+		)
+		(pin "1"
+			(uuid "54bbec00-2315-4397-815b-13836e3e1993")
+		)
+		(instances
+			(project "AudioMixer"
+				(path "/73500d36-8d33-4e8e-af4c-6d26a6542844/cde9dc0a-cd46-46be-bd47-d745af9c50d5"
+					(reference "U4")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 278.13 144.78 90)
 		(unit 1)
@@ -4549,6 +4635,92 @@
 		)
 	)
 	(symbol
+		(lib_id "Amplifier_Operational:NE5532")
+		(at 85.09 93.98 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "29dbd0c6-f98e-4a79-809a-507b98181a27")
+		(property "Reference" "U5"
+			(at 85.09 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NE5532"
+			(at 85.09 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 85.09 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C22462564.html?s_z=n_q_l_ne5532"
+			(at 85.09 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual Low-Noise Operational Amplifiers, DIP-8/SOIC-8 LCSC:C22462564"
+			(at 85.09 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "55e662f2-3a21-40da-86c4-53c5409c1b12")
+		)
+		(pin "7"
+			(uuid "cffdc846-2809-4a07-ae92-bc907fc1c14d")
+		)
+		(pin "5"
+			(uuid "e2de544a-f124-4bd0-a7ea-65721829e35b")
+		)
+		(pin "3"
+			(uuid "1400d56d-dfcb-434a-8993-afe2a4cd7e99")
+		)
+		(pin "6"
+			(uuid "4783fdc4-06e9-4544-9431-b66f2856f4ae")
+		)
+		(pin "2"
+			(uuid "67e3f064-10ac-4019-b7cc-49435cd55ddb")
+		)
+		(pin "8"
+			(uuid "69b2c9eb-1a27-4d0b-87df-93eef9fd888c")
+		)
+		(pin "1"
+			(uuid "bc6c9323-ef5b-40d4-b45e-5e097f5c5cfe")
+		)
+		(instances
+			(project "AudioMixer"
+				(path "/73500d36-8d33-4e8e-af4c-6d26a6542844/cde9dc0a-cd46-46be-bd47-d745af9c50d5"
+					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VCC")
 		(at 96.52 208.28 0)
 		(unit 1)
@@ -4957,92 +5129,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:NE5532")
-		(at 128.27 163.83 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "433c7699-4987-4c5a-83f5-1292b04407f1")
-		(property "Reference" "U5"
-			(at 128.27 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "NE5532"
-			(at 128.27 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 128.27 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C22462564.html?s_z=n_q_l_ne5532"
-			(at 128.27 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual Low-Noise Operational Amplifiers, DIP-8/SOIC-8 LCSC:C22462564"
-			(at 128.27 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "55e662f2-3a21-40da-86c4-53c5409c1b12")
-		)
-		(pin "7"
-			(uuid "cffdc846-2809-4a07-ae92-bc907fc1c14d")
-		)
-		(pin "5"
-			(uuid "e2de544a-f124-4bd0-a7ea-65721829e35b")
-		)
-		(pin "3"
-			(uuid "9a88b4a1-7d81-4fc4-97a4-2e403fd144e5")
-		)
-		(pin "6"
-			(uuid "4783fdc4-06e9-4544-9431-b66f2856f4ae")
-		)
-		(pin "2"
-			(uuid "d6f5390f-515a-4951-a64d-adf69a6768db")
-		)
-		(pin "8"
-			(uuid "69b2c9eb-1a27-4d0b-87df-93eef9fd888c")
-		)
-		(pin "1"
-			(uuid "3f8771d5-9907-4fe3-b2f2-3f7909ac7aec")
-		)
-		(instances
-			(project "AudioMixer"
-				(path "/73500d36-8d33-4e8e-af4c-6d26a6542844/cde9dc0a-cd46-46be-bd47-d745af9c50d5"
-					(reference "U5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
 		(at 204.47 128.27 270)
 		(unit 1)
@@ -5177,92 +5263,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:NE5532")
-		(at 85.09 93.98 0)
-		(mirror x)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "49cad122-e050-46cf-87cb-71949469456a")
-		(property "Reference" "U4"
-			(at 85.09 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "NE5532"
-			(at 85.09 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 85.09 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C22462564.html?s_z=n_q_l_ne5532"
-			(at 85.09 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual Low-Noise Operational Amplifiers, DIP-8/SOIC-8 LCSC:C22462564"
-			(at 85.09 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "55e662f2-3a21-40da-86c4-53c5409c1b13")
-		)
-		(pin "7"
-			(uuid "87cc6396-b4a4-462f-9d63-b10235874ade")
-		)
-		(pin "5"
-			(uuid "b8eebbe1-3189-490b-a108-dfc79e0bd5e0")
-		)
-		(pin "3"
-			(uuid "63453db4-e64e-4041-9696-85df80603b96")
-		)
-		(pin "6"
-			(uuid "08bdc5ca-fdc1-4822-9999-794e9065f6f9")
-		)
-		(pin "2"
-			(uuid "2c7f8468-a49b-424d-ad43-ab265fb2c315")
-		)
-		(pin "8"
-			(uuid "69b2c9eb-1a27-4d0b-87df-93eef9fd888d")
-		)
-		(pin "1"
-			(uuid "54bbec00-2315-4397-815b-13836e3e1993")
-		)
-		(instances
-			(project "AudioMixer"
-				(path "/73500d36-8d33-4e8e-af4c-6d26a6542844/cde9dc0a-cd46-46be-bd47-d745af9c50d5"
-					(reference "U4")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 81.28 115.57 270)
 		(unit 1)
@@ -5391,92 +5391,6 @@
 			(project "AudioMixer"
 				(path "/73500d36-8d33-4e8e-af4c-6d26a6542844/cde9dc0a-cd46-46be-bd47-d745af9c50d5"
 					(reference "#PWR046")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:NE5532")
-		(at 274.32 165.1 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5857c965-4be3-4df6-87d1-491d569f9f8d")
-		(property "Reference" "U7"
-			(at 274.32 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "NE5532"
-			(at 274.32 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 274.32 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C22462564.html?s_z=n_q_l_ne5532"
-			(at 274.32 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual Low-Noise Operational Amplifiers, DIP-8/SOIC-8 LCSC:C22462564"
-			(at 274.32 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "55e662f2-3a21-40da-86c4-53c5409c1b14")
-		)
-		(pin "7"
-			(uuid "cffdc846-2809-4a07-ae92-bc907fc1c14e")
-		)
-		(pin "5"
-			(uuid "e2de544a-f124-4bd0-a7ea-65721829e35c")
-		)
-		(pin "3"
-			(uuid "a498b7e4-2348-4b0a-bfae-9ef39e1479db")
-		)
-		(pin "6"
-			(uuid "4783fdc4-06e9-4544-9431-b66f2856f4af")
-		)
-		(pin "2"
-			(uuid "6c24872f-bc92-4f68-9e83-655f1a6ad4c6")
-		)
-		(pin "8"
-			(uuid "69b2c9eb-1a27-4d0b-87df-93eef9fd888e")
-		)
-		(pin "1"
-			(uuid "b7cfeda4-8c2e-4f49-b4b9-8cfff4905346")
-		)
-		(instances
-			(project "AudioMixer"
-				(path "/73500d36-8d33-4e8e-af4c-6d26a6542844/cde9dc0a-cd46-46be-bd47-d745af9c50d5"
-					(reference "U7")
 					(unit 1)
 				)
 			)
@@ -5787,6 +5701,92 @@
 		)
 	)
 	(symbol
+		(lib_id "Amplifier_Operational:NE5532")
+		(at 274.32 165.1 0)
+		(mirror x)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "651cd85c-b8f8-4218-b94c-ff5a139e48dd")
+		(property "Reference" "U6"
+			(at 274.32 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NE5532"
+			(at 274.32 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 274.32 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C22462564.html?s_z=n_q_l_ne5532"
+			(at 274.32 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual Low-Noise Operational Amplifiers, DIP-8/SOIC-8 LCSC:C22462564"
+			(at 274.32 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "55e662f2-3a21-40da-86c4-53c5409c1b15")
+		)
+		(pin "7"
+			(uuid "69a6d972-cf46-4196-b7f4-78f184411d82")
+		)
+		(pin "5"
+			(uuid "32092a83-eab1-41f3-b45e-b33c203dc919")
+		)
+		(pin "3"
+			(uuid "63453db4-e64e-4041-9696-85df80603b97")
+		)
+		(pin "6"
+			(uuid "079d4761-2194-4c63-a9b3-ecd97a27175b")
+		)
+		(pin "2"
+			(uuid "2c7f8468-a49b-424d-ad43-ab265fb2c316")
+		)
+		(pin "8"
+			(uuid "69b2c9eb-1a27-4d0b-87df-93eef9fd888f")
+		)
+		(pin "1"
+			(uuid "54bbec00-2315-4397-815b-13836e3e1994")
+		)
+		(instances
+			(project "AudioMixer"
+				(path "/73500d36-8d33-4e8e-af4c-6d26a6542844/cde9dc0a-cd46-46be-bd47-d745af9c50d5"
+					(reference "U6")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Potentiometer_Dual_Separate")
 		(at 227.33 30.48 90)
 		(unit 2)
@@ -5999,92 +5999,6 @@
 				(path "/73500d36-8d33-4e8e-af4c-6d26a6542844/cde9dc0a-cd46-46be-bd47-d745af9c50d5"
 					(reference "R34")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:NE5532")
-		(at 231.14 95.25 0)
-		(mirror x)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7ddc8fb1-1624-4b46-9b1e-5f2f18559b38")
-		(property "Reference" "U6"
-			(at 231.14 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "NE5532"
-			(at 231.14 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 231.14 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C22462564.html?s_z=n_q_l_ne5532"
-			(at 231.14 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual Low-Noise Operational Amplifiers, DIP-8/SOIC-8 LCSC:C22462564"
-			(at 231.14 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "55e662f2-3a21-40da-86c4-53c5409c1b15")
-		)
-		(pin "7"
-			(uuid "4279c13f-a3ce-41ac-919f-e39e10e8ee25")
-		)
-		(pin "5"
-			(uuid "c150dad2-a1ec-4d23-9e5f-1c724e9b7eb5")
-		)
-		(pin "3"
-			(uuid "63453db4-e64e-4041-9696-85df80603b97")
-		)
-		(pin "6"
-			(uuid "cc754ba0-4b6e-4926-b4e9-b8a448635c01")
-		)
-		(pin "2"
-			(uuid "2c7f8468-a49b-424d-ad43-ab265fb2c316")
-		)
-		(pin "8"
-			(uuid "69b2c9eb-1a27-4d0b-87df-93eef9fd888f")
-		)
-		(pin "1"
-			(uuid "54bbec00-2315-4397-815b-13836e3e1994")
-		)
-		(instances
-			(project "AudioMixer"
-				(path "/73500d36-8d33-4e8e-af4c-6d26a6542844/cde9dc0a-cd46-46be-bd47-d745af9c50d5"
-					(reference "U6")
-					(unit 2)
 				)
 			)
 		)
@@ -7222,6 +7136,92 @@
 				(path "/73500d36-8d33-4e8e-af4c-6d26a6542844/cde9dc0a-cd46-46be-bd47-d745af9c50d5"
 					(reference "RV3")
 					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:NE5532")
+		(at 231.14 95.25 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a8360895-a457-41c9-8c88-8c1f7a74107b")
+		(property "Reference" "U7"
+			(at 231.14 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NE5532"
+			(at 231.14 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 231.14 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C22462564.html?s_z=n_q_l_ne5532"
+			(at 231.14 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual Low-Noise Operational Amplifiers, DIP-8/SOIC-8 LCSC:C22462564"
+			(at 231.14 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "55e662f2-3a21-40da-86c4-53c5409c1b14")
+		)
+		(pin "7"
+			(uuid "cffdc846-2809-4a07-ae92-bc907fc1c14e")
+		)
+		(pin "5"
+			(uuid "e2de544a-f124-4bd0-a7ea-65721829e35c")
+		)
+		(pin "3"
+			(uuid "691eedae-3eb8-4f56-bc0b-9882275a6cb4")
+		)
+		(pin "6"
+			(uuid "4783fdc4-06e9-4544-9431-b66f2856f4af")
+		)
+		(pin "2"
+			(uuid "24ad3338-83a6-4f8a-bde3-0ae8b1105ac2")
+		)
+		(pin "8"
+			(uuid "69b2c9eb-1a27-4d0b-87df-93eef9fd888e")
+		)
+		(pin "1"
+			(uuid "ef7ae890-c067-48c0-9924-ed5b77818419")
+		)
+		(instances
+			(project "AudioMixer"
+				(path "/73500d36-8d33-4e8e-af4c-6d26a6542844/cde9dc0a-cd46-46be-bd47-d745af9c50d5"
+					(reference "U7")
+					(unit 1)
 				)
 			)
 		)

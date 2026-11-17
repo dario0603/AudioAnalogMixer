@@ -2452,6 +2452,17 @@
 		)
 		(uuid "2edb3244-e52b-4047-953f-062f1d6b29d2")
 	)
+	(text "Jumper configuration:\n- Pins 2-1: Connects the differential output signal to the connector ring.\n- Pins 2-3: Connects the connector ring to GND.\n- No jumper: Leaves the ring unconnected. \n\nUse the \"No jumper\" configuration if the ring contact is not present."
+		(exclude_from_sim no)
+		(at 204.724 293.878 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "93ccaa2c-bc6f-4ee1-8239-9db0ef57949e")
+	)
 	(text "Bridge SingleSupply if the board is\npowered with a single 30V power supply\nand not with a dual +-15V"
 		(exclude_from_sim no)
 		(at 467.868 359.41 0)
@@ -2461,6 +2472,28 @@
 			)
 		)
 		(uuid "c14dd8fa-ae3d-4d7a-8c29-6697edf9ea40")
+	)
+	(text "Jumper configuration:\n- Pins 2-1: Connects the differential output signal to the connector ring.\n- Pins 2-3: Connects the connector ring to GND.\n- No jumper: Leaves the ring unconnected. \n\nUse the \"No jumper\" configuration if the ring contact is not present."
+		(exclude_from_sim no)
+		(at 204.724 95.758 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c377c754-df03-4287-bea5-c2cd3006eeba")
+	)
+	(text "Jumper configuration:\n- Pins 2-1: Connects the differential output signal to the connector ring.\n- Pins 2-3: Connects the connector ring to GND.\n- No jumper: Leaves the ring unconnected. \n\nUse the \"No jumper\" configuration if the ring contact is not present."
+		(exclude_from_sim no)
+		(at 444.754 95.758 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e42e3b92-a429-4aa7-b6ff-32900003839d")
 	)
 	(text "Unused opamp"
 		(exclude_from_sim no)
@@ -3394,6 +3427,16 @@
 	)
 	(wire
 		(pts
+			(xy 238.76 105.41) (xy 177.8 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "042cb5af-53dd-48ed-accd-6e6228ca05ef")
+	)
+	(wire
+		(pts
 			(xy 327.66 66.04) (xy 327.66 76.2)
 		)
 		(stroke
@@ -3541,16 +3584,6 @@
 			(type default)
 		)
 		(uuid "086adc64-8643-442b-bc65-152ebbc14dd3")
-	)
-	(wire
-		(pts
-			(xy 241.3 303.53) (xy 177.8 303.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "08e2a19d-7694-4df4-b5bf-f2daea181efc")
 	)
 	(wire
 		(pts
@@ -3844,6 +3877,26 @@
 	)
 	(wire
 		(pts
+			(xy 241.3 115.57) (xy 254 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14546135-4e0e-4756-a7e7-ec72a34d4a44")
+	)
+	(wire
+		(pts
+			(xy 241.3 316.23) (xy 241.3 313.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1457103c-18a4-4c07-a4c6-8da751ec9065")
+	)
+	(wire
+		(pts
 			(xy 468.63 196.85) (xy 468.63 189.23)
 		)
 		(stroke
@@ -3981,6 +4034,16 @@
 			(type default)
 		)
 		(uuid "1941eb8c-eeb5-4c3d-8771-90ac8edd5ba5")
+	)
+	(wire
+		(pts
+			(xy 238.76 303.53) (xy 177.8 303.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1951a160-c820-46b3-8a00-2434c1ab6534")
 	)
 	(wire
 		(pts
@@ -4204,6 +4267,16 @@
 	)
 	(wire
 		(pts
+			(xy 463.55 115.57) (xy 476.25 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21c1086e-360e-451a-9076-5d0849dc2803")
+	)
+	(wire
+		(pts
 			(xy 259.08 364.49) (xy 259.08 375.92)
 		)
 		(stroke
@@ -4211,6 +4284,16 @@
 			(type default)
 		)
 		(uuid "21c9ed51-b34a-4ccd-85f9-267e3420455b")
+	)
+	(wire
+		(pts
+			(xy 238.76 105.41) (xy 238.76 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2215aabc-15e7-409f-a0b3-a74ce31c346e")
 	)
 	(wire
 		(pts
@@ -4284,7 +4367,7 @@
 	)
 	(wire
 		(pts
-			(xy 494.03 168.91) (xy 494.03 105.41)
+			(xy 494.03 168.91) (xy 494.03 115.57)
 		)
 		(stroke
 			(width 0)
@@ -4421,6 +4504,16 @@
 			(type default)
 		)
 		(uuid "2b0bbb41-1a27-438a-a3b1-3c10877a00ee")
+	)
+	(wire
+		(pts
+			(xy 238.76 313.69) (xy 238.76 316.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d669e49-d10d-48e2-9506-7f5d8526b6b6")
 	)
 	(wire
 		(pts
@@ -4904,13 +4997,13 @@
 	)
 	(wire
 		(pts
-			(xy 254 303.53) (xy 248.92 303.53)
+			(xy 481.33 118.11) (xy 481.33 115.57)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "435b098a-d9c0-4e65-b88f-b0373a32c5c1")
+		(uuid "4366e096-b68a-476e-b394-92ba9b9dd46c")
 	)
 	(wire
 		(pts
@@ -4981,6 +5074,16 @@
 			(type default)
 		)
 		(uuid "470cbab3-f1df-4c9c-a568-0ffd59a83764")
+	)
+	(wire
+		(pts
+			(xy 478.79 105.41) (xy 478.79 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "485bbe98-f43a-4dd0-a6a1-acff8f36fbf7")
 	)
 	(wire
 		(pts
@@ -5254,6 +5357,16 @@
 	)
 	(wire
 		(pts
+			(xy 241.3 118.11) (xy 241.3 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53367dc4-ec9a-467f-9c3b-65d630714da1")
+	)
+	(wire
+		(pts
 			(xy 67.31 260.35) (xy 67.31 267.97)
 		)
 		(stroke
@@ -5454,6 +5567,26 @@
 	)
 	(wire
 		(pts
+			(xy 476.25 115.57) (xy 476.25 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5bef4f56-33a4-46ce-91d9-7dfbe7e6a8d6")
+	)
+	(wire
+		(pts
+			(xy 223.52 313.69) (xy 236.22 313.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c26f88f-4516-4f0d-bbe9-67fdb4351416")
+	)
+	(wire
+		(pts
 			(xy 370.84 328.93) (xy 370.84 326.39)
 		)
 		(stroke
@@ -5574,7 +5707,7 @@
 	)
 	(wire
 		(pts
-			(xy 254 367.03) (xy 254 303.53)
+			(xy 254 367.03) (xy 254 313.69)
 		)
 		(stroke
 			(width 0)
@@ -5591,6 +5724,16 @@
 			(type default)
 		)
 		(uuid "626bf8ff-29a8-4051-b0ef-27d23ad2fdad")
+	)
+	(wire
+		(pts
+			(xy 223.52 313.69) (xy 223.52 316.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "628ee5f3-2b59-4a38-8833-020b75b5f3a1")
 	)
 	(wire
 		(pts
@@ -6514,16 +6657,6 @@
 	)
 	(wire
 		(pts
-			(xy 494.03 105.41) (xy 488.95 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8a4c1e0b-e39c-4526-bafa-e39dbe056ed3")
-	)
-	(wire
-		(pts
 			(xy 347.98 308.61) (xy 359.41 308.61)
 		)
 		(stroke
@@ -6764,16 +6897,6 @@
 	)
 	(wire
 		(pts
-			(xy 254 168.91) (xy 254 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "94589466-a44a-4952-8c81-7513bfb0c116")
-	)
-	(wire
-		(pts
 			(xy 67.31 320.04) (xy 69.85 320.04)
 		)
 		(stroke
@@ -6874,6 +6997,16 @@
 	)
 	(wire
 		(pts
+			(xy 223.52 115.57) (xy 236.22 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97537031-8a73-4abb-8157-f1f9600518a8")
+	)
+	(wire
+		(pts
 			(xy 393.7 265.43) (xy 381 265.43)
 		)
 		(stroke
@@ -6901,6 +7034,16 @@
 			(type default)
 		)
 		(uuid "97aa8e05-c2f0-47de-bdcb-e464f2dad551")
+	)
+	(wire
+		(pts
+			(xy 236.22 313.69) (xy 236.22 316.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98791aaa-2201-4253-a0a9-c564c0933e60")
 	)
 	(wire
 		(pts
@@ -7024,6 +7167,16 @@
 	)
 	(wire
 		(pts
+			(xy 463.55 115.57) (xy 463.55 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9dabc616-7853-4c5a-9fe8-6def5a82b906")
+	)
+	(wire
+		(pts
 			(xy 389.89 116.84) (xy 407.67 116.84)
 		)
 		(stroke
@@ -7041,6 +7194,16 @@
 			(type default)
 		)
 		(uuid "9e642f2e-8509-4fa8-b122-a6899de570c3")
+	)
+	(wire
+		(pts
+			(xy 236.22 115.57) (xy 236.22 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ec929f9-28be-4653-87e8-db3197666d88")
 	)
 	(wire
 		(pts
@@ -7091,6 +7254,16 @@
 			(type default)
 		)
 		(uuid "9fc8a785-282f-42aa-942e-4f3d3810bb11")
+	)
+	(wire
+		(pts
+			(xy 254 115.57) (xy 254 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a08ce7e8-0607-41a0-9aaf-46c96cb071f1")
 	)
 	(wire
 		(pts
@@ -7224,6 +7397,16 @@
 	)
 	(wire
 		(pts
+			(xy 238.76 303.53) (xy 238.76 306.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a751c7ae-b86f-4844-959e-0ef04f1b6d7c")
+	)
+	(wire
+		(pts
 			(xy 391.16 243.84) (xy 388.62 243.84)
 		)
 		(stroke
@@ -7301,6 +7484,16 @@
 			(type default)
 		)
 		(uuid "a8993aa2-629a-48f6-b0ea-47efdeb8d634")
+	)
+	(wire
+		(pts
+			(xy 238.76 115.57) (xy 238.76 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8b5dc6c-5999-429a-9142-2af1e5282994")
 	)
 	(wire
 		(pts
@@ -7444,6 +7637,16 @@
 	)
 	(wire
 		(pts
+			(xy 478.79 115.57) (xy 478.79 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad72b3a1-53e4-4f54-bfef-8ac4182f8856")
+	)
+	(wire
+		(pts
 			(xy 100.33 138.43) (xy 100.33 140.97)
 		)
 		(stroke
@@ -7541,16 +7744,6 @@
 			(type default)
 		)
 		(uuid "b010aff5-413e-4486-a358-6190419b3043")
-	)
-	(wire
-		(pts
-			(xy 254 105.41) (xy 248.92 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b0b2be7f-4194-4b4b-bac9-b2d071f22965")
 	)
 	(wire
 		(pts
@@ -7924,6 +8117,16 @@
 	)
 	(wire
 		(pts
+			(xy 223.52 115.57) (xy 223.52 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0bae10d-cae0-4530-99e6-b236d041e6a1")
+	)
+	(wire
+		(pts
 			(xy 433.07 176.53) (xy 430.53 176.53)
 		)
 		(stroke
@@ -8204,16 +8407,6 @@
 	)
 	(wire
 		(pts
-			(xy 481.33 105.41) (xy 417.83 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cefbb728-88f2-45c4-8854-05167fa03c70")
-	)
-	(wire
-		(pts
 			(xy 430.53 171.45) (xy 433.07 171.45)
 		)
 		(stroke
@@ -8301,6 +8494,16 @@
 			(type default)
 		)
 		(uuid "d1a6669c-7282-4795-9fa3-c01cf7bfc968")
+	)
+	(wire
+		(pts
+			(xy 241.3 313.69) (xy 254 313.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d21c1816-c334-4eba-853d-acd7e4dd2a16")
 	)
 	(wire
 		(pts
@@ -9004,13 +9207,13 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 105.41) (xy 177.8 105.41)
+			(xy 481.33 115.57) (xy 494.03 115.57)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ecf1c8e4-1640-49a8-9b2a-f40541375c21")
+		(uuid "ec6da98b-089b-47a0-a487-ccd92cb55bf5")
 	)
 	(wire
 		(pts
@@ -9191,6 +9394,16 @@
 			(type default)
 		)
 		(uuid "f61a9cd5-7db0-43cd-a4b3-bea356ae7b38")
+	)
+	(wire
+		(pts
+			(xy 478.79 105.41) (xy 417.83 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f657a9be-bf07-4ba2-ac86-f2aa0733cadc")
 	)
 	(wire
 		(pts
@@ -11954,6 +12167,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 223.52 316.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1706c185-f18b-47ed-a17e-f77d6caae452")
+		(property "Reference" "#PWR057"
+			(at 223.52 322.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 223.52 321.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 223.52 316.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 223.52 316.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 223.52 316.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3566a20e-6711-4999-899b-a94bb968d7d1")
+		)
+		(instances
+			(project "Mixer_circuit"
+				(path "/524c0fa7-20e0-4db6-ae4b-fc3b6fcd38d3"
+					(reference "#PWR057")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Amplifier_Operational:NE5532")
 		(at 361.95 279.4 0)
 		(mirror x)
@@ -13553,74 +13832,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 245.11 303.53 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "26320ca1-f46f-44cd-81d6-763e56783229")
-		(property "Reference" "C5"
-			(at 245.11 295.91 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10u"
-			(at 245.11 298.45 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 248.92 302.5648 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C89632.html?s_z=n_q_t_capacitor"
-			(at 245.11 303.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "10uF 50V X7R capacitor LCSC:C89632"
-			(at 245.11 303.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c92fd25a-ccf5-4749-bacc-764a37b7600f")
-		)
-		(pin "2"
-			(uuid "b9b6903a-5d32-46e8-bd2f-41b412225201")
-		)
-		(instances
-			(project "Mixer_circuit"
-				(path "/524c0fa7-20e0-4db6-ae4b-fc3b6fcd38d3"
-					(reference "C5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VCC")
 		(at 381 304.8 0)
 		(unit 1)
@@ -13888,6 +14099,76 @@
 			(project "Mixer_circuit"
 				(path "/524c0fa7-20e0-4db6-ae4b-fc3b6fcd38d3"
 					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 478.79 111.76 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2adcffd1-3509-4a6e-91d4-2e6ea374d017")
+		(property "Reference" "C30"
+			(at 482.6 110.4899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10u"
+			(at 482.6 113.0299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+			(at 477.8248 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C89632.html?s_z=n_q_t_capacitor"
+			(at 478.79 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10uF 50V X7R capacitor LCSC:C89632"
+			(at 478.79 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "318c28b0-c291-45ac-b6e0-d2199a6f0f10")
+		)
+		(pin "2"
+			(uuid "b66f9970-3a7b-4013-ad82-79fe75bdbdf6")
+		)
+		(instances
+			(project "Mixer_circuit"
+				(path "/524c0fa7-20e0-4db6-ae4b-fc3b6fcd38d3"
+					(reference "C30")
 					(unit 1)
 				)
 			)
@@ -15034,74 +15315,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 245.11 105.41 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "43502d34-8999-421e-959c-17fec4749bd2")
-		(property "Reference" "C3"
-			(at 245.11 97.79 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10u"
-			(at 245.11 100.33 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 248.92 104.4448 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C89632.html?s_z=n_q_t_capacitor"
-			(at 245.11 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "10uF 50V X7R capacitor LCSC:C89632"
-			(at 245.11 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8660df43-bd5e-40af-a8d9-d1deff700477")
-		)
-		(pin "2"
-			(uuid "37ad99c5-21f5-4878-ad1e-429675a99d49")
-		)
-		(instances
-			(project "Mixer_circuit"
-				(path "/524c0fa7-20e0-4db6-ae4b-fc3b6fcd38d3"
-					(reference "C3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Amplifier_Operational:NE5532")
 		(at 339.09 279.4 0)
 		(mirror x)
@@ -15278,6 +15491,72 @@
 				(path "/524c0fa7-20e0-4db6-ae4b-fc3b6fcd38d3"
 					(reference "U10")
 					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 223.52 118.11 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "468f5e18-0564-441b-a6bc-39f1052a764c")
+		(property "Reference" "#PWR055"
+			(at 223.52 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 223.52 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 223.52 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 223.52 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 223.52 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "014c8e09-bfb2-4c27-b31a-3ed91a0efbb3")
+		)
+		(instances
+			(project "Mixer_circuit"
+				(path "/524c0fa7-20e0-4db6-ae4b-fc3b6fcd38d3"
+					(reference "#PWR055")
+					(unit 1)
 				)
 			)
 		)
@@ -15852,74 +16131,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 485.14 105.41 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4e167c9f-def6-49c6-bbab-85c9ce555ddb")
-		(property "Reference" "C30"
-			(at 485.14 97.79 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10u"
-			(at 485.14 100.33 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 488.95 104.4448 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C89632.html?s_z=n_q_t_capacitor"
-			(at 485.14 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "10uF 50V X7R capacitor LCSC:C89632"
-			(at 485.14 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5f71fa38-6132-4ff8-a1ba-ef9a0dfe2ca7")
-		)
-		(pin "2"
-			(uuid "2c0069a3-d40d-42c7-ab5f-58f50fdfa078")
-		)
-		(instances
-			(project "Mixer_circuit"
-				(path "/524c0fa7-20e0-4db6-ae4b-fc3b6fcd38d3"
-					(reference "C30")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 430.53 179.07 0)
 		(unit 1)
@@ -16204,6 +16415,76 @@
 			(project "Mixer_circuit"
 				(path "/524c0fa7-20e0-4db6-ae4b-fc3b6fcd38d3"
 					(reference "J9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 478.79 123.19 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "55045e2a-47ca-4613-ac9d-eec61dad728e")
+		(property "Reference" "J14"
+			(at 478.282 132.334 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Dual_conn_jumper"
+			(at 480.314 132.842 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+			(at 478.79 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 478.79 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 478.79 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "62c28d97-9741-4d58-954e-35faf357277b")
+		)
+		(pin "3"
+			(uuid "a4f4b5eb-9c69-47a5-8958-07207db41475")
+		)
+		(pin "1"
+			(uuid "ca280038-5481-406c-94eb-573b0d60dae0")
+		)
+		(instances
+			(project "Mixer_circuit"
+				(path "/524c0fa7-20e0-4db6-ae4b-fc3b6fcd38d3"
+					(reference "J14")
 					(unit 1)
 				)
 			)
@@ -21349,6 +21630,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 463.55 118.11 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "966e1a84-fea4-4cb9-b3e6-b9fe5493cbd4")
+		(property "Reference" "#PWR056"
+			(at 463.55 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 463.55 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 463.55 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 463.55 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 463.55 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "388fe57d-6e63-416d-9167-bc3ce0711cd0")
+		)
+		(instances
+			(project "Mixer_circuit"
+				(path "/524c0fa7-20e0-4db6-ae4b-fc3b6fcd38d3"
+					(reference "#PWR056")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 332.74 378.46 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -23623,6 +23970,76 @@
 	)
 	(symbol
 		(lib_id "Device:C")
+		(at 238.76 309.88 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b27c11a7-8fd4-4465-8362-cac737b20771")
+		(property "Reference" "C5"
+			(at 242.57 308.6099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10u"
+			(at 242.57 311.1499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+			(at 237.7948 306.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C89632.html?s_z=n_q_t_capacitor"
+			(at 238.76 309.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10uF 50V X7R capacitor LCSC:C89632"
+			(at 238.76 309.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d2bc92bf-4e91-4d8a-8300-2cf17157b9d4")
+		)
+		(pin "2"
+			(uuid "6b880b60-29bf-401a-88cf-d93e7aa3a3e1")
+		)
+		(instances
+			(project "Mixer_circuit"
+				(path "/524c0fa7-20e0-4db6-ae4b-fc3b6fcd38d3"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
 		(at 393.7 323.85 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24435,6 +24852,76 @@
 			(project "Mixer_circuit"
 				(path "/524c0fa7-20e0-4db6-ae4b-fc3b6fcd38d3"
 					(reference "Q6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 238.76 321.31 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c5a19586-0b19-4cd2-b290-42d4a1d6d676")
+		(property "Reference" "J15"
+			(at 238.252 330.454 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Dual_conn_jumper"
+			(at 240.284 330.962 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+			(at 238.76 321.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 238.76 321.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 238.76 321.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d9c68852-2a10-4d15-89e3-19390e2c28d2")
+		)
+		(pin "3"
+			(uuid "6819eb43-2611-4167-bb01-6df4bb310018")
+		)
+		(pin "1"
+			(uuid "5a11e315-3b74-40a5-b621-308cec2b92cc")
+		)
+		(instances
+			(project "Mixer_circuit"
+				(path "/524c0fa7-20e0-4db6-ae4b-fc3b6fcd38d3"
+					(reference "J15")
 					(unit 1)
 				)
 			)
@@ -26842,6 +27329,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 238.76 123.19 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f23c6620-e71a-4421-88e4-691001ceac18")
+		(property "Reference" "J13"
+			(at 238.252 132.334 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Dual_conn_jumper"
+			(at 240.284 132.842 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+			(at 238.76 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 238.76 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 238.76 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1c041ec5-8b54-46af-90f6-2fc9a5be27da")
+		)
+		(pin "3"
+			(uuid "167d7ea3-75a8-4c23-ae31-2109509f751c")
+		)
+		(pin "1"
+			(uuid "474306bc-3b11-4ae6-ab48-ee608ecac686")
+		)
+		(instances
+			(project "Mixer_circuit"
+				(path "/524c0fa7-20e0-4db6-ae4b-fc3b6fcd38d3"
+					(reference "J13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_BJT:BCX53")
 		(at 165.1 347.98 0)
 		(mirror x)
@@ -27543,6 +28100,76 @@
 			(project "Mixer_circuit"
 				(path "/524c0fa7-20e0-4db6-ae4b-fc3b6fcd38d3"
 					(reference "R23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 238.76 111.76 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fd9a774a-5825-4b94-b4d8-912fb585a184")
+		(property "Reference" "C3"
+			(at 242.57 110.4899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10u"
+			(at 242.57 113.0299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+			(at 237.7948 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C89632.html?s_z=n_q_t_capacitor"
+			(at 238.76 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10uF 50V X7R capacitor LCSC:C89632"
+			(at 238.76 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6b9c2dd7-9923-4783-8600-3d34e9e7e81a")
+		)
+		(pin "2"
+			(uuid "8c83d3e2-c194-4968-8e6a-0a8497e3836a")
+		)
+		(instances
+			(project "Mixer_circuit"
+				(path "/524c0fa7-20e0-4db6-ae4b-fc3b6fcd38d3"
+					(reference "C3")
 					(unit 1)
 				)
 			)

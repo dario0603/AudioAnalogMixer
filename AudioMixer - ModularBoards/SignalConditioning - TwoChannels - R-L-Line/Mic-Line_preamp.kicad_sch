@@ -4974,8 +4974,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 146.05 74.93 270)
-		(mirror x)
+		(at 146.05 74.93 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4999,7 +4998,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 145.796 73.914 90)
+			(at 146.304 73.914 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8906,8 +8905,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 146.05 144.78 270)
-		(mirror x)
+		(at 146.05 144.78 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8931,7 +8929,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 145.796 143.764 90)
+			(at 146.304 143.764 90)
 			(effects
 				(font
 					(size 1.27 1.27)

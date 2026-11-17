@@ -1898,7 +1898,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 161.29) (xy 161.29 161.29)
+			(xy 143.51 161.29) (xy 165.1 161.29)
 		)
 		(stroke
 			(width 0)
@@ -2198,7 +2198,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 163.83) (xy 161.29 161.29)
+			(xy 165.1 163.83) (xy 165.1 161.29)
 		)
 		(stroke
 			(width 0)
@@ -2578,7 +2578,7 @@
 			)
 		)
 	)
-	(global_label "Tone_R"
+	(global_label "Tone_out_R"
 		(shape input)
 		(at 118.11 62.23 0)
 		(fields_autoplaced yes)
@@ -2590,7 +2590,7 @@
 		)
 		(uuid "32de4aa8-682e-420b-847d-3d701b82769c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 127.687 62.23 0)
+			(at 131.6783 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2688,7 +2688,7 @@
 			)
 		)
 	)
-	(global_label "Tone_L"
+	(global_label "Tone_out_L"
 		(shape input)
 		(at 118.11 111.76 0)
 		(fields_autoplaced yes)
@@ -2700,7 +2700,7 @@
 		)
 		(uuid "70ad8d6d-380f-440a-8534-08cfd2bffbac")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 127.4451 111.76 0)
+			(at 131.4364 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2776,7 +2776,7 @@
 			)
 		)
 	)
-	(global_label "Tone_R"
+	(global_label "Tone_out_R"
 		(shape input)
 		(at 148.59 156.21 0)
 		(fields_autoplaced yes)
@@ -2788,7 +2788,7 @@
 		)
 		(uuid "f7ef6257-040c-4a3f-bdf9-3041944cafe7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 158.167 156.21 0)
+			(at 162.1583 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2798,7 +2798,7 @@
 			)
 		)
 	)
-	(global_label "Tone_L"
+	(global_label "Tone_out_L"
 		(shape input)
 		(at 148.59 166.37 0)
 		(fields_autoplaced yes)
@@ -2810,7 +2810,7 @@
 		)
 		(uuid "fb3027b7-59f7-45c5-8e21-b27dd2207020")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 157.9251 166.37 0)
+			(at 161.9164 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5000,7 +5000,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 161.29 163.83 0)
+		(at 165.1 163.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5009,7 +5009,7 @@
 		(fields_autoplaced yes)
 		(uuid "a9761156-32ff-455c-8082-b26234e1500c")
 		(property "Reference" "#PWR066"
-			(at 161.29 170.18 0)
+			(at 165.1 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5018,7 +5018,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 161.29 168.91 0)
+			(at 165.1 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5026,7 +5026,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 161.29 163.83 0)
+			(at 165.1 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5035,7 +5035,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 161.29 163.83 0)
+			(at 165.1 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5044,7 +5044,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 161.29 163.83 0)
+			(at 165.1 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
