@@ -2045,6 +2045,16 @@
 		)
 		(uuid "5f5ac4c7-2101-4858-a45d-9d26443650df")
 	)
+	(text "For this board, the +48 V power supply is not used.\nThe connector is provided solely to maintain\nstandardization across modules.\nCan be connected or not"
+		(exclude_from_sim no)
+		(at 61.976 31.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "98889bf0-f031-43e3-99ea-a070de51bfe2")
+	)
 	(text "Power supply indicators"
 		(exclude_from_sim no)
 		(at 72.136 93.726 0)

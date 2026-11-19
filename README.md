@@ -179,7 +179,7 @@ The `SignalConditioning - TwoChannels - R-L-Line` project contains a two-channel
 
 Its schematic is organized around the same functional blocks as the single-channel version, adapted for a stereo input configuration.
 
-The PCB layouts and circuit integration are still under development. Further work is required to complete the board designs and verify their operation in hardware.
+![Dual-channel Left-Right channel signal-conditioning PCB](img/SignalConditioning%20-%20TwoChannels%20-%20LeftRight%20PCB.png)
 
 ## Repository Structure
 

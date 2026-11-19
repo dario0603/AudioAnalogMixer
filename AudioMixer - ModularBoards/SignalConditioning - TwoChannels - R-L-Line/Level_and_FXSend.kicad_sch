@@ -3159,73 +3159,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 233.68 50.8 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1dcd2813-7412-4674-b370-4df36b106954")
-		(property "Reference" "C42"
-			(at 233.68 43.18 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10u"
-			(at 233.68 45.72 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 237.49 49.8348 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C89632.html?s_z=n_q_t_capacitor"
-			(at 233.68 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "10uF 50V X7R capacitor LCSC:C89632"
-			(at 233.68 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d39d09a4-e252-4a22-a726-55d0c0f9df64")
-		)
-		(pin "2"
-			(uuid "8ff1c1bf-1597-4cfb-a9f6-4b6e949b6e9b")
-		)
-		(instances
-			(project "AudioMixer"
-				(path "/73500d36-8d33-4e8e-af4c-6d26a6542844/fb6a4863-343b-4eba-b1af-661547f4a9e8"
-					(reference "C42")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
 		(at 43.18 39.37 270)
 		(unit 1)
@@ -3566,6 +3499,74 @@
 			(project "AudioMixer"
 				(path "/73500d36-8d33-4e8e-af4c-6d26a6542844/fb6a4863-343b-4eba-b1af-661547f4a9e8"
 					(reference "RV6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 96.52 55.88 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "41387a09-7b01-41e0-8620-12a0bab77add")
+		(property "Reference" "C40"
+			(at 96.52 48.26 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10u"
+			(at 96.52 50.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 100.33 54.9148 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C22367830.html?s_z=n_q_t_capacitor"
+			(at 96.52 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10uF 50V X5R capacitor LCSC:C22367830"
+			(at 96.52 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fafd671d-2a90-46ca-97cf-4f20337974bc")
+		)
+		(pin "2"
+			(uuid "3e132a33-d31b-4389-99ee-f666667fe8e0")
+		)
+		(instances
+			(project "AudioMixer"
+				(path "/73500d36-8d33-4e8e-af4c-6d26a6542844/fb6a4863-343b-4eba-b1af-661547f4a9e8"
+					(reference "C40")
 					(unit 1)
 				)
 			)
@@ -4074,6 +4075,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 96.52 105.41 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5ca8cab9-3305-454b-b85d-ee1717cb52d6")
+		(property "Reference" "C41"
+			(at 96.52 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10u"
+			(at 96.52 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 100.33 104.4448 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C22367830.html?s_z=n_q_t_capacitor"
+			(at 96.52 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10uF 50V X5R capacitor LCSC:C22367830"
+			(at 96.52 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "47aed2f4-63d6-49d3-ab14-83d86f83808b")
+		)
+		(pin "2"
+			(uuid "8f3be0bc-3fa3-4476-a27e-22b7c15a2a42")
+		)
+		(instances
+			(project "AudioMixer"
+				(path "/73500d36-8d33-4e8e-af4c-6d26a6542844/fb6a4863-343b-4eba-b1af-661547f4a9e8"
+					(reference "C41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 180.34 34.29 270)
 		(unit 1)
@@ -4136,75 +4205,6 @@
 			(project "AudioMixer"
 				(path "/73500d36-8d33-4e8e-af4c-6d26a6542844/fb6a4863-343b-4eba-b1af-661547f4a9e8"
 					(reference "R54")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 96.52 105.41 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "66901dbc-7981-46fb-9908-4fd2f5399817")
-		(property "Reference" "C41"
-			(at 96.52 113.03 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10u"
-			(at 96.52 110.49 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 100.33 106.3752 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C89632.html?s_z=n_q_t_capacitor"
-			(at 96.52 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "10uF 50V X7R capacitor LCSC:C89632"
-			(at 96.52 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d397fc76-13fa-4cf8-b39c-57a105be327e")
-		)
-		(pin "2"
-			(uuid "b0f15146-6520-4e28-b624-f08a1aaaf116")
-		)
-		(instances
-			(project "AudioMixer"
-				(path "/73500d36-8d33-4e8e-af4c-6d26a6542844/fb6a4863-343b-4eba-b1af-661547f4a9e8"
-					(reference "C41")
 					(unit 1)
 				)
 			)
@@ -4862,75 +4862,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 96.52 55.88 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9b138f73-7a71-4534-9b21-2cda661e843c")
-		(property "Reference" "C40"
-			(at 96.52 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10u"
-			(at 96.52 60.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 100.33 56.8452 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C89632.html?s_z=n_q_t_capacitor"
-			(at 96.52 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "10uF 50V X7R capacitor LCSC:C89632"
-			(at 96.52 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3cf41404-add1-4ebc-940a-d57d22cb83a6")
-		)
-		(pin "2"
-			(uuid "64fae5b2-2539-418d-b627-f821fd98abde")
-		)
-		(instances
-			(project "AudioMixer"
-				(path "/73500d36-8d33-4e8e-af4c-6d26a6542844/fb6a4863-343b-4eba-b1af-661547f4a9e8"
-					(reference "C40")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
 		(at 66.04 88.9 270)
 		(unit 1)
@@ -5215,6 +5146,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 233.68 50.8 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b263e742-b852-45e3-b58d-d30f7329155e")
+		(property "Reference" "C42"
+			(at 233.68 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10u"
+			(at 233.68 45.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 237.49 49.8348 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C22367830.html?s_z=n_q_t_capacitor"
+			(at 233.68 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10uF 50V X5R capacitor LCSC:C22367830"
+			(at 233.68 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3a22df1c-9015-4aa5-a795-ee1e7ac5a338")
+		)
+		(pin "2"
+			(uuid "3ad7573a-e7df-47b0-a99d-64a822408f4f")
+		)
+		(instances
+			(project "AudioMixer"
+				(path "/73500d36-8d33-4e8e-af4c-6d26a6542844/fb6a4863-343b-4eba-b1af-661547f4a9e8"
+					(reference "C42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Potentiometer_Dual_Separate")
 		(at 59.69 116.84 90)
 		(unit 2)
@@ -5354,6 +5353,74 @@
 			(project "AudioMixer"
 				(path "/73500d36-8d33-4e8e-af4c-6d26a6542844/fb6a4863-343b-4eba-b1af-661547f4a9e8"
 					(reference "#PWR071")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 233.68 100.33 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c488b67a-f921-4353-84e5-680f492a8098")
+		(property "Reference" "C43"
+			(at 233.68 92.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10u"
+			(at 233.68 95.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 237.49 99.3648 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C22367830.html?s_z=n_q_t_capacitor"
+			(at 233.68 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10uF 50V X5R capacitor LCSC:C22367830"
+			(at 233.68 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4c997856-f885-4990-8839-09efd2d4df31")
+		)
+		(pin "2"
+			(uuid "47a366ac-7607-4680-83f0-d73d631e8f4c")
+		)
+		(instances
+			(project "AudioMixer"
+				(path "/73500d36-8d33-4e8e-af4c-6d26a6542844/fb6a4863-343b-4eba-b1af-661547f4a9e8"
+					(reference "C43")
 					(unit 1)
 				)
 			)
@@ -6349,73 +6416,6 @@
 			(project "AudioMixer"
 				(path "/73500d36-8d33-4e8e-af4c-6d26a6542844/fb6a4863-343b-4eba-b1af-661547f4a9e8"
 					(reference "#PWR056")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 233.68 100.33 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f13664ed-d03c-4744-95d1-e1c206fa26b9")
-		(property "Reference" "C43"
-			(at 233.68 92.71 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10u"
-			(at 233.68 95.25 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 237.49 99.3648 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/product-detail/C89632.html?s_z=n_q_t_capacitor"
-			(at 233.68 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "10uF 50V X7R capacitor LCSC:C89632"
-			(at 233.68 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "63f48b61-af01-4dbe-bc08-de937e7651c2")
-		)
-		(pin "2"
-			(uuid "24a17ca0-7e98-439a-9482-d8d9483012b6")
-		)
-		(instances
-			(project "AudioMixer"
-				(path "/73500d36-8d33-4e8e-af4c-6d26a6542844/fb6a4863-343b-4eba-b1af-661547f4a9e8"
-					(reference "C43")
 					(unit 1)
 				)
 			)
