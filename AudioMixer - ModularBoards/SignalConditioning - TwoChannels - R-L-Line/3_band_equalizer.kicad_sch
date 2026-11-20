@@ -259,113 +259,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:TestPoint"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.762)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "TP"
-				(at 0 6.858 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TestPoint"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "test point"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "test point tp"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Pin* Test*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "TestPoint_0_1"
-				(circle
-					(center 0 3.302)
-					(radius 0.762)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "TestPoint_1_1"
-				(pin passive line
-					(at 0 0 90)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -2054,16 +1947,6 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 176.53) (xy 138.43 163.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "410e8d1e-dc17-4f20-8f11-65be47c87246")
-	)
-	(wire
-		(pts
 			(xy 220.98 52.07) (xy 220.98 49.53)
 		)
 		(stroke
@@ -2591,16 +2474,6 @@
 			(type default)
 		)
 		(uuid "93ded991-0a19-4b17-a517-d2cb4a683be6")
-	)
-	(wire
-		(pts
-			(xy 284.48 177.8) (xy 284.48 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9772ec29-4178-4112-a3a3-6875194d648a")
 	)
 	(wire
 		(pts
@@ -4289,74 +4162,6 @@
 			(project "AudioMixer"
 				(path "/73500d36-8d33-4e8e-af4c-6d26a6542844/cde9dc0a-cd46-46be-bd47-d745af9c50d5"
 					(reference "#PWR050")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 284.48 177.8 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "18171832-75a5-4cdf-8d8d-b6dfa0c7aea2")
-		(property "Reference" "TP4"
-			(at 287.02 182.3721 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "FilteredWave"
-			(at 287.02 179.8321 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 289.56 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 289.56 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 284.48 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ff449d9c-128f-45f2-afd3-8cb4fe070cb1")
-		)
-		(instances
-			(project "AudioMixer"
-				(path "/73500d36-8d33-4e8e-af4c-6d26a6542844/cde9dc0a-cd46-46be-bd47-d745af9c50d5"
-					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -6487,74 +6292,6 @@
 			(project "AudioMixer"
 				(path "/73500d36-8d33-4e8e-af4c-6d26a6542844/cde9dc0a-cd46-46be-bd47-d745af9c50d5"
 					(reference "#PWR040")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 138.43 176.53 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8d3231c6-c90a-4275-8b81-93bdc30d7da2")
-		(property "Reference" "TP3"
-			(at 140.97 181.1021 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "FilteredWave"
-			(at 140.97 178.5621 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 143.51 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 143.51 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 138.43 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fa9d8799-612d-4348-92f1-4e76a20027c1")
-		)
-		(instances
-			(project "AudioMixer"
-				(path "/73500d36-8d33-4e8e-af4c-6d26a6542844/cde9dc0a-cd46-46be-bd47-d745af9c50d5"
-					(reference "TP3")
 					(unit 1)
 				)
 			)
