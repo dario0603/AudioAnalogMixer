@@ -39857,7 +39857,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "+15V"
+	(gr_text "-15V"
 		(at 93.85 78.575 0)
 		(layer "F.SilkS" knockout)
 		(uuid "c78b3b74-456b-494d-a0b4-9cf8aaf8d0f0")
@@ -39883,7 +39883,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "-15V"
+	(gr_text "+15V"
 		(at 93.85 83.625 0)
 		(layer "F.SilkS" knockout)
 		(uuid "dc841280-420b-4837-b0ac-74c493365dd1")
@@ -39971,6 +39971,19 @@
 			(justify left bottom mirror)
 		)
 	)
+	(gr_text "GND"
+		(at 96.75 96.5 0)
+		(layer "B.SilkS")
+		(uuid "3be7dc82-2d92-428f-a809-d40ef4207144")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+				(bold yes)
+			)
+			(justify left bottom mirror)
+		)
+	)
 	(gr_text "VCompIn"
 		(at 143.25 95.25 0)
 		(layer "B.SilkS")
@@ -40033,6 +40046,19 @@
 			(justify left bottom mirror)
 		)
 	)
+	(gr_text "L"
+		(at 94.7 93.85 0)
+		(layer "B.SilkS")
+		(uuid "c57dbc70-4b04-4431-8746-8045d7e38fb8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+				(bold yes)
+			)
+			(justify left bottom mirror)
+		)
+	)
 	(gr_text "FilteredWave"
 		(at 115.75 107.48 0)
 		(layer "B.SilkS")
@@ -40041,6 +40067,19 @@
 			(font
 				(size 1 1)
 				(thickness 0.15)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "R"
+		(at 94.7 99 0)
+		(layer "B.SilkS")
+		(uuid "d9f6169c-bfa7-4e68-817a-543146ddb275")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.2)
+				(bold yes)
 			)
 			(justify left bottom mirror)
 		)
